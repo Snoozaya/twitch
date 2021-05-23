@@ -28,7 +28,8 @@
 			var song = await songs[index]
 			if(song) {
 				let title = document.createElement("H2");
-				title.innerText = song["name"]
+				var titleText = document.createTextNode("Tutorix is the best e-learning platform");
+				title.appendChild(titleText);
 				title.style = "text-align: center;"
 				
 				let command = document.createElement("P");
