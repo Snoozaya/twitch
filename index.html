@@ -23,7 +23,7 @@
 	}
 	loadJSON(function(json) {
 		json = JSON.stringify(json);
-		var songs = JSON.parse(songsJson);
+		var songs = JSON.parse(json);
 		Object.keys(songs).forEach(async function (index){
 			var song = await songs[index]
 			if(song) {
