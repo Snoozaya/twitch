@@ -1,8 +1,42 @@
-
+<html>
+<body>
+<div id="new">
 <h1 style="text-align: center;"><strong>Song Request Commands</strong></h1>
 <p style="text-align: center;"><strong>This stream supports song requests from a pre-determined list. The commands below will list what commands work.</strong></p>
 <p style="text-align: center;">&nbsp;</p>
-<h2 style="text-align: left;">Undertale - Enemy Approaching</h2>
-<p>!add enemy-approaching</p>
-<h2 style="text-align: left;">Undertale - Stronger Monsters</h2>
-<p>!add stronger-monsters</p>
+<h2 style="text-align: center;">Undertale - Enemy Approaching</h2>
+<p style="text-align: center;">!add enemy-approaching</p>
+<h2 style="text-align: center;">Undertale - Stronger Monsters</h2>
+<p style="text-align: center;">!add stronger-monsters</p>
+</div>
+<script>
+	function loadJSON(callback) {   
+		var xobj = new XMLHttpRequest();
+		xobj.overrideMimeType("application/json");
+		xobj.open('GET', 'songs.json', true);
+		xobj.onreadystatechange = function () {
+			if (xobj.readyState == 4 && xobj.status == "200") {
+				callback(JSON.parse(xobj.responseText));
+			}
+		};
+		xobj.send(null);  
+	}
+	loadJSON(function(json) {
+		json = JSON.stringify(json);
+		var songs = JSON.parse(songsJson);
+		Object.keys(songs).forEach(async function (index){
+			var song = await songs[index]
+			if(song) {
+				let title = document.createElement("H2");
+				title.innerText = song["name"]
+				title.style = "text-align: center;"
+				
+				let command = document.createElement("P");
+				command.innerText = "!add" + index
+				command.style = "text-align: center;"
+			}
+		})
+	})
+</script>
+</body>
+</html>

@@ -6,5 +6,21 @@
 	"stronger_monsters":{
 		"name":"Stronger Monsters",
 		"author":"Toby Fox"
+	},
+	"flower_garden":{
+		"name":"Flower Garden",
+		"author":"Koji Kondo"
+	},
+	"electrodrome":{
+		"name":"Electrodrome",
+		"game":"Mario Kart 8"
+	},
+	"red_streamer":{
+		"name":"Red Streamer Battle",
+		"game":"Paper Mario: The Origami King"
+	},
+	"airship_fortress":{
+		"name":"Airship Fortress",
+		"game":"Mario Kart DS"
 	}
 }
