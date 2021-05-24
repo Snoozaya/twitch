@@ -14,6 +14,14 @@
 		"author":"Toby Fox",
 		"game":"Undertale"
 	},
+	"bowser_jr":{
+		"name":"Bowser Jr. Battle 4",
+		"game":"Mario Party 9"
+	},
+	"bowser_jr_mad":{
+		"name":"Bowser Jr.'s Mad",
+		"game":"Mario Party 9"
+	},
 	"flower_garden":{
 		"name":"Flower Garden",
 		"author":"Koji Kondo",
