@@ -18,13 +18,13 @@
 		"name":"Electrodrome",
 		"game":"Mario Kart 8"
 	},
-	"red_streamer":{
-		"name":"Red Streamer Battle",
-		"game":"Paper Mario: The Origami King"
-	},
 	"airship_fortress":{
 		"name":"Airship Fortress",
 		"game":"Mario Kart DS"
+	},
+	"red_streamer":{
+		"name":"Red Streamer Battle",
+		"game":"Paper Mario: The Origami King"
 	},
 	"piranha_creeper_creek":{
 		"name":"Piranha Creeper Creek",
