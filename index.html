@@ -19,7 +19,7 @@
 		xobj.send(null);  
 	}
 	
-	
+	var songs = []
 	function compare( a, b ) {
 		a = songs[a]
 		b = songs[b]
@@ -49,7 +49,7 @@
 	
 	loadJSON(function(json) {
 		json = JSON.stringify(json);
-		var songs = JSON.parse(json);
+		songs = JSON.parse(json);
 		songs = sortData(songs)
 		Object.keys(songs).forEach(async function (index){
 			var song = await songs[index]
