@@ -1,14 +1,14 @@
 <html>
 <body style="background-color:black;">
 <div id="div1">
-<h1 style="text-align: center; color:#FFFFFF"><strong>Song Request Commands</strong></h1>
-<p style="text-align: center; color:#FFFFFF"><strong>This stream supports song requests from a pre-determined list. The commands below will list what commands work.</strong></p>
-<p style="text-align: center; color:#FFFFFF"><strong>!replace to replace your song in the queue. !currentsong to view the current song</strong></p>
+<h1 style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>Song Request Commands</strong></h1>
+<p style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>This stream supports song requests from a pre-determined list. The commands below will list what commands work.</strong></p>
+<p style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>!replace to replace your song in the queue. !currentsong to view the current song</strong></p>
 <hr>
 </div>
 <div>
-<h2 style="text-align: center; color:#FFFFFF"><strong>Random</strong></h2>
-<p style="text-align: center; color:#FFFFFF">!add random</p>
+<h2 style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>Random</strong></h2>
+<p style="font-family:arial black; text-align: center; color:#FFFFFF">!add random</p>
 </div>
 <script>
 	// I am awful at coding javascript, sorry for people who know how to actually code javascript :(
@@ -72,12 +72,12 @@
 				let title = document.createElement("H2");
 				let titleText = document.createTextNode(songText);
 				title.appendChild(titleText);
-				title.style = "text-align: center; color:#FFFFFF"
+				title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 				
 				let command = document.createElement("P");
 				let commandText = document.createTextNode("!add "+index);
 				command.appendChild(commandText);
-				command.style = "text-align: center; color:#FFFFFF"
+				command.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 				
 				var element = document.getElementById("div1");
 				element.appendChild(title);
