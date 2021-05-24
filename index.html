@@ -23,16 +23,10 @@
 		Object.keys(songs).forEach(async function (index){
 			var song = await songs[index]
 			if(song) {
-				let songText = index
-				if(song["game"]) {
-					songText = index + " - " + song["game"]
-				}
-				else if (song["author"]) {
-					songText = index + " - " + song["author"]
-				}
+				let songText = (song["name"] || index || "???") + " - " + (song["game"] || song["author"] || "???")
 			
 				let title = document.createElement("H2");
-				let titleText = document.createTextNode(song["name"]);
+				let titleText = document.createTextNode(songText);
 				title.appendChild(titleText);
 				title.style = "text-align: center;"
 				
