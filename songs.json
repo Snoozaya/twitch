@@ -30,6 +30,10 @@
 		"name":"Super Bell Hill",
 		"game":"Super Mario 3D World"
 	},
+	"double_cherry_pass":{
+		"name":"Double Cherry Pass",
+		"game":"Super Mario 3D World"
+	},
 	"piranha_creeper_creek":{
 		"name":"Piranha Creeper Creek",
 		"game":"Super Mario 3D World"
@@ -68,7 +72,8 @@
 	},
 	"smw_desert":{
 		"name":"Desert (Super Mario World)",
-		"game":"Super Mario Maker 2"
+		"game":"Super Mario Maker 2",
+		"author":"Koji Kondo"
 	},
 	"athletic":{
 		"name":"Athletic",
