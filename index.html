@@ -21,7 +21,8 @@
 	
 	
 	function compare( a, b ) {
-		console.log(a,b)
+		a = songs[a]
+		b = songs[b]
 		let aProp = (a["game"] || a["author"] || a["name"] || "???")
 		let bProp = (a["game"] || a["author"] || a["name"] || "???")
 		console.log(aProp,bProp)
