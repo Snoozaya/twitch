@@ -20,22 +20,21 @@
 	}
 	
 	
-	function dynamicSort(property) {
-		var sortOrder = 1;
-		return function (a,b) {
-			/* next line works with strings and numbers, 
-			 * and you may want to customize it to your needs
-			 */
-			var aprop = a["game"] || a["author"] || a["name"] || "???"
-			var bprop = b["game"] || b["author"] || b["name"] || "???"
-			var result = (aprop < bprop) ? -1 : (aprop > bprop) ? 1 : 0;
-			return result * sortOrder;
+	function compare( a, b ) {
+		let aProp = (a["game"] || a["author"] || a["name"] || "???")
+		let bProp = (a["game"] || a["author"] || a["name"] || "???")
+		if ( aProp < bProp ){
+			return -1;
 		}
+		if ( aProp > bProp ){
+			return 1;
+		}
+		return 0;
 	}
 	
 	function sortData(data) {
 		let ordered = {};
-		let compareFunction = dynamicSort()
+		let compareFunction = compare
 		Object.keys(data).sort(compareFunction).forEach(function(key) {
 			console.log("Test :"+key)
 			ordered[key] = data[key];
