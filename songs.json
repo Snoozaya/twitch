@@ -149,8 +149,20 @@
 		"name":"Spookeez",
 		"game":"Friday Night Funkin'"
 	},
+	"monster":{
+		"name":"Monster",
+		"game":"Friday Night Funkin'"
+	},
 	"winter_horrorland":{
 		"name":"Winter Horrorland",
+		"game":"Friday Night Funkin'"
+	},
+	"ugh":{
+		"name":"Ugh",
+		"game":"Friday Night Funkin'"
+	},
+	"guns":{
+		"name":"Guns",
 		"game":"Friday Night Funkin'"
 	},
 	"stress":{
