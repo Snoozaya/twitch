@@ -25,12 +25,20 @@
 		b = songs[b]
 		let aProp = (a["game"] || a["author"] || a["name"] || "???")
 		let bProp = (b["game"] || b["author"] || b["name"] || "???")
+		let aName = a["name"] || "???"
+		let bName = b["name"] || "???"
 		console.log(aProp,bProp)
 		if ( aProp < bProp ){
 			return -1;
 		}
 		if ( aProp > bProp ){
 			return 1;
+		}
+		if ( aName < bName ) {
+			return -1
+		}
+		if ( aName > bName ) {
+			return 1
 		}
 		return 0;
 	}
