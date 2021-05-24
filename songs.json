@@ -79,6 +79,31 @@
 		"name":"Athletic",
 		"game":"New Super Mario Bros U."
 	},
+	"guard_down":{
+		"name":"Guard Down",
+		"game":"Half-Life 2: Episode One",
+		"author":"Kelly Bailey"
+	},
+	"hospital":{
+		"name":"What Kind Of Hospital Is This",
+		"game":"Half-Life 2: Episode One",
+		"author":"Kelly Bailey"
+	},
+	"hunting_party":{
+		"name":"Hunting Party",
+		"game":"Half-Life 2: Episode Two",
+		"author":"Kelly Bailey"
+	},
+	"sector_sweep":{
+		"name":"Sector Sweep",
+		"game":"Half-Life 2: Episode Two",
+		"author":"Kelly Bailey"
+	},
+	"last_legs":{
+		"name":"Last Legs",
+		"game":"Half-Life 2: Episode Two",
+		"author":"Kelly Bailey"
+	},
 	"golden_trophy":{
 		"name":"Combat (Quest for the Golden Trophy)",
 		"game":"Rec Room"
