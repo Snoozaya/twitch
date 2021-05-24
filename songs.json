@@ -39,8 +39,24 @@
 		"name":"Double Cherry Pass",
 		"game":"Super Mario 3D World"
 	},
+	"plunging_falls":{
+		"name":"Plunging Falls",
+		"game":"Super Mario 3D World"
+	},
+	"captain_toad":{
+		"name":"The Adventures of Captain Toad",
+		"game":"Super Mario 3D World"
+	},
 	"piranha_creeper_creek":{
 		"name":"Piranha Creeper Creek",
+		"game":"Super Mario 3D World"
+	},
+	"lava_lake_keep":{
+		"name":"Bowser's Lava Lake Keep",
+		"game":"Super Mario 3D World"
+	},
+	"fort_fire_bros":{
+		"name":"Fort Fire Bros",
 		"game":"Super Mario 3D World"
 	},
 	"beep_block_skyway":{
