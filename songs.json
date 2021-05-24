@@ -26,6 +26,10 @@
 		"name":"Red Streamer Battle",
 		"game":"Paper Mario: The Origami King"
 	},
+	"super_bell_hill":{
+		"name":"Super Bell Hill",
+		"game":"Super Mario 3D World"
+	},
 	"piranha_creeper_creek":{
 		"name":"Piranha Creeper Creek",
 		"game":"Super Mario 3D World"
@@ -41,6 +45,10 @@
 	"smw_desert":{
 		"name":"Desert (Super Mario World)",
 		"game":"Super Mario Maker 2"
+	},
+	"athletic":{
+		"name":"Athletic",
+		"game":"New Super Mario Bros U."
 	},
 	"golden_trophy":{
 		"name":"Combat (Quest for the Golden Trophy)",
