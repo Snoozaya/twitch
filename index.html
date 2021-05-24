@@ -37,14 +37,9 @@
 		}
 	}
 	
-	function sortData(key, data, type) {
+	function sortData(data) {
 		let ordered = {};
-		let compareFunction = function(a, b) {
-			return data[b][key] - data[a][key];
-		};
-		if (type === "asc") {
-			compareFunction = dynamicSort("game")
-		}
+		let compareFunction = dynamicSort("game")
 		Object.keys(data).sort(compareFunction).forEach(function(key) {
 			ordered[key] = data[key];
 		});
@@ -57,6 +52,7 @@
 	loadJSON(function(json) {
 		json = JSON.stringify(json);
 		var songs = JSON.parse(json);
+		songs = sortData(songs)
 		Object.keys(songs).forEach(async function (index){
 			var song = await songs[index]
 			if(song) {
