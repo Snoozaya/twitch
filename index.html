@@ -29,7 +29,6 @@
 			var aprop = a["game"] || a["author"] || a["name"] || "???"
 			var bprop = b["game"] || b["author"] || b["name"] || "???"
 			var result = (aprop < bprop) ? -1 : (aprop > bprop) ? 1 : 0;
-			console.log(result * sortOrder)
 			return result * sortOrder;
 		}
 	}
@@ -38,6 +37,7 @@
 		let ordered = {};
 		let compareFunction = dynamicSort()
 		Object.keys(data).sort(compareFunction).forEach(function(key) {
+			console.log("Test :"+key)
 			ordered[key] = data[key];
 		});
 		return ordered;
