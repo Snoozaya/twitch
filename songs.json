@@ -1,15 +1,18 @@
 {
 	"enemy_approaching":{
 		"name":"Enemy Approaching",
-		"author":"Toby Fox"
+		"author":"Toby Fox",
+		"game":"Undertale"
 	},
 	"stronger_monsters":{
 		"name":"Stronger Monsters",
-		"author":"Toby Fox"
+		"author":"Toby Fox",
+		"game":"Undertale"
 	},
 	"flower_garden":{
 		"name":"Flower Garden",
-		"author":"Koji Kondo"
+		"author":"Koji Kondo",
+		"game":"Yoshi's Island"
 	},
 	"electrodrome":{
 		"name":"Electrodrome",
