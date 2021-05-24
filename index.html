@@ -15,7 +15,7 @@
 	function loadJSON(callback) {   
 		var xobj = new XMLHttpRequest();
 		xobj.overrideMimeType("application/json");
-		xobj.open('GET', 'songs.json', true);
+		xobj.open('GET', 'songs.json?nocache=' + new Date().getTime(), true);
 		xobj.onreadystatechange = function () {
 			if (xobj.readyState == 4 && xobj.status == "200") {
 				callback(JSON.parse(xobj.responseText));
