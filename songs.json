@@ -41,5 +41,13 @@
 	"smw_desert":{
 		"name":"Desert (Super Mario World)",
 		"game":"Super Mario Maker 2"
+	},
+	"golden_trophy":{
+		"name":"Combat (Quest for the Golden Trophy)",
+		"game":"Rec Room"
+	},
+	"spookeez":{
+		"name":"Spookeez",
+		"game":"Friday Night Funkin'"
 	}
 }
