@@ -104,12 +104,20 @@
 		"game":"Half-Life 2: Episode Two",
 		"author":"Kelly Bailey"
 	},
-	"golden_trophy":{
-		"name":"Combat (Quest for the Golden Trophy)",
-		"game":"Rec Room"
-	},
 	"spookeez":{
 		"name":"Spookeez",
 		"game":"Friday Night Funkin'"
+	},
+	"winter_horrorland":{
+		"name":"Winter Horrorland",
+		"game":"Friday Night Funkin'"
+	},
+	"stress":{
+		"name":"Stress",
+		"game":"Friday Night Funkin'"
+	},
+	"golden_trophy":{
+		"name":"Combat (Quest for the Golden Trophy)",
+		"game":"Rec Room"
 	}
 }
