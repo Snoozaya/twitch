@@ -23,6 +23,7 @@
 	function compare( a, b ) {
 		let aProp = (a["game"] || a["author"] || a["name"] || "???")
 		let bProp = (a["game"] || a["author"] || a["name"] || "???")
+		console.log(aProp,bProp)
 		if ( aProp < bProp ){
 			return -1;
 		}
@@ -36,7 +37,7 @@
 		let ordered = {};
 		let compareFunction = compare
 		Object.keys(data).sort(compareFunction).forEach(function(key) {
-			console.log("Test :"+key)
+			console.log("Test :"+(compare())
 			ordered[key] = data[key];
 		});
 		return ordered;
