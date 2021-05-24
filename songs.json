@@ -46,6 +46,18 @@
 		"name":"Hisstocrat",
 		"game":"Super Mario 3D World"
 	},
+	"scamper_shores":{
+		"name":"Scamper Shores",
+		"game":"Super Mario 3D World + Bowser's Fury"
+	},
+	"pounce_bounce":{
+		"name":"Pounce Bounce Isle",
+		"game":"Super Mario 3D World + Bowser's Fury"
+	},
+	"mount_magmeow":{
+		"name":"Mount Magmeow",
+		"game":"Super Mario 3D World + Bowser's Fury"
+	},
 	"tostarena":{
 		"name":"Tostarena Ruins",
 		"game":"Super Mario Odyssey"
