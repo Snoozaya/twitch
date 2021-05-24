@@ -104,6 +104,16 @@
 		"game":"Half-Life 2: Episode Two",
 		"author":"Kelly Bailey"
 	},
+	"anti_citizen":{
+		"name":"Anti-Citizen",
+		"game":"Half-Life: Alyx",
+		"author":"Mike Morasky"
+	},
+	"scanning_hostile_biodats":{
+		"name":"Scanning Hostile Biodats",
+		"game":"Half-Life: Alyx",
+		"author":"Mike Morasky"
+	},
 	"spookeez":{
 		"name":"Spookeez",
 		"game":"Friday Night Funkin'"
