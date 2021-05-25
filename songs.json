@@ -31,6 +31,21 @@
 		"author":"Koji Kondo",
 		"game":"Yoshi's Island"
 	},
+	"castle":{
+		"name":"Castle & Fortress",
+		"author":"Koji Kondo",
+		"game":"Yoshi's Island"
+	},
+	"mini_boss":{
+		"name":"Mini-boss",
+		"author":"Koji Kondo",
+		"game":"Yoshi's Island"
+	},
+	"baby_bowser":{
+		"name":"Baby Bowser",
+		"author":"Koji Kondo",
+		"game":"Yoshi's Island"
+	},
 	"electrodrome":{
 		"name":"Electrodrome",
 		"game":"Mario Kart 8"
@@ -86,14 +101,17 @@
 	"scamper_shores":{
 		"name":"Scamper Shores",
 		"game":"Super Mario 3D World + Bowser's Fury"
+		"category":"Bowser's Fury"
 	},
 	"pounce_bounce":{
 		"name":"Pounce Bounce Isle",
 		"game":"Super Mario 3D World + Bowser's Fury"
+		"category":"Bowser's Fury"
 	},
 	"mount_magmeow":{
 		"name":"Mount Magmeow",
 		"game":"Super Mario 3D World + Bowser's Fury"
+		"category":"Bowser's Fury"
 	},
 	"tostarena":{
 		"name":"Tostarena Ruins",
@@ -116,46 +134,55 @@
 		"name":"Guard Down",
 		"game":"Half-Life 2: Episode One",
 		"author":"Kelly Bailey"
+		"category":"Half-Life"
 	},
 	"hospital":{
 		"name":"What Kind Of Hospital Is This",
 		"game":"Half-Life 2: Episode One",
 		"author":"Kelly Bailey"
+		"category":"Half-Life"
 	},
 	"hunting_party":{
 		"name":"Hunting Party",
 		"game":"Half-Life 2: Episode Two",
 		"author":"Kelly Bailey"
+		"category":"Half-Life"
 	},
 	"sector_sweep":{
 		"name":"Sector Sweep",
 		"game":"Half-Life 2: Episode Two",
 		"author":"Kelly Bailey"
+		"category":"Half-Life"
 	},
 	"last_legs":{
 		"name":"Last Legs",
 		"game":"Half-Life 2: Episode Two",
 		"author":"Kelly Bailey"
+		"category":"Half-Life"
 	},
 	"anti_citizen":{
 		"name":"Anti-Citizen",
 		"game":"Half-Life: Alyx",
 		"author":"Mike Morasky"
+		"category":"Half-Life"
 	},
 	"scanning_hostile_biodats":{
 		"name":"Scanning Hostile Biodats",
 		"game":"Half-Life: Alyx",
 		"author":"Mike Morasky"
+		"category":"Half-Life"
 	},
 	"outbreak":{
 		"name":"Outbreak is Uncontained",
 		"game":"Half-Life: Alyx",
 		"author":"Mike Morasky"
+		"category":"Half-Life"
 	},
 	"beasts_of_prey":{
 		"name":"Beasts of Prey",
 		"game":"Half-Life: Alyx",
 		"author":"Mike Morasky"
+		"category":"Half-Life"
 	},
 	"test":{
 		"name":"Test (Unused)",
