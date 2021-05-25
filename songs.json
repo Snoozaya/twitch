@@ -59,6 +59,10 @@
 		"name":"Airship Fortress",
 		"game":"Mario Kart DS"
 	},
+	"waluigi_pinball":{
+		"name":"Waluigi Pinball",
+		"game":"Mario Kart DS"
+	},
 	"red_streamer":{
 		"name":"Red Streamer Battle",
 		"game":"Paper Mario: The Origami King"
@@ -190,6 +194,10 @@
 		"author":"Mike Morasky",
 		"category":"Half-Life"
 	},
+	"dont_stop":{
+		"name":"Game Over (Don't Stop)",
+		"game":"Friday Night Funkin'"
+	},
 	"test":{
 		"name":"Test (Unused)",
 		"game":"Friday Night Funkin'"
@@ -204,6 +212,14 @@
 	},
 	"monster":{
 		"name":"Monster",
+		"game":"Friday Night Funkin'"
+	},
+	"satin_panties":{
+		"name":"Satin Panties",
+		"game":"Friday Night Funkin'"
+	},
+	"high":{
+		"name":"High",
 		"game":"Friday Night Funkin'"
 	},
 	"milf":{
@@ -237,6 +253,10 @@
 	"stress":{
 		"name":"Stress",
 		"game":"Friday Night Funkin'"
+	},
+	"greenhorn_forest":{
+		"name":"Greenhorn Forest",
+		"game":"Wario World"
 	},
 	"golden_trophy":{
 		"name":"Combat (Golden Trophy)",
