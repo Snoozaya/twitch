@@ -67,7 +67,7 @@
 		Object.keys(songs).forEach(async function (index){
 			var song = await songs[index]
 			if(song) {
-				let songText = (song["name"] || index || "???") + " - " + (song["game"] || song["author"] || "???")
+				let songText = (song['site_name'] || song["name"] || index || "???") + " - " + (song["game"] || song["author"] || "???")
 			
 				let title = document.createElement("H2");
 				let titleText = document.createTextNode(songText);

@@ -9,6 +9,11 @@
 		"author":"Toby Fox",
 		"game":"Undertale"
 	},
+	"true_hero":{
+		"name":"Battle Against a True Hero",
+		"author":"Toby Fox",
+		"game":"Undertale"
+	},
 	"megalovania":{
 		"name":"Megalovania",
 		"author":"Toby Fox",
@@ -71,7 +76,8 @@
 		"game":"Super Mario 3D World"
 	},
 	"captain_toad":{
-		"name":"The Adventures of Captain Toad",
+		"name":"Adventures of Captain Toad",
+		"site_name":"The Adventures of Captain Toad",
 		"game":"Super Mario 3D World"
 	},
 	"piranha_creeper_creek":{
@@ -100,17 +106,17 @@
 	},
 	"scamper_shores":{
 		"name":"Scamper Shores",
-		"game":"Super Mario 3D World + Bowser's Fury"
+		"game":"Super Mario 3D World + Bowser's Fury",
 		"category":"Bowser's Fury"
 	},
 	"pounce_bounce":{
 		"name":"Pounce Bounce Isle",
-		"game":"Super Mario 3D World + Bowser's Fury"
+		"game":"Super Mario 3D World + Bowser's Fury",
 		"category":"Bowser's Fury"
 	},
 	"mount_magmeow":{
 		"name":"Mount Magmeow",
-		"game":"Super Mario 3D World + Bowser's Fury"
+		"game":"Super Mario 3D World + Bowser's Fury",
 		"category":"Bowser's Fury"
 	},
 	"tostarena":{
@@ -133,55 +139,55 @@
 	"guard_down":{
 		"name":"Guard Down",
 		"game":"Half-Life 2: Episode One",
-		"author":"Kelly Bailey"
+		"author":"Kelly Bailey",
 		"category":"Half-Life"
 	},
 	"hospital":{
 		"name":"What Kind Of Hospital Is This",
 		"game":"Half-Life 2: Episode One",
-		"author":"Kelly Bailey"
+		"author":"Kelly Bailey",
 		"category":"Half-Life"
 	},
 	"hunting_party":{
 		"name":"Hunting Party",
 		"game":"Half-Life 2: Episode Two",
-		"author":"Kelly Bailey"
+		"author":"Kelly Bailey",
 		"category":"Half-Life"
 	},
 	"sector_sweep":{
 		"name":"Sector Sweep",
 		"game":"Half-Life 2: Episode Two",
-		"author":"Kelly Bailey"
+		"author":"Kelly Bailey",
 		"category":"Half-Life"
 	},
 	"last_legs":{
 		"name":"Last Legs",
 		"game":"Half-Life 2: Episode Two",
-		"author":"Kelly Bailey"
+		"author":"Kelly Bailey",
 		"category":"Half-Life"
 	},
 	"anti_citizen":{
 		"name":"Anti-Citizen",
 		"game":"Half-Life: Alyx",
-		"author":"Mike Morasky"
+		"author":"Mike Morasky",
 		"category":"Half-Life"
 	},
 	"scanning_hostile_biodats":{
 		"name":"Scanning Hostile Biodats",
 		"game":"Half-Life: Alyx",
-		"author":"Mike Morasky"
+		"author":"Mike Morasky",
 		"category":"Half-Life"
 	},
 	"outbreak":{
 		"name":"Outbreak is Uncontained",
 		"game":"Half-Life: Alyx",
-		"author":"Mike Morasky"
+		"author":"Mike Morasky",
 		"category":"Half-Life"
 	},
 	"beasts_of_prey":{
 		"name":"Beasts of Prey",
 		"game":"Half-Life: Alyx",
-		"author":"Mike Morasky"
+		"author":"Mike Morasky",
 		"category":"Half-Life"
 	},
 	"test":{
