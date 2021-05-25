@@ -15,9 +15,9 @@
 		"game":"Undertale"
 	},
 	"megalovania":{
-		"name":"Megalovania",
+		"name":"MEGALOVANIA (Smash Ver.)",
 		"author":"Toby Fox",
-		"game":"Undertale"
+		"game":"UNDERTALE"
 	},
 	"super_duper":{
 		"name":"Super-Duper Mario Bros.",
@@ -257,6 +257,10 @@
 	"greenhorn_forest":{
 		"name":"Greenhorn Forest",
 		"game":"Wario World"
+	},
+	"out_of_time":{
+		"name":"Out of Time (Smash Ver.)",
+		"game":"Castlevania"
 	},
 	"golden_trophy":{
 		"name":"Combat (Golden Trophy)",
