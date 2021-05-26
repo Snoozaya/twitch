@@ -89,12 +89,15 @@
 				let hrLine = document.createElement("HR")
 				hrLine.style = "width:60%; color:#FFFFFF"
 				element.appendChild(hrLine)
-				element.appendChild(category);
 			}
 			pastFirstCategory = true
+			
+			element.appendChild(category);
+			
 			let hrLine2 = document.createElement("HR")
 			hrLine2.style = "width:50%; color:#FFFFFF"
 			element.appendChild(hrLine2)
+			
 			let pastFirstOne = false
 			Object.keys(songs).forEach(function (index){
 				let song = songs[index]
