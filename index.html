@@ -88,7 +88,7 @@
 			Object.keys(songs).forEach(function (index){
 				let song = songs[index]
 				let songCategory = song['category'] || song['game'] || song['author'] || '???'
-				let songText = (song['site_name'] || song["name"] || index || "???") + " - " + (song["game"] || song["author"] || "???")
+				let songText = (song['site_name'] || song["name"] || index || "???")
 				if(song && songCategory == catIndex) {
 					let title = document.createElement("H3");
 					let titleText = document.createTextNode(songText);
