@@ -141,7 +141,7 @@
 		window.history.replaceState({}, '', `${location.pathname}?${params}`);
 	}
 	
-	if((params.get('light') || 0) > 0) {
+	if(Number(params.get('light') || 0) > 0) {
 		javascript: (
 			function () { 
 			// the css we are going to inject
