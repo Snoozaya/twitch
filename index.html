@@ -8,7 +8,7 @@
 <hr>
 </div>
 <div id="rndcmd" style="display:none;">
-<h2 style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>Random</strong></h2>
+<h1 style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>Random</strong></h2>
 <p style="font-family:arial black; text-align: center; color:#FFFFFF">!add random</p>
 </div>
 <script>
@@ -78,7 +78,7 @@
 		let categories = getAllCategories(songs)
 		console.log(categories)
 		categories.forEach(async function (catIndex){
-			console.log(catIndex,+" "+,categories[catIndex])
+			console.log(catIndex+" "+categories[catIndex])
 			let category = document.createElement("H1");
 			let categoryText = document.createTextNode(categories[catIndex]);
 			category.appendChild(categoryText);
