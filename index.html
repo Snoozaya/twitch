@@ -91,6 +91,7 @@
 			let hrLine2 = document.createElement("HR")
 			hrLine2.style = "width:50%; color:#FFFFFF"
 			element.appendChild(hrLine2)
+			let pastFirstOne = false
 			Object.keys(songs).forEach(function (index){
 				let song = songs[index]
 				let songCategory = song['category'] || song['game'] || song['author'] || '???'
@@ -106,18 +107,21 @@
 					command.appendChild(commandText);
 					command.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 					
-					let hrLine3 = document.createElement("HR")
-					hrLine3.style = "width:30%; color:#FFFFFF"
-					element.appendChild(hrLine3)
+					if(!pastFirstOne) {
+						let hrLine3 = document.createElement("HR")
+						hrLine3.style = "width:30%; color:#FFFFFF"
+						element.appendChild(hrLine3)
+						pastFirstOne = true
+					}
 					
 					element.appendChild(title);
 					element.appendChild(command);
 					title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 				}
 			})
-			let hrLine4 = document.createElement("HR")
-			hrLine4.style = "width:30%; color:#FFFFFF"
-			element.appendChild(hrLine4)
+			//let hrLine4 = document.createElement("HR")
+			//hrLine4.style = "width:30%; color:#FFFFFF"
+			//element.appendChild(hrLine4)
 		})
 		document.getElementById('div1').style.display = "block"
 		document.getElementById('rndcmd').style.display = "block"
