@@ -139,7 +139,7 @@
 	lightModeOn = Number(params.get('light') || 0) > 0
 	
 	function swapLightDark() {
-		params.set('light', !(params.get('light') || false));
+		params.set('light', !((params.get('light') || false) ? 1 : 0));
 
 		window.history.replaceState({}, '', `${location.pathname}?${params}`);
 	}
