@@ -134,11 +134,6 @@
 		"name":"Honeylune Ridge: Caves",
 		"game":"Super Mario Odyssey"
 	},
-	"smw_desert":{
-		"name":"Desert (Super Mario World)",
-		"game":"Super Mario Maker 2",
-		"author":"Koji Kondo"
-	},
 	"desert_hill":{
 		"name":"Desert Hills",
 		"game":"Super Mario Bros. 3"
@@ -151,9 +146,17 @@
 		"name":"Boom Boom",
 		"game":"Super Mario Bros. 3"
 	},
-	"athletic":{
+	"athletic_wii":{
 		"name":"Athletic",
-		"game":"New Super Mario Bros U."
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Athletic (NSMBWii)",
+		"category":"New Super Mario Bros."
+	},
+	"ground_wii":{
+		"name":"Ground",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Ground (NSMBWii)",
+		"category":"New Super Mario Bros."
 	},
 	"guard_down":{
 		"name":"Guard Down",
@@ -301,7 +304,8 @@
 	},
 	"greenhorn_forest":{
 		"name":"Greenhorn Forest",
-		"game":"Wario World"
+		"game":"Wario World",
+		"category":"Other"
 	},
 	"vampire_killer":{
 		"name":"Vampire Killer",
@@ -317,6 +321,98 @@
 	},
 	"golden_trophy":{
 		"name":"Combat (Golden Trophy)",
-		"game":"Rec Room"
+		"game":"Rec Room",
+		"category":"Other"
+	},
+	
+	
+	
+	
+	"__comment": "Super Mario World",
+	"ground_world":{
+		"name":"Ground",
+		"game":"Super Mario World",
+		"author":"Koji Kondo",
+		"site_name":"Ground (SMW)",
+		"alt_name":"ground_smw"
+	},
+	"athletic_world":{
+		"name":"Athletic",
+		"game":"Super Mario World",
+		"author":"Koji Kondo",
+		"site_name":"Athletic (SMW)",
+		"alt_name":"athletic_smw"
+	},
+	"underground_world":{
+		"name":"Underground",
+		"game":"Super Mario World",
+		"author":"Koji Kondo",
+		"site_name":"Underground (SMW)",
+		"alt_name":"underground_smw"
+	},
+	"underwater_world":{
+		"name":"Underwater",
+		"game":"Super Mario World",
+		"author":"Koji Kondo",
+		"site_name":"Underwater (SMW)",
+		"alt_name":"underwater_smw"
+	},
+	"ghost_house_world":{
+		"name":"Ghost House",
+		"game":"Super Mario World",
+		"author":"Koji Kondo",
+		"site_name":"Ghost House (SMW)",
+		"alt_name":"ghost_house_smw"
+	},
+	"forest_world":{
+		"name":"Forest (Super Mario World)",
+		"game":"Super Mario Maker 2",
+		"category":"Super Mario Maker",
+		"author":"Koji Kondo",
+		"alt_name":"forest_smw"
+	},
+	"snow_world":{
+		"name":"Snow (Super Mario World)",
+		"game":"Super Mario Maker 2",
+		"category":"Super Mario Maker",
+		"author":"Koji Kondo",
+		"alt_name":"snow_smw"
+	},
+	"airship_world":{
+		"name":"Airship (Super Mario World)",
+		"game":"Super Mario Maker 2",
+		"category":"Super Mario Maker",
+		"author":"Koji Kondo",
+		"alt_name":"airship_smw"
+	},
+	"desert_world":{
+		"name":"Desert (Super Mario World)",
+		"game":"Super Mario Maker 2",
+		"category":"Super Mario Maker",
+		"author":"Koji Kondo",
+		"alt_name":"desert_smw"
+	},
+	"castle_world":{
+		"name":"Castle",
+		"game":"Super Mario World",
+		"author":"Koji Kondo",
+		"site_name":"Castle (SMW)",
+		"alt_name":"castle_smw"
+	},
+	
+	"__comment": "New Super Mario Bros U.",
+	"ground":{
+		"name":"Ground",
+		"game":"New Super Mario Bros. U",
+		"site_name":"Ground (NSMBU)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"ground_u"
+	},
+	"athletic":{
+		"name":"Athletic",
+		"game":"New Super Mario Bros. U",
+		"site_name":"Athletic (NSMBU)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"athletic_u"
 	}
 }
