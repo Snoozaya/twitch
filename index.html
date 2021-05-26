@@ -85,9 +85,12 @@
 			var element = document.getElementById("div1");
 			
 			let hrLine = document.createElement("HR")
-			hrLine.style = "width:50%; color:#FFFFFF"
+			hrLine.style = "width:80%; color:#FFFFFF"
 			element.appendChild(hrLine)
 			element.appendChild(category);
+			let hrLine2 = document.createElement("HR")
+			hrLine2.style = "width:80%; color:#FFFFFF"
+			element.appendChild(hrLine2)
 			Object.keys(songs).forEach(function (index){
 				let song = songs[index]
 				let songCategory = song['category'] || song['game'] || song['author'] || '???'
