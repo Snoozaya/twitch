@@ -124,7 +124,11 @@
 			//element.appendChild(hrLine4)
 		})
 		document.getElementById('div1').style.display = "block"
-		//document.getElementById('rndcmd').style.display = "block"
+		
+		let rndcmdElement = document.getElementById('rndcmd')
+		if(rndcmdElement) {
+			rndcmdElement.style.display = "block"
+		}
 	})
 </script>
 </body>
