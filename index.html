@@ -134,16 +134,13 @@
 			rndcmdElement.style.display = "block"
 		}
 	})
+	const params = new URLSearchParams(window.location.search)
 	function swapLightDark() {
-		let params = params || new URLSearchParams(window.location.search)
-		//let light_mode = params.get('light')
-		
-		//url = window.location.href.split('?')[0];
-		//window.location.href = url+"?light="+!light_mode
-		params.set("light",!(params.get('light') || false))
+		params.set('light', !(param.get('light') || false));
+
+		window.history.replaceState({}, '', `${location.pathname}?${params}`);
 	}
 	
-	const params = new URLSearchParams(window.location.search)
 	if(params.get('light')) {
 		javascript: (
 			function () { 
