@@ -9,7 +9,7 @@
 		"author":"Toby Fox",
 		"game":"Undertale"
 	},
-	"true_hero":{
+	"battle_against_a_true_hero":{
 		"name":"Battle Against a True Hero",
 		"author":"Toby Fox",
 		"game":"Undertale"
@@ -285,6 +285,10 @@
 	"grand_finale":{
 		"name":"The Grand Finale",
 		"game":"Mario & Luigi: Bowser's Inside Story"
+	},
+	"charge_and_clash":{
+		"name":"Charge and Clash!",
+		"game":"Mario And Luigi: Bowser Jr.'s Journey"
 	},
 	"greenhorn_forest":{
 		"name":"Greenhorn Forest",
