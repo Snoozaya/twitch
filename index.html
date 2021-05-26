@@ -64,7 +64,7 @@
 			var song = songs[index]
 			var songCategory = song['category'] || song['game'] || song['author'] || '???'
 			
-			if(!categories[songCategory]) {
+			if(!categories.includes(songCategory)) {
 				categories.push(songCategory)
 			}
 		})
