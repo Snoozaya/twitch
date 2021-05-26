@@ -89,7 +89,7 @@
 			element.appendChild(hrLine)
 			element.appendChild(category);
 			let hrLine2 = document.createElement("HR")
-			hrLine2.style = "width:60%; color:#FFFFFF"
+			hrLine2.style = "width:50%; color:#FFFFFF"
 			element.appendChild(hrLine2)
 			Object.keys(songs).forEach(function (index){
 				let song = songs[index]
@@ -115,6 +115,9 @@
 					element.appendChild(hrLine3)
 				}
 			})
+			let hrLine4 = document.createElement("HR")
+			hrLine4.style = "width:30%; color:#FFFFFF"
+			element.appendChild(hrLine3)
 		})
 		document.getElementById('div1').style.display = "block"
 		document.getElementById('rndcmd').style.display = "block"
