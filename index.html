@@ -33,7 +33,6 @@
 		let bProp = (b["game"] || b["author"] || b["name"] || "???")
 		let aName = a["name"] || "???"
 		let bName = b["name"] || "???"
-		console.log(aName,bName)
 		if ( aProp < bProp ){
 			return -1;
 		}
@@ -79,6 +78,7 @@
 		let categories = getAllCategories(songs)
 		console.log(categories)
 		categories.forEach(async function (catIndex){
+			console.log(catIndex,+" "+,categories[catIndex])
 			let category = document.createElement("H1");
 			let categoryText = document.createTextNode(categories[catIndex]);
 			category.appendChild(categoryText);
