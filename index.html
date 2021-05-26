@@ -134,14 +134,17 @@
 			rndcmdElement.style.display = "block"
 		}
 	})
+	
 	const params = new URLSearchParams(window.location.search)
+	lightModeOn = Number(params.get('light') || 0) > 0
+	
 	function swapLightDark() {
 		params.set('light', !(param.get('light') || false));
 
 		window.history.replaceState({}, '', `${location.pathname}?${params}`);
 	}
 	
-	if(Number(params.get('light') || 0) > 0) {
+	if(lightModeOn) {
 		javascript: (
 			function () { 
 			// the css we are going to inject
