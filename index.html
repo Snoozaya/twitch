@@ -142,6 +142,7 @@
 		params.set('light', (!(lightModeOn || false) ? 1 : 0));
 
 		window.history.replaceState({}, '', `${location.pathname}?${params}`);
+		location.reload()
 	}
 	
 	if(lightModeOn) {
