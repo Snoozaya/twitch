@@ -78,9 +78,8 @@
 		let categories = getAllCategories(songs)
 		console.log(categories)
 		categories.forEach(async function (catIndex){
-			console.log(catIndex+" "+categories[catIndex])
 			let category = document.createElement("H1");
-			let categoryText = document.createTextNode(categories[catIndex]);
+			let categoryText = document.createTextNode(catIndex);
 			category.appendChild(categoryText);
 			category.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 			var element = document.getElementById("div1");
@@ -89,7 +88,7 @@
 				let song = await songs[index]
 				let songCategory = song['category'] || song['game'] || song['author'] || '???'
 				let songText = (song['site_name'] || song["name"] || index || "???") + " - " + (song["game"] || song["author"] || "???")
-				if(song && songCategory == categories[catIndex]) {
+				if(song && songCategory == catIndex) {
 					let title = document.createElement("H2");
 					let titleText = document.createTextNode(songText);
 					title.appendChild(titleText);
