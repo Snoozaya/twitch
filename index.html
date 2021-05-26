@@ -136,10 +136,11 @@
 	})
 	function swapLightDark() {
 		let params = params || new URLSearchParams(window.location.search)
-		let light_mode = params.get('light')
+		//let light_mode = params.get('light')
 		
-		url = window.location.href.split('?')[0];
-		window.location.href = url+"?light="+!light_mode
+		//url = window.location.href.split('?')[0];
+		//window.location.href = url+"?light="+!light_mode
+		params.set("light",!(params.get('light') || false))
 	}
 	
 	const params = new URLSearchParams(window.location.search)
