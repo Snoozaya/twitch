@@ -83,7 +83,10 @@
 			category.appendChild(categoryText);
 			category.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 			var element = document.getElementById("div1");
-			element.appendChild(document.createElement("HR")
+			
+			let hrLine = document.createElement("HR")
+			hrLine.style = "width:50%; color:#FFFFFF"
+			element.appendChild(hrLine)
 			element.appendChild(category);
 			Object.keys(songs).forEach(function (index){
 				let song = songs[index]
