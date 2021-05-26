@@ -107,12 +107,12 @@
 					command.appendChild(commandText);
 					command.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 					
-					if(!pastFirstOne) {
+					if(pastFirstOne) {
 						let hrLine3 = document.createElement("HR")
 						hrLine3.style = "width:30%; color:#FFFFFF"
 						element.appendChild(hrLine3)
-						pastFirstOne = true
 					}
+					pastFirstOne = true
 					
 					element.appendChild(title);
 					element.appendChild(command);
