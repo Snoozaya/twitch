@@ -136,6 +136,18 @@
 		"game":"Super Mario Maker 2",
 		"author":"Koji Kondo"
 	},
+	"desert_hill":{
+		"name":"Desert Hills",
+		"game":"Super Mario Bros. 3"
+	},
+	"above_ground":{
+		"name":"Above Ground Theme",
+		"game":"Super Mario Bros. 3"
+	},
+	"boom_boom":{
+		"name":"Boom Boom",
+		"game":"Super Mario Bros. 3"
+	},
 	"athletic":{
 		"name":"Athletic",
 		"game":"New Super Mario Bros U."
@@ -254,12 +266,40 @@
 		"name":"Stress",
 		"game":"Friday Night Funkin'"
 	},
+	"have_a_nice_talk":{
+		"name":"Have a Nice Talk",
+		"game":"Mario & Luigi: Bowser's Inside Story"
+	},
+	"toad_town":{
+		"name":"Short Break in Toad Town",
+		"game":"Mario & Luigi: Bowser's Inside Story"
+	},
+	"tough_guy_alert":{
+		"name":"Tough Guy Alert",
+		"game":"Mario & Luigi: Bowser's Inside Story"
+	},
+	"show_time":{
+		"name":"SHOW TIME!",
+		"game":"Mario & Luigi: Bowser's Inside Story"
+	},
+	"grand_finale":{
+		"name":"The Grand Finale",
+		"game":"Mario & Luigi: Bowser's Inside Story"
+	},
 	"greenhorn_forest":{
 		"name":"Greenhorn Forest",
 		"game":"Wario World"
 	},
+	"vampire_killer":{
+		"name":"Vampire Killer",
+		"game":"Castlevania"
+	},
+	"stalker":{
+		"name":"Stalker",
+		"game":"Castlevania"
+	},
 	"out_of_time":{
-		"name":"Out of Time (Smash Ver.)",
+		"name":"Out of Time",
 		"game":"Castlevania"
 	},
 	"golden_trophy":{
