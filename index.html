@@ -84,8 +84,8 @@
 			category.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 			var element = document.getElementById("div1");
 			element.appendChild(category);
-			Object.keys(songs).forEach(async function (index){
-				let song = await songs[index]
+			Object.keys(songs).forEach(function (index){
+				let song = songs[index]
 				let songCategory = song['category'] || song['game'] || song['author'] || '???'
 				let songText = (song['site_name'] || song["name"] || index || "???") + " - " + (song["game"] || song["author"] || "???")
 				if(song && songCategory == catIndex) {
@@ -99,8 +99,8 @@
 					command.appendChild(commandText);
 					command.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 					
-					category.appendChild(title);
-					category.appendChild(command);
+					element.appendChild(title);
+					element.appendChild(command);
 				}
 			})
 		})
