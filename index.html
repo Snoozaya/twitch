@@ -58,13 +58,26 @@
 		return ordered;
 	}
 	
-	
+	function getAllCategories(songs) {
+		let categories = []
+		Object.keys(songs).forEach(async function(index) {
+			var song = songs[index]
+			var songCategory = song['category'] || song['game'] || song['author'] || '???'
+			
+			if(!categories[songCategory]) {
+				array.push(songCategory)
+			}
+		}
+		return categories
+	}
 	
 	
 	loadJSON(function(json) {
 		json = JSON.stringify(json);
 		songs = JSON.parse(json);
 		songs = sortData(songs)
+		let categories = getAllCategories(songs)
+		console.log(categories)
 		Object.keys(songs).forEach(async function (index){
 			var song = await songs[index]
 			if(song) {
