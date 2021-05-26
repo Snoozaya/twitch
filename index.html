@@ -85,11 +85,11 @@
 			var element = document.getElementById("div1");
 			
 			let hrLine = document.createElement("HR")
-			hrLine.style = "width:80%; color:#FFFFFF"
+			hrLine.style = "width:60%; color:#FFFFFF"
 			element.appendChild(hrLine)
 			element.appendChild(category);
 			let hrLine2 = document.createElement("HR")
-			hrLine2.style = "width:80%; color:#FFFFFF"
+			hrLine2.style = "width:60%; color:#FFFFFF"
 			element.appendChild(hrLine2)
 			Object.keys(songs).forEach(function (index){
 				let song = songs[index]
@@ -100,9 +100,6 @@
 					let titleText = document.createTextNode(songText);
 					title.appendChild(titleText);
 					title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
-					let hrLine3 = document.createElement("HR")
-					hrLine3.style = "width:30%; color:#FFFFFF"
-					element.appendChild(hrLine3)
 					
 					let command = document.createElement("P");
 					let commandText = document.createTextNode("!add "+index);
@@ -112,6 +109,10 @@
 					element.appendChild(title);
 					element.appendChild(command);
 					title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
+					
+					let hrLine3 = document.createElement("HR")
+					hrLine3.style = "width:30%; color:#FFFFFF"
+					element.appendChild(hrLine3)
 				}
 			})
 		})
