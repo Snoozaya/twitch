@@ -53,15 +53,18 @@
 	},
 	"electrodrome":{
 		"name":"Electrodrome",
-		"game":"Mario Kart 8"
+		"game":"Mario Kart 8",
+		"category":"Mario Kart"
 	},
 	"airship_fortress":{
 		"name":"Airship Fortress",
-		"game":"Mario Kart DS"
+		"game":"Mario Kart DS",
+		"category":"Mario Kart"
 	},
 	"waluigi_pinball":{
 		"name":"Waluigi Pinball",
-		"game":"Mario Kart DS"
+		"game":"Mario Kart DS",
+		"category":"Mario Kart"
 	},
 	"red_streamer":{
 		"name":"Red Streamer Battle",
