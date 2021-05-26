@@ -80,7 +80,7 @@
 		console.log(categories)
 		categories.forEach(async function (catIndex){
 			let category = document.createElement("H1");
-			let categoryText = document.createTextNode(songText);
+			let categoryText = document.createTextNode(categories[catIndex]);
 			category.appendChild(titleText);
 			category.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 			var element = document.getElementById("div1");
