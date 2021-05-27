@@ -146,18 +146,6 @@
 		"name":"Boom Boom",
 		"game":"Super Mario Bros. 3"
 	},
-	"athletic_wii":{
-		"name":"Athletic",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Athletic (NSMBWii)",
-		"category":"New Super Mario Bros."
-	},
-	"ground_wii":{
-		"name":"Ground",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Ground (NSMBWii)",
-		"category":"New Super Mario Bros."
-	},
 	"guard_down":{
 		"name":"Guard Down",
 		"game":"Half-Life 2: Episode One",
@@ -406,18 +394,103 @@
 	},
 	
 	
-	"ground":{
+	"ground_u":{
 		"name":"Ground",
 		"game":"New Super Mario Bros. U",
 		"site_name":"Ground (NSMBU)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"ground_u"
+		"category":"New Super Mario Bros."
 	},
-	"athletic":{
+	"athletic_u":{
 		"name":"Athletic",
 		"game":"New Super Mario Bros. U",
 		"site_name":"Athletic (NSMBU)",
+		"category":"New Super Mario Bros."
+	},
+	"snow_u":{
+		"name":"Snow",
+		"game":"New Super Mario Bros. U",
+		"site_name":"Snow (NSMBU)",
+		"category":"New Super Mario Bros."
+	},
+	"ground_wii":{
+		"name":"Ground",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Ground (NSMBWii)",
+		"category":"New Super Mario Bros."
+	},
+	"athletic_wii":{
+		"name":"Athletic",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Athletic (NSMBWii)",
+		"category":"New Super Mario Bros."
+	},
+	"underwater_wii":{
+		"name":"Underwater",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Underwater (NSMBWii)",
 		"category":"New Super Mario Bros.",
-		"alt_name":"athletic_u"
+		"alt_name":"underwater_u"
+	},
+	"underground_wii":{
+		"name":"Underground",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Underground (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"underground_u"
+	},
+	"ghost_house_wii":{
+		"name":"Ghost House",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Ghost House (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"ghost_house_u"
+	},
+	"jungle_wii":{
+		"name":"Forest",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Forest (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"forest_u"
+	},
+	"snow_wii":{
+		"name":"Forest",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Snow (NSMBWii)",
+		"category":"New Super Mario Bros."
+	},
+	"airship_wii":{
+		"name":"Airship",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Airship (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"airship_u"
+	},
+	"desert_wii":{
+		"name":"Desert",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Desert (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"desert_u"
+	},
+	"castle_wii":{
+		"name":"Castle",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Castle (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"castle_u"
+	},
+	"tower_wii":{
+		"name":"Tower",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Tower (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"tower_u"
+	},
+	"beach_wii":{
+		"name":"Beach",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Beach (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"beach_u"
 	}
 }
