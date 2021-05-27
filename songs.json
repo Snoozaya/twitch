@@ -479,12 +479,33 @@
 		"category":"New Super Mario Bros.",
 		"alt_name":"castle_u"
 	},
+	"boss_wii":{
+		"name":"Castle Boss",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Castle Boss (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"castle_boss_u"
+	},
+	"volcano_wii":{
+		"name":"Volcano",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Volcano (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"volcano_u"
+	},
 	"tower_wii":{
 		"name":"Tower",
 		"game":"New Super Mario Bros. Wii",
 		"site_name":"Tower (NSMBWii)",
 		"category":"New Super Mario Bros.",
 		"alt_name":"tower_u"
+	},
+	"tower_boss_wii":{
+		"name":"Tower Boss",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Tower Boss (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"tower_boss_u"
 	},
 	"beach_wii":{
 		"name":"Beach",
