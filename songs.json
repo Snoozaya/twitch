@@ -339,7 +339,16 @@
 		"game":"Rec Room",
 		"category":"Other"
 	},
-	
+	"battle_64":{
+		"name":"Battle 64",
+		"game":"Super Bomberman R Online",
+		"url":"https://youtu.be/cWnxAsrFd7o"
+	},
+	"setup":{
+		"name":"Setup Menu",
+		"game":"Super Bomberman R Online",
+		"url":"https://youtu.be/9WCC87hMB3A"
+	},
 	
 	
 	
