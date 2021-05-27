@@ -132,6 +132,11 @@
 					title.appendChild(titleText);
 					title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 					
+					if (song['url']) {
+						let titleUrl = document.createElement("A")
+						title.appendChild(titleUrl)
+					}
+					
 					let command = document.createElement("P");
 					let commandText = document.createTextNode("!add "+index);
 					command.appendChild(commandText);
