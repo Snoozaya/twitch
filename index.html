@@ -129,12 +129,16 @@
 					}
 					let title = document.createElement("H2");
 					let titleText = document.createTextNode(songText);
-					title.appendChild(titleText);
 					title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 					
 					if (song['url']) {
 						let titleUrl = document.createElement("A")
+						titleUrl.style = title.style
+						titleUrl.appendChild(titleText);
 						title.appendChild(titleUrl)
+					}
+					else {
+						title.appendChild(titleText);
 					}
 					
 					let command = document.createElement("P");
