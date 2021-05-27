@@ -280,26 +280,31 @@
 	"toad_town":{
 		"name":"Short Break in Toad Town",
 		"game":"Mario & Luigi: Bowser's Inside Story",
+		"site_name":"Short Break in Toad Town (Bowser's Inside Story)",
 		"category":"Mario & Luigi"
 	},
 	"tough_guy_alert":{
 		"name":"Tough Guy Alert",
 		"game":"Mario & Luigi: Bowser's Inside Story",
+		"site_name":"Tough Guy Alert (Bowser's Inside Story)",
 		"category":"Mario & Luigi"
 	},
 	"show_time":{
 		"name":"SHOW TIME!",
 		"game":"Mario & Luigi: Bowser's Inside Story",
+		"site_name":"SHOW TIME! (Bowser's Inside Story)",
 		"category":"Mario & Luigi"
 	},
 	"grand_finale":{
 		"name":"The Grand Finale",
 		"game":"Mario & Luigi: Bowser's Inside Story",
+		"site_name":"The Grand Finale (Bowser's Inside Story)",
 		"category":"Mario & Luigi"
 	},
 	"charge_and_clash":{
 		"name":"Charge and Clash!",
 		"game":"Bowser Jr.'s Journey",
+		"site_name":"Short Break in Toad Town (Bowser's Jr.'s Journey)",
 		"category":"Mario & Luigi"
 	},
 	"greenhorn_forest":{
