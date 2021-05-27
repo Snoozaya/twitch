@@ -78,9 +78,9 @@
 	loadJSON(function(json) {
 		json = JSON.stringify(json);
 		songs = JSON.parse(json);
-		songs = sortData(songs)
+		//songs = sortData(songs)
 		let categories = getAllCategories(songs)
-		console.log(categories)
+		//console.log(categories)
 		categories.forEach(async function (catIndex){
 			let category = document.createElement("H1");
 			let categoryText = document.createTextNode(catIndex);
