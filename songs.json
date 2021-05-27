@@ -328,7 +328,6 @@
 	
 	
 	
-	"__comment": "Super Mario World",
 	"ground_world":{
 		"name":"Ground",
 		"game":"Super Mario World",
@@ -400,7 +399,7 @@
 		"alt_name":"castle_smw"
 	},
 	
-	"__comment": "New Super Mario Bros U.",
+	
 	"ground":{
 		"name":"Ground",
 		"game":"New Super Mario Bros. U",
