@@ -63,12 +63,13 @@
 	
 	function getAllCategories(songs) {
 		let categories = []
+		categories.unshift("Other")
 		Object.keys(songs).forEach(async function(index) {
 			var song = songs[index]
 			var songCategory = song['category'] || song['game'] || song['author'] || 'Other'
 			
 			if(!categories.includes(songCategory)) {
-				categories.push(songCategory)
+				categories.unshift(songCategory)
 			}
 		})
 		return categories.sort()
