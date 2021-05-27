@@ -17,10 +17,13 @@
 </div> -->
 <script>
 	// I am awful at coding javascript, sorry for people who know how to actually code javascript :(
+	
+	var htmlVerNumber = 1
+	
 	function loadJSON(callback) {   
 		var xobj = new XMLHttpRequest();
 		xobj.overrideMimeType("application/json");
-		xobj.open('GET', 'songs.json?nocache=' + new Date().getTime(), true);
+		xobj.open('GET', 'songs.json?ver=' + (htmlVerNumber || (new Date().getTime())), true);
 		xobj.onreadystatechange = function () {
 			if (xobj.readyState == 4 && xobj.status == "200") {
 				callback(JSON.parse(xobj.responseText));
