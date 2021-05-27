@@ -2,22 +2,26 @@
 	"enemy_approaching":{
 		"name":"Enemy Approaching",
 		"author":"Toby Fox",
-		"game":"Undertale"
+		"game":"Undertale",
+		"url":"https://youtu.be/g6aia0GQMRw"
 	},
 	"stronger_monsters":{
 		"name":"Stronger Monsters",
 		"author":"Toby Fox",
-		"game":"Undertale"
+		"game":"Undertale",
+		"url":"https://youtu.be/lXtwWBLLLbk"
 	},
 	"battle_against_a_true_hero":{
 		"name":"Battle Against a True Hero",
 		"author":"Toby Fox",
-		"game":"Undertale"
+		"game":"Undertale",
+		"url":"https://youtu.be/DcERQHg3iy8"
 	},
 	"megalovania":{
 		"name":"MEGALOVANIA (Smash Ver.)",
 		"author":"Toby Fox",
-		"game":"Undertale"
+		"game":"Undertale",
+		"url":"https://youtu.be/RFFdvIqzrls"
 	},
 	"super_duper":{
 		"name":"Super-Duper Mario Bros.",
@@ -25,11 +29,13 @@
 	},
 	"bowser_jr":{
 		"name":"Bowser Jr. Battle 4",
-		"game":"Mario Party 9"
+		"game":"Mario Party 9",
+		"url":"https://youtu.be/WOC-n6UOIOw"
 	},
 	"bowser_jr_mad":{
 		"name":"Bowser Jr.'s Mad",
-		"game":"Mario Party 9"
+		"game":"Mario Party 9",
+		"url":"https://youtu.be/IOPdyowRYf8"
 	},
 	"flower_garden":{
 		"name":"Flower Garden",
@@ -202,63 +208,78 @@
 	},
 	"dont_stop":{
 		"name":"Game Over (Don't Stop)",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/OsSDYf5yMOE"
 	},
 	"test":{
 		"name":"Test (Unused)",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/qn3n4hyZRJg"
 	},
 	"dad_battle":{
 		"name":"Dad Battle",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/w0WyKTSuX4U"
 	},
 	"spookeez":{
 		"name":"Spookeez",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/EiNwUpco4OI"
 	},
 	"monster":{
 		"name":"Monster",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/NQSkjR7P3_A"
 	},
 	"satin_panties":{
 		"name":"Satin Panties",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/YzJKStx9IyU"
 	},
 	"high":{
 		"name":"High",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/OIsp8KrwSVY"
 	},
 	"milf":{
 		"name":"M.I.L.F",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/dOPrN6aJ7TI"
 	},
 	"winter_horrorland":{
 		"name":"Winter Horrorland",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/D-vapQ1RdL4"
 	},
 	"senpai":{
 		"name":"Senpai",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/EJiXO3vwNFo"
 	},
 	"roses":{
 		"name":"Roses",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/DKs-Tkw4X3I"
 	},
 	"thorns":{
 		"name":"Thorns",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/lWja270s6qA"
 	},
 	"ugh":{
 		"name":"Ugh",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/_pLDBCkvyUg"
 	},
 	"guns":{
 		"name":"Guns",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/K5lp8aAoT1g"
 	},
 	"stress":{
 		"name":"Stress",
-		"game":"Friday Night Funkin'"
+		"game":"Friday Night Funkin'",
+		"url":"https://youtu.be/GBD2B9bDD5I"
 	},
 	"have_a_nice_talk":{
 		"name":"Have a Nice Talk",
@@ -406,6 +427,13 @@
 		"site_name":"Athletic (NSMBU)",
 		"category":"New Super Mario Bros."
 	},
+	"jungle_u":{
+		"name":"Jungle",
+		"game":"New Super Mario Bros. U",
+		"site_name":"Jungle (NSMBU)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"jungle_wii"
+	},
 	"snow_u":{
 		"name":"Snow",
 		"game":"New Super Mario Bros. U",
@@ -445,13 +473,6 @@
 		"category":"New Super Mario Bros.",
 		"alt_name":"ghost_house_u"
 	},
-	"jungle_wii":{
-		"name":"Forest",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Forest (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"forest_u"
-	},
 	"snow_wii":{
 		"name":"Forest",
 		"game":"New Super Mario Bros. Wii",
@@ -464,6 +485,13 @@
 		"site_name":"Airship (NSMBWii)",
 		"category":"New Super Mario Bros.",
 		"alt_name":"airship_u"
+	},
+	"airship_boss_wii":{
+		"name":"Airship Boss (Bowser Jr.)",
+		"game":"New Super Mario Bros. Wii",
+		"site_name":"Airship Boss (NSMBWii)",
+		"category":"New Super Mario Bros.",
+		"alt_name":"airship_boss_u"
 	},
 	"desert_wii":{
 		"name":"Desert",
