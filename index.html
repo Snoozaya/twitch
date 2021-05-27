@@ -120,9 +120,13 @@
 			let pastFirstOne = false
 			Object.keys(songs).forEach(function (index){
 				let song = songs[index]
+				let songGame = song['game'] || song['author'] || '???'
 				let songCategory = song['category'] || song['game'] || song['author'] || 'Other'
 				let songText = (song['site_name'] || song["name"] || index || "???")
 				if(song && songCategory == catIndex) {
+					if(songCategory.toLowerCase() == "other" && songGame != '???') {
+						songText = songText + " (" + songGame + ")"
+					}
 					let title = document.createElement("H2");
 					let titleText = document.createTextNode(songText);
 					title.appendChild(titleText);
