@@ -344,6 +344,11 @@
 		"game":"Super Bomberman R Online",
 		"url":"https://youtu.be/cWnxAsrFd7o"
 	},
+	"battle_64_final":{
+		"name":"Battle 64 (Final Phase)",
+		"game":"Super Bomberman R Online",
+		"url":"https://youtu.be/IXAWxVj5zTI"
+	},
 	"setup":{
 		"name":"Setup Menu",
 		"game":"Super Bomberman R Online",
@@ -483,7 +488,7 @@
 		"alt_name":"ghost_house_u"
 	},
 	"snow_wii":{
-		"name":"Forest",
+		"name":"Snow",
 		"game":"New Super Mario Bros. Wii",
 		"site_name":"Snow (NSMBWii)",
 		"category":"New Super Mario Bros."
