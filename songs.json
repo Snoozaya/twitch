@@ -361,35 +361,30 @@
 		"name":"Ground",
 		"game":"Super Mario World",
 		"author":"Koji Kondo",
-		"site_name":"Ground (SMW)",
 		"alt_name":"ground_smw"
 	},
 	"athletic_world":{
 		"name":"Athletic",
 		"game":"Super Mario World",
 		"author":"Koji Kondo",
-		"site_name":"Athletic (SMW)",
 		"alt_name":"athletic_smw"
 	},
 	"underground_world":{
 		"name":"Underground",
 		"game":"Super Mario World",
 		"author":"Koji Kondo",
-		"site_name":"Underground (SMW)",
 		"alt_name":"underground_smw"
 	},
 	"underwater_world":{
 		"name":"Underwater",
 		"game":"Super Mario World",
 		"author":"Koji Kondo",
-		"site_name":"Underwater (SMW)",
 		"alt_name":"underwater_smw"
 	},
 	"ghost_house_world":{
 		"name":"Ghost House",
 		"game":"Super Mario World",
 		"author":"Koji Kondo",
-		"site_name":"Ghost House (SMW)",
 		"alt_name":"ghost_house_smw"
 	},
 	"forest_world":{
@@ -424,7 +419,6 @@
 		"name":"Castle",
 		"game":"Super Mario World",
 		"author":"Koji Kondo",
-		"site_name":"Castle (SMW)",
 		"alt_name":"castle_smw"
 	},
 	
