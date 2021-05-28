@@ -72,9 +72,50 @@
 		"game":"Mario Kart DS",
 		"category":"Mario Kart"
 	},
+	"event_battle":{
+		"name":"Event Battle",
+		"game":"Paper Mario: The Origami King"
+	},
 	"red_streamer":{
 		"name":"Red Streamer Battle",
 		"game":"Paper Mario: The Origami King"
+	},
+	"vellumental":{
+		"name":"Vellumental Area Battle",
+		"game":"Paper Mario: The Origami King"
+	},
+	"autumn_battle":{
+		"name":"Autumn Mountain Battle",
+		"game":"Paper Mario: The Origami King",
+		"alt_name":"autumn_mountain"
+	},
+	"dino_piranha":{
+		"name":"Dino Piranha",
+		"game":"Super Mario Galaxy"
+	},
+	"enter_bowser_jr":{
+		"name":"Enter Bowser Jr.!",
+		"game":"Super Mario Galaxy"
+	},
+	"kamella":{
+		"name":"Kamella",
+		"game":"Super Mario Galaxy"
+	},
+	"aquatic_race":{
+		"name":"Aquatic Race",
+		"game":"Super Mario Galaxy"
+	},
+	"galaxy_reactor":{
+		"name":"Bowser's Galaxy Reactor",
+		"game":"Super Mario Galaxy"
+	},
+	"bunny_chase":{
+		"name":"Chase the Bunnies!",
+		"game":"Super Mario Galaxy"
+	},
+	"flying_mario":{
+		"name":"Flying Mario",
+		"game":"Super Mario Galaxy"
 	},
 	"super_bell_hill":{
 		"name":"Super Bell Hill",
