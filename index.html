@@ -1,8 +1,8 @@
 <html>
 <body style="background-color:black;">
-<div id="div1" style="display:none;">
+<div id="div1" style="display:block;">
 <button onclick="swapLightDark()">Swap between light/dark</button>
-<div unselectable="on" onselectstart="return false;" user-select="none" >
+<div style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" >
 <h1 style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>Song Request Commands</strong></h1>
 <p style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>This stream supports song requests from a pre-determined list. The commands below will list what commands work.</strong></p>
 <p style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>!replace to replace your song in the queue. !currentsong to view the current song</strong></p>
