@@ -25,7 +25,8 @@
 	},
 	"super_duper":{
 		"name":"Super-Duper Mario Bros.",
-		"game":"Mario Party 9"
+		"game":"Mario Party 9",
+		"url":"https://youtu.be/Hzyif3Mbyio"
 	},
 	"bowser_jr":{
 		"name":"Bowser Jr. Battle 4",
@@ -94,7 +95,7 @@
 		"game":"Super Mario Galaxy"
 	},
 	"enter_bowser_jr":{
-		"name":"Enter Bowser Jr.!",
+		"name":"Enter Bowser Jr!",
 		"game":"Super Mario Galaxy"
 	},
 	"kamella":{
@@ -197,31 +198,36 @@
 		"name":"Guard Down",
 		"game":"Half-Life 2: Episode One",
 		"author":"Kelly Bailey",
-		"category":"Half-Life"
+		"category":"Half-Life",
+		"url":"https://youtu.be/l1Ac6FlD9VU"
 	},
 	"hospital":{
 		"name":"What Kind Of Hospital Is This",
 		"game":"Half-Life 2: Episode One",
 		"author":"Kelly Bailey",
-		"category":"Half-Life"
+		"category":"Half-Life",
+		"url":"https://youtu.be/jVqigQOMxKA"
 	},
 	"hunting_party":{
 		"name":"Hunting Party",
 		"game":"Half-Life 2: Episode Two",
 		"author":"Kelly Bailey",
-		"category":"Half-Life"
+		"category":"Half-Life",
+		"url":"https://youtu.be/Xx7S1CWpa3w"
 	},
 	"sector_sweep":{
 		"name":"Sector Sweep",
 		"game":"Half-Life 2: Episode Two",
 		"author":"Kelly Bailey",
-		"category":"Half-Life"
+		"category":"Half-Life",
+		"url":"https://youtu.be/tTFUgzMqV5A"
 	},
 	"last_legs":{
 		"name":"Last Legs",
 		"game":"Half-Life 2: Episode Two",
 		"author":"Kelly Bailey",
-		"category":"Half-Life"
+		"category":"Half-Life",
+		"url":"https://youtu.be/OCUUBYKCo24"
 	},
 	"anti_citizen":{
 		"name":"Anti-Citizen",
@@ -233,19 +239,22 @@
 		"name":"Scanning Hostile Biodats",
 		"game":"Half-Life: Alyx",
 		"author":"Mike Morasky",
-		"category":"Half-Life"
+		"category":"Half-Life",
+		"url":"https://youtu.be/dc_cpu_L18M"
 	},
 	"outbreak":{
 		"name":"Outbreak is Uncontained",
 		"game":"Half-Life: Alyx",
 		"author":"Mike Morasky",
-		"category":"Half-Life"
+		"category":"Half-Life",
+		"url":"https://youtu.be/lV84tQaaNDo"
 	},
 	"beasts_of_prey":{
 		"name":"Beasts of Prey",
 		"game":"Half-Life: Alyx",
 		"author":"Mike Morasky",
-		"category":"Half-Life"
+		"category":"Half-Life",
+		"url":"https://youtu.be/xv_MNYbr0z0"
 	},
 	"dont_stop":{
 		"name":"Game Over (Don't Stop)",
