@@ -194,6 +194,13 @@
 		"name":"Boom Boom",
 		"game":"Super Mario Bros. 3"
 	},
+	"cp_violation":{
+		"name":"CP Violation",
+		"game":"Half-Life 2",
+		"author":"Kelly Bailey",
+		"category":"Half-Life",
+		"url":"https://youtu.be/K5FsGscsY78"
+	},
 	"guard_down":{
 		"name":"Guard Down",
 		"game":"Half-Life 2: Episode One",
@@ -330,6 +337,13 @@
 		"name":"Stress",
 		"game":"Friday Night Funkin'",
 		"url":"https://youtu.be/GBD2B9bDD5I"
+	},
+	"improbable_outset":{
+		"name":"Improbable Outset",
+		"game":"Friday Night Funkin': Tricky Mod",
+		"category":"Friday Night Funkin'",
+		"site_name":"Improbable Outset (Tricky Mod)",
+		"url":"https://youtu.be/kG70yPDXHDY"
 	},
 	"have_a_nice_talk":{
 		"name":"Have a Nice Talk",
