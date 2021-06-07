@@ -384,6 +384,7 @@
 	"greenhorn_forest":{
 		"name":"Greenhorn Forest",
 		"game":"Wario World",
+		"volume":0.5,
 		"category":"Other"
 	},
 	"vampire_killer":{
