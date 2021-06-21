@@ -1,613 +1,683 @@
 {
-	"enemy_approaching":{
-		"name":"Enemy Approaching",
-		"author":"Toby Fox",
-		"game":"Undertale",
-		"url":"https://youtu.be/g6aia0GQMRw"
-	},
-	"stronger_monsters":{
-		"name":"Stronger Monsters",
-		"author":"Toby Fox",
-		"game":"Undertale",
-		"url":"https://youtu.be/lXtwWBLLLbk"
-	},
-	"battle_against_a_true_hero":{
-		"name":"Battle Against a True Hero",
-		"author":"Toby Fox",
-		"game":"Undertale",
-		"url":"https://youtu.be/DcERQHg3iy8"
-	},
-	"megalovania":{
-		"name":"MEGALOVANIA (Smash Ver.)",
-		"author":"Toby Fox",
-		"game":"Undertale",
-		"url":"https://youtu.be/RFFdvIqzrls"
-	},
-	"super_duper":{
-		"name":"Super-Duper Mario Bros.",
-		"game":"Mario Party 9",
-		"url":"https://youtu.be/Hzyif3Mbyio"
-	},
-	"bowser_jr":{
-		"name":"Bowser Jr. Battle 4",
-		"game":"Mario Party 9",
-		"url":"https://youtu.be/WOC-n6UOIOw"
-	},
-	"bowser_jr_mad":{
-		"name":"Bowser Jr.'s Mad",
-		"game":"Mario Party 9",
-		"url":"https://youtu.be/IOPdyowRYf8"
-	},
-	"flower_garden":{
-		"name":"Flower Garden",
-		"author":"Koji Kondo",
-		"game":"Yoshi's Island"
-	},
-	"castle":{
-		"name":"Castle & Fortress",
-		"author":"Koji Kondo",
-		"game":"Yoshi's Island"
-	},
-	"mini_boss":{
-		"name":"Mini-boss",
-		"author":"Koji Kondo",
-		"game":"Yoshi's Island"
-	},
-	"baby_bowser":{
-		"name":"Baby Bowser",
-		"author":"Koji Kondo",
-		"game":"Yoshi's Island"
-	},
-	"electrodrome":{
-		"name":"Electrodrome",
-		"game":"Mario Kart 8",
-		"category":"Mario Kart"
-	},
-	"airship_fortress":{
-		"name":"Airship Fortress",
-		"game":"Mario Kart DS",
-		"category":"Mario Kart"
-	},
-	"waluigi_pinball":{
-		"name":"Waluigi Pinball",
-		"game":"Mario Kart DS",
-		"category":"Mario Kart"
-	},
-	"event_battle":{
-		"name":"Event Battle",
-		"game":"Paper Mario: The Origami King"
-	},
-	"red_streamer":{
-		"name":"Red Streamer Battle",
-		"game":"Paper Mario: The Origami King"
-	},
-	"vellumental":{
-		"name":"Vellumental Area Battle",
-		"game":"Paper Mario: The Origami King"
-	},
-	"autumn_battle":{
-		"name":"Autumn Mountain Battle",
-		"game":"Paper Mario: The Origami King",
-		"alt_name":"autumn_mountain"
-	},
-	"dino_piranha":{
-		"name":"Dino Piranha",
-		"game":"Super Mario Galaxy"
-	},
-	"enter_bowser_jr":{
-		"name":"Enter Bowser Jr!",
-		"game":"Super Mario Galaxy"
-	},
-	"kamella":{
-		"name":"Kamella",
-		"game":"Super Mario Galaxy"
-	},
-	"aquatic_race":{
-		"name":"Aquatic Race",
-		"game":"Super Mario Galaxy"
-	},
-	"galaxy_reactor":{
-		"name":"Bowser's Galaxy Reactor",
-		"game":"Super Mario Galaxy"
-	},
-	"bunny_chase":{
-		"name":"Chase the Bunnies!",
-		"game":"Super Mario Galaxy"
-	},
-	"flying_mario":{
-		"name":"Flying Mario",
-		"game":"Super Mario Galaxy"
-	},
-	"super_bell_hill":{
-		"name":"Super Bell Hill",
-		"game":"Super Mario 3D World"
-	},
-	"double_cherry_pass":{
-		"name":"Double Cherry Pass",
-		"game":"Super Mario 3D World"
-	},
-	"plunging_falls":{
-		"name":"Plunging Falls",
-		"game":"Super Mario 3D World"
-	},
-	"captain_toad":{
-		"name":"Adventures of Captain Toad",
-		"site_name":"The Adventures of Captain Toad",
-		"game":"Super Mario 3D World"
-	},
-	"piranha_creeper_creek":{
-		"name":"Piranha Creeper Creek",
-		"game":"Super Mario 3D World"
-	},
-	"lava_lake_keep":{
-		"name":"Bowser's Lava Lake Keep",
-		"game":"Super Mario 3D World"
-	},
-	"fort_fire_bros":{
-		"name":"Fort Fire Bros",
-		"game":"Super Mario 3D World"
-	},
-	"beep_block_skyway":{
-		"name":"Beep Block Skyway",
-		"game":"Super Mario 3D World"
-	},
-	"motley":{
-		"name":"Motley Bossblob",
-		"game":"Super Mario 3D World"
-	},
-	"hisstocrat":{
-		"name":"Hisstocrat",
-		"game":"Super Mario 3D World"
-	},
-	"scamper_shores":{
-		"name":"Scamper Shores",
-		"game":"Super Mario 3D World + Bowser's Fury",
-		"category":"Bowser's Fury"
-	},
-	"pounce_bounce":{
-		"name":"Pounce Bounce Isle",
-		"game":"Super Mario 3D World + Bowser's Fury",
-		"category":"Bowser's Fury"
-	},
-	"mount_magmeow":{
-		"name":"Mount Magmeow",
-		"game":"Super Mario 3D World + Bowser's Fury",
-		"category":"Bowser's Fury"
-	},
-	"tostarena":{
-		"name":"Tostarena Ruins",
-		"game":"Super Mario Odyssey"
-	},
-	"honeylune_ridge":{
-		"name":"Honeylune Ridge: Caves",
-		"game":"Super Mario Odyssey"
-	},
-	"desert_hill":{
-		"name":"Desert Hills",
-		"game":"Super Mario Bros. 3"
-	},
-	"above_ground":{
-		"name":"Above Ground Theme",
-		"game":"Super Mario Bros. 3"
-	},
-	"boom_boom":{
-		"name":"Boom Boom",
-		"game":"Super Mario Bros. 3"
-	},
-	"cp_violation":{
-		"name":"CP Violation",
-		"game":"Half-Life 2",
-		"author":"Kelly Bailey",
-		"category":"Half-Life",
-		"url":"https://youtu.be/K5FsGscsY78"
-	},
-	"guard_down":{
-		"name":"Guard Down",
-		"game":"Half-Life 2: Episode One",
-		"author":"Kelly Bailey",
-		"category":"Half-Life",
-		"url":"https://youtu.be/l1Ac6FlD9VU"
-	},
-	"hospital":{
-		"name":"What Kind Of Hospital Is This",
-		"game":"Half-Life 2: Episode One",
-		"author":"Kelly Bailey",
-		"category":"Half-Life",
-		"url":"https://youtu.be/jVqigQOMxKA"
-	},
-	"hunting_party":{
-		"name":"Hunting Party",
-		"game":"Half-Life 2: Episode Two",
-		"author":"Kelly Bailey",
-		"category":"Half-Life",
-		"url":"https://youtu.be/Xx7S1CWpa3w"
-	},
-	"sector_sweep":{
-		"name":"Sector Sweep",
-		"game":"Half-Life 2: Episode Two",
-		"author":"Kelly Bailey",
-		"category":"Half-Life",
-		"url":"https://youtu.be/tTFUgzMqV5A"
-	},
-	"last_legs":{
-		"name":"Last Legs",
-		"game":"Half-Life 2: Episode Two",
-		"author":"Kelly Bailey",
-		"category":"Half-Life",
-		"url":"https://youtu.be/OCUUBYKCo24"
-	},
-	"anti_citizen":{
-		"name":"Anti-Citizen",
-		"game":"Half-Life: Alyx",
-		"author":"Mike Morasky",
-		"category":"Half-Life"
-	},
-	"scanning_hostile_biodats":{
-		"name":"Scanning Hostile Biodats",
-		"game":"Half-Life: Alyx",
-		"author":"Mike Morasky",
-		"category":"Half-Life",
-		"url":"https://youtu.be/dc_cpu_L18M"
-	},
-	"outbreak":{
-		"name":"Outbreak is Uncontained",
-		"game":"Half-Life: Alyx",
-		"author":"Mike Morasky",
-		"category":"Half-Life",
-		"url":"https://youtu.be/lV84tQaaNDo"
-	},
-	"beasts_of_prey":{
-		"name":"Beasts of Prey",
-		"game":"Half-Life: Alyx",
-		"author":"Mike Morasky",
-		"category":"Half-Life",
-		"url":"https://youtu.be/xv_MNYbr0z0"
-	},
-	"dont_stop":{
-		"name":"Game Over (Don't Stop)",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/OsSDYf5yMOE"
-	},
-	"test":{
-		"name":"Test (Unused)",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/qn3n4hyZRJg"
-	},
-	"dad_battle":{
-		"name":"Dad Battle",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/w0WyKTSuX4U"
-	},
-	"spookeez":{
-		"name":"Spookeez",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/EiNwUpco4OI"
-	},
-	"monster":{
-		"name":"Monster",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/NQSkjR7P3_A"
-	},
-	"satin_panties":{
-		"name":"Satin Panties",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/YzJKStx9IyU"
-	},
-	"high":{
-		"name":"High",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/OIsp8KrwSVY"
-	},
-	"milf":{
-		"name":"M.I.L.F",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/dOPrN6aJ7TI"
-	},
-	"winter_horrorland":{
-		"name":"Winter Horrorland",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/D-vapQ1RdL4"
-	},
-	"senpai":{
-		"name":"Senpai",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/EJiXO3vwNFo"
-	},
-	"roses":{
-		"name":"Roses",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/DKs-Tkw4X3I"
-	},
-	"thorns":{
-		"name":"Thorns",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/lWja270s6qA"
-	},
-	"ugh":{
-		"name":"Ugh",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/_pLDBCkvyUg"
-	},
-	"guns":{
-		"name":"Guns",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/K5lp8aAoT1g"
-	},
-	"stress":{
-		"name":"Stress",
-		"game":"Friday Night Funkin'",
-		"url":"https://youtu.be/GBD2B9bDD5I"
-	},
-	"improbable_outset":{
-		"name":"Improbable Outset",
-		"game":"Friday Night Funkin': Tricky Mod",
-		"category":"Friday Night Funkin'",
-		"site_name":"Improbable Outset (Tricky Mod)",
-		"url":"https://youtu.be/kG70yPDXHDY"
-	},
-	"have_a_nice_talk":{
-		"name":"Have a Nice Talk",
-		"game":"Mario & Luigi: Bowser's Inside Story",
-		"site_name":"Have a Nice Talk (Bowser's Inside Story)",
-		"category":"Mario & Luigi"
-	},
-	"toad_town":{
-		"name":"Short Break in Toad Town",
-		"game":"Mario & Luigi: Bowser's Inside Story",
-		"site_name":"Short Break in Toad Town (Bowser's Inside Story)",
-		"category":"Mario & Luigi"
-	},
-	"tough_guy_alert":{
-		"name":"Tough Guy Alert",
-		"game":"Mario & Luigi: Bowser's Inside Story",
-		"site_name":"Tough Guy Alert (Bowser's Inside Story)",
-		"category":"Mario & Luigi"
-	},
-	"show_time":{
-		"name":"SHOW TIME!",
-		"game":"Mario & Luigi: Bowser's Inside Story",
-		"site_name":"SHOW TIME! (Bowser's Inside Story)",
-		"category":"Mario & Luigi"
-	},
-	"grand_finale":{
-		"name":"The Grand Finale",
-		"game":"Mario & Luigi: Bowser's Inside Story",
-		"site_name":"The Grand Finale (Bowser's Inside Story)",
-		"category":"Mario & Luigi"
-	},
-	"charge_and_clash":{
-		"name":"Charge and Clash!",
-		"game":"Bowser Jr.'s Journey",
-		"site_name":"Charge and Clash! (Bowser's Jr.'s Journey)",
-		"category":"Mario & Luigi"
-	},
-	"greenhorn_forest":{
-		"name":"Greenhorn Forest",
-		"game":"Wario World",
-		"volume":0.5,
-		"category":"Other"
-	},
-	"vampire_killer":{
-		"name":"Vampire Killer",
-		"game":"Castlevania"
-	},
-	"stalker":{
-		"name":"Stalker",
-		"game":"Castlevania"
-	},
-	"out_of_time":{
-		"name":"Out of Time",
-		"game":"Castlevania"
-	},
-	"golden_trophy":{
-		"name":"Combat (Golden Trophy)",
-		"game":"Rec Room",
-		"category":"Other"
-	},
-	"battle_64":{
-		"name":"Battle 64",
-		"game":"Super Bomberman R Online",
-		"url":"https://youtu.be/cWnxAsrFd7o"
-	},
-	"setup":{
-		"name":"Setup Menu",
-		"game":"Super Bomberman R Online",
-		"url":"https://youtu.be/9WCC87hMB3A"
-	},
-	
-	
-	
-	"ground_world":{
-		"name":"Ground",
-		"game":"Super Mario World",
-		"author":"Koji Kondo",
-		"alt_name":"ground_smw"
-	},
-	"athletic_world":{
-		"name":"Athletic",
-		"game":"Super Mario World",
-		"author":"Koji Kondo",
-		"alt_name":"athletic_smw"
-	},
-	"underground_world":{
-		"name":"Underground",
-		"game":"Super Mario World",
-		"author":"Koji Kondo",
-		"alt_name":"underground_smw"
-	},
-	"underwater_world":{
-		"name":"Underwater",
-		"game":"Super Mario World",
-		"author":"Koji Kondo",
-		"alt_name":"underwater_smw"
-	},
-	"ghost_house_world":{
-		"name":"Ghost House",
-		"game":"Super Mario World",
-		"author":"Koji Kondo",
-		"alt_name":"ghost_house_smw"
-	},
-	"forest_world":{
-		"name":"Forest (Super Mario World)",
-		"game":"Super Mario Maker 2",
-		"category":"Super Mario Maker",
-		"author":"Koji Kondo",
-		"alt_name":"forest_smw"
-	},
-	"snow_world":{
-		"name":"Snow (Super Mario World)",
-		"game":"Super Mario Maker 2",
-		"category":"Super Mario Maker",
-		"author":"Koji Kondo",
-		"alt_name":"snow_smw"
-	},
-	"airship_world":{
-		"name":"Airship (Super Mario World)",
-		"game":"Super Mario Maker 2",
-		"category":"Super Mario Maker",
-		"author":"Koji Kondo",
-		"alt_name":"airship_smw"
-	},
-	"desert_world":{
-		"name":"Desert (Super Mario World)",
-		"game":"Super Mario Maker 2",
-		"category":"Super Mario Maker",
-		"author":"Koji Kondo",
-		"alt_name":"desert_smw"
-	},
-	"castle_world":{
-		"name":"Castle",
-		"game":"Super Mario World",
-		"author":"Koji Kondo",
-		"alt_name":"castle_smw"
-	},
-	
-	
-	"ground_u":{
-		"name":"Ground",
-		"game":"New Super Mario Bros. U",
-		"site_name":"Ground (NSMBU)",
-		"category":"New Super Mario Bros."
-	},
-	"athletic_u":{
-		"name":"Athletic",
-		"game":"New Super Mario Bros. U",
-		"site_name":"Athletic (NSMBU)",
-		"category":"New Super Mario Bros."
-	},
-	"jungle_u":{
-		"name":"Jungle",
-		"game":"New Super Mario Bros. U",
-		"site_name":"Jungle (NSMBU)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"jungle_wii"
-	},
-	"snow_u":{
-		"name":"Snow",
-		"game":"New Super Mario Bros. U",
-		"site_name":"Snow (NSMBU)",
-		"category":"New Super Mario Bros."
-	},
-	"ground_wii":{
-		"name":"Ground",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Ground (NSMBWii)",
-		"category":"New Super Mario Bros."
-	},
-	"athletic_wii":{
-		"name":"Athletic",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Athletic (NSMBWii)",
-		"category":"New Super Mario Bros."
-	},
-	"underwater_wii":{
-		"name":"Underwater",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Underwater (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"underwater_u"
-	},
-	"underground_wii":{
-		"name":"Underground",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Underground (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"underground_u"
-	},
-	"ghost_house_wii":{
-		"name":"Ghost House",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Ghost House (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"ghost_house_u"
-	},
-	"snow_wii":{
-		"name":"Snow",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Snow (NSMBWii)",
-		"category":"New Super Mario Bros."
-	},
-	"airship_wii":{
-		"name":"Airship",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Airship (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"airship_u"
-	},
-	"airship_boss_wii":{
-		"name":"Airship Boss (Bowser Jr.)",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Airship Boss (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"airship_boss_u"
-	},
-	"desert_wii":{
-		"name":"Desert",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Desert (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"desert_u"
-	},
-	"castle_wii":{
-		"name":"Castle",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Castle (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"castle_u"
-	},
-	"boss_wii":{
-		"name":"Castle Boss",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Castle Boss (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"castle_boss_u"
-	},
-	"volcano_wii":{
-		"name":"Volcano",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Volcano (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"volcano_u"
-	},
-	"tower_wii":{
-		"name":"Tower",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Tower (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"tower_u"
-	},
-	"tower_boss_wii":{
-		"name":"Tower Boss",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Tower Boss (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"tower_boss_u"
-	},
-	"beach_wii":{
-		"name":"Beach",
-		"game":"New Super Mario Bros. Wii",
-		"site_name":"Beach (NSMBWii)",
-		"category":"New Super Mario Bros.",
-		"alt_name":"beach_u"
+	"enemy_approaching": {
+		"name": "Enemy Approaching",
+		"author": "Toby Fox",
+		"game": "Undertale",
+		"color": "#FF0000",
+		"url": "https://youtu.be/g6aia0GQMRw"
+	},
+	"stronger_monsters": {
+		"name": "Stronger Monsters",
+		"author": "Toby Fox",
+		"game": "Undertale",
+		"color": "#FF0000",
+		"url": "https://youtu.be/lXtwWBLLLbk"
+	},
+	"battle_against_a_true_hero": {
+		"name": "Battle Against a True Hero",
+		"author": "Toby Fox",
+		"game": "Undertale",
+		"color": "#00FF00",
+		"url": "https://youtu.be/DcERQHg3iy8"
+	},
+	"megalovania": {
+		"name": "MEGALOVANIA (Smash Ver.)",
+		"author": "Toby Fox",
+		"game": "Undertale",
+		"color": "#0000FF",
+		"url": "https://youtu.be/RFFdvIqzrls"
+	},
+	"super_duper": {
+		"name": "Super-Duper Mario Bros.",
+		"game": "Mario Party 9",
+		"url": "https://youtu.be/Hzyif3Mbyio"
+	},
+	"bowser_jr": {
+		"name": "Bowser Jr. Battle 4",
+		"game": "Mario Party 9",
+		"url": "https://youtu.be/WOC-n6UOIOw"
+	},
+	"bowser_jr_mad": {
+		"name": "Bowser Jr.'s Mad",
+		"game": "Mario Party 9",
+		"url": "https://youtu.be/IOPdyowRYf8"
+	},
+	"flower_garden": {
+		"name": "Flower Garden",
+		"author": "Koji Kondo",
+		"game": "Yoshi's Island"
+	},
+	"castle": {
+		"name": "Castle & Fortress",
+		"author": "Koji Kondo",
+		"effect": 2,
+		"game": "Yoshi's Island"
+	},
+	"mini_boss": {
+		"name": "Mini-boss",
+		"author": "Koji Kondo",
+		"game": "Yoshi's Island"
+	},
+	"baby_bowser": {
+		"name": "Baby Bowser",
+		"author": "Koji Kondo",
+		"game": "Yoshi's Island"
+	},
+	"electrodrome": {
+		"name": "Electrodrome",
+		"game": "Mario Kart 8",
+		"category": "Mario Kart"
+	},
+	"airship_fortress": {
+		"name": "Airship Fortress",
+		"game": "Mario Kart DS",
+		"category": "Mario Kart"
+	},
+	"waluigi_pinball": {
+		"name": "Waluigi Pinball",
+		"game": "Mario Kart DS",
+		"color": "#9400D3",
+		"category": "Mario Kart"
+	},
+	"event_battle": {
+		"name": "Event Battle",
+		"game": "Paper Mario: The Origami King"
+	},
+	"red_streamer": {
+		"name": "Red Streamer Battle",
+		"game": "Paper Mario: The Origami King"
+	},
+	"vellumental": {
+		"name": "Vellumental Area Battle",
+		"game": "Paper Mario: The Origami King"
+	},
+	"autumn_battle": {
+		"name": "Autumn Mountain Battle",
+		"game": "Paper Mario: The Origami King",
+		"alt_name": "autumn_mountain"
+	},
+	"dino_piranha": {
+		"name": "Dino Piranha",
+		"game": "Super Mario Galaxy"
+	},
+	"enter_bowser_jr": {
+		"name": "Enter Bowser Jr!",
+		"game": "Super Mario Galaxy"
+	},
+	"kamella": {
+		"name": "Kamella",
+		"game": "Super Mario Galaxy"
+	},
+	"aquatic_race": {
+		"name": "Aquatic Race",
+		"game": "Super Mario Galaxy"
+	},
+	"galaxy_reactor": {
+		"name": "Bowser's Galaxy Reactor",
+		"game": "Super Mario Galaxy"
+	},
+	"bunny_chase": {
+		"name": "Chase the Bunnies!",
+		"game": "Super Mario Galaxy"
+	},
+	"flying_mario": {
+		"name": "Flying Mario",
+		"game": "Super Mario Galaxy"
+	},
+	"super_bell_hill": {
+		"name": "Super Bell Hill",
+		"game": "Super Mario 3D World"
+	},
+	"double_cherry_pass": {
+		"name": "Double Cherry Pass",
+		"game": "Super Mario 3D World"
+	},
+	"plunging_falls": {
+		"name": "Plunging Falls",
+		"game": "Super Mario 3D World"
+	},
+	"captain_toad": {
+		"name": "Adventures of Captain Toad",
+		"site_name": "The Adventures of Captain Toad",
+		"game": "Super Mario 3D World"
+	},
+	"piranha_creeper_creek": {
+		"name": "Piranha Creeper Creek",
+		"game": "Super Mario 3D World"
+	},
+	"lava_lake_keep": {
+		"name": "Bowser's Lava Lake Keep",
+		"effect": 2,
+		"game": "Super Mario 3D World"
+	},
+	"fort_fire_bros": {
+		"name": "Fort Fire Bros",
+		"effect": 2,
+		"game": "Super Mario 3D World"
+	},
+	"beep_block_skyway": {
+		"name": "Beep Block Skyway",
+		"game": "Super Mario 3D World"
+	},
+	"motley": {
+		"name": "Motley Bossblob",
+		"game": "Super Mario 3D World"
+	},
+	"hisstocrat": {
+		"name": "Hisstocrat",
+		"game": "Super Mario 3D World"
+	},
+	"scamper_shores": {
+		"name": "Scamper Shores",
+		"game": "Super Mario 3D World + Bowser's Fury",
+		"category": "Bowser's Fury"
+	},
+	"pounce_bounce": {
+		"name": "Pounce Bounce Isle",
+		"game": "Super Mario 3D World + Bowser's Fury",
+		"category": "Bowser's Fury"
+	},
+	"mount_magmeow": {
+		"name": "Mount Magmeow",
+		"game": "Super Mario 3D World + Bowser's Fury",
+		"effect": 2,
+		"category": "Bowser's Fury"
+	},
+	"tostarena": {
+		"name": "Tostarena Ruins",
+		"game": "Super Mario Odyssey"
+	},
+	"honeylune_ridge": {
+		"name": "Honeylune Ridge: Caves",
+		"game": "Super Mario Odyssey"
+	},
+	"desert_hill": {
+		"name": "Desert Hills",
+		"game": "Super Mario Bros. 3"
+	},
+	"above_ground": {
+		"name": "Above Ground Theme",
+		"game": "Super Mario Bros. 3"
+	},
+	"boom_boom": {
+		"name": "Boom Boom",
+		"game": "Super Mario Bros. 3"
+	},
+	"cp_violation": {
+		"name": "CP Violation",
+		"game": "Half-Life 2",
+		"author": "Kelly Bailey",
+		"category": "Half-Life",
+		"url": "https://youtu.be/K5FsGscsY78"
+	},
+	"guard_down": {
+		"name": "Guard Down",
+		"game": "Half-Life 2: Episode One",
+		"author": "Kelly Bailey",
+		"category": "Half-Life",
+		"url": "https://youtu.be/l1Ac6FlD9VU"
+	},
+	"hospital": {
+		"name": "What Kind Of Hospital Is This",
+		"game": "Half-Life 2: Episode One",
+		"author": "Kelly Bailey",
+		"category": "Half-Life",
+		"url": "https://youtu.be/jVqigQOMxKA"
+	},
+	"hunting_party": {
+		"name": "Hunting Party",
+		"game": "Half-Life 2: Episode Two",
+		"author": "Kelly Bailey",
+		"category": "Half-Life",
+		"url": "https://youtu.be/Xx7S1CWpa3w"
+	},
+	"sector_sweep": {
+		"name": "Sector Sweep",
+		"game": "Half-Life 2: Episode Two",
+		"author": "Kelly Bailey",
+		"category": "Half-Life",
+		"url": "https://youtu.be/tTFUgzMqV5A"
+	},
+	"last_legs": {
+		"name": "Last Legs",
+		"game": "Half-Life 2: Episode Two",
+		"author": "Kelly Bailey",
+		"category": "Half-Life",
+		"url": "https://youtu.be/OCUUBYKCo24"
+	},
+	"anti_citizen": {
+		"name": "Anti-Citizen",
+		"game": "Half-Life: Alyx",
+		"author": "Mike Morasky",
+		"category": "Half-Life"
+	},
+	"scanning_hostile_biodats": {
+		"name": "Scanning Hostile Biodats",
+		"game": "Half-Life: Alyx",
+		"author": "Mike Morasky",
+		"category": "Half-Life",
+		"url": "https://youtu.be/dc_cpu_L18M"
+	},
+	"outbreak": {
+		"name": "Outbreak is Uncontained",
+		"game": "Half-Life: Alyx",
+		"author": "Mike Morasky",
+		"category": "Half-Life",
+		"url": "https://youtu.be/lV84tQaaNDo"
+	},
+	"beasts_of_prey": {
+		"name": "Beasts of Prey",
+		"game": "Half-Life: Alyx",
+		"author": "Mike Morasky",
+		"category": "Half-Life",
+		"url": "https://youtu.be/xv_MNYbr0z0"
+	},
+	"dont_stop": {
+		"name": "Game Over (Don't Stop)",
+		"game": "Friday Night Funkin'",
+		"url": "https://youtu.be/OsSDYf5yMOE"
+	},
+	"test": {
+		"name": "Test (Unused)",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/qn3n4hyZRJg"
+	},
+	"dad_battle": {
+		"name": "Dad Battle",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/w0WyKTSuX4U"
+	},
+	"spookeez": {
+		"name": "Spookeez",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/EiNwUpco4OI"
+	},
+	"monster": {
+		"name": "Monster",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/NQSkjR7P3_A"
+	},
+	"satin_panties": {
+		"name": "Satin Panties",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/YzJKStx9IyU"
+	},
+	"high": {
+		"name": "High",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/OIsp8KrwSVY"
+	},
+	"milf": {
+		"name": "M.I.L.F",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/dOPrN6aJ7TI"
+	},
+	"winter_horrorland": {
+		"name": "Winter Horrorland",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/D-vapQ1RdL4"
+	},
+	"senpai": {
+		"name": "Senpai",
+		"game": "Friday Night Funkin'",
+		"color": "#ff4ae7",
+		"url": "https://youtu.be/EJiXO3vwNFo"
+	},
+	"roses": {
+		"name": "Roses",
+		"game": "Friday Night Funkin'",
+		"color": "#ff0077",
+		"url": "https://youtu.be/DKs-Tkw4X3I"
+	},
+	"thorns": {
+		"name": "Thorns",
+		"game": "Friday Night Funkin'",
+		"color": "#FF0000",
+		"url": "https://youtu.be/lWja270s6qA"
+	},
+	"ugh": {
+		"name": "Ugh",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/_pLDBCkvyUg"
+	},
+	"guns": {
+		"name": "Guns",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/K5lp8aAoT1g"
+	},
+	"stress": {
+		"name": "Stress",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/GBD2B9bDD5I"
+	},
+	"improbable_outset": {
+		"name": "Improbable Outset",
+		"game": "Friday Night Funkin': Tricky Mod",
+		"category": "Friday Night Funkin'",
+		"site_name": "Improbable Outset (Tricky Mod)",
+		"color": "#8B0000",
+		"effect": 2,
+		"url": "https://youtu.be/kG70yPDXHDY"
+	},
+	"have_a_nice_talk": {
+		"name": "Have a Nice Talk",
+		"game": "Mario & Luigi: Bowser's Inside Story",
+		"site_name": "Have a Nice Talk (Bowser's Inside Story)",
+		"category": "Mario & Luigi"
+	},
+	"toad_town": {
+		"name": "Short Break in Toad Town",
+		"game": "Mario & Luigi: Bowser's Inside Story",
+		"site_name": "Short Break in Toad Town (Bowser's Inside Story)",
+		"category": "Mario & Luigi"
+	},
+	"tough_guy_alert": {
+		"name": "Tough Guy Alert",
+		"game": "Mario & Luigi: Bowser's Inside Story",
+		"site_name": "Tough Guy Alert (Bowser's Inside Story)",
+		"category": "Mario & Luigi"
+	},
+	"show_time": {
+		"name": "SHOW TIME!",
+		"game": "Mario & Luigi: Bowser's Inside Story",
+		"site_name": "SHOW TIME! (Bowser's Inside Story)",
+		"category": "Mario & Luigi"
+	},
+	"grand_finale": {
+		"name": "The Grand Finale",
+		"game": "Mario & Luigi: Bowser's Inside Story",
+		"site_name": "The Grand Finale (Bowser's Inside Story)",
+		"category": "Mario & Luigi"
+	},
+	"charge_and_clash": {
+		"name": "Charge and Clash!",
+		"game": "Bowser Jr.'s Journey",
+		"site_name": "Charge and Clash! (Bowser's Jr.'s Journey)",
+		"category": "Mario & Luigi"
+	},
+	"greenhorn_forest": {
+		"name": "Greenhorn Forest",
+		"game": "Wario World",
+		"volume": 0.5,
+		"category": "Other"
+	},
+	"vampire_killer": {
+		"name": "Vampire Killer",
+		"game": "Castlevania"
+	},
+	"stalker": {
+		"name": "Stalker",
+		"game": "Castlevania"
+	},
+	"out_of_time": {
+		"name": "Out of Time",
+		"game": "Castlevania"
+	},
+	"golden_trophy": {
+		"name": "Combat (Golden Trophy)",
+		"game": "Rec Room",
+		"category": "Other"
+	},
+	"battle_64": {
+		"name": "Battle 64",
+		"game": "Super Bomberman R Online",
+		"url": "https://youtu.be/cWnxAsrFd7o"
+	},
+	"setup": {
+		"name": "Setup Menu",
+		"game": "Super Bomberman R Online",
+		"url": "https://youtu.be/9WCC87hMB3A"
+	},
+	"ground_world": {
+		"name": "Ground",
+		"game": "Super Mario World",
+		"author": "Koji Kondo",
+		"alt_name": "ground_smw"
+	},
+	"athletic_world": {
+		"name": "Athletic",
+		"game": "Super Mario World",
+		"author": "Koji Kondo",
+		"alt_name": "athletic_smw"
+	},
+	"underground_world": {
+		"name": "Underground",
+		"game": "Super Mario World",
+		"author": "Koji Kondo",
+		"alt_name": "underground_smw"
+	},
+	"underwater_world": {
+		"name": "Underwater",
+		"game": "Super Mario World",
+		"author": "Koji Kondo",
+		"alt_name": "underwater_smw"
+	},
+	"ghost_house_world": {
+		"name": "Ghost House",
+		"game": "Super Mario World",
+		"author": "Koji Kondo",
+		"alt_name": "ghost_house_smw"
+	},
+	"forest_world": {
+		"name": "Forest (Super Mario World)",
+		"game": "Super Mario Maker 2",
+		"category": "Super Mario Maker",
+		"author": "Koji Kondo",
+		"alt_name": "forest_smw"
+	},
+	"snow_world": {
+		"name": "Snow (Super Mario World)",
+		"game": "Super Mario Maker 2",
+		"category": "Super Mario Maker",
+		"author": "Koji Kondo",
+		"effect": 1,
+		"alt_name": "snow_smw"
+	},
+	"airship_world": {
+		"name": "Airship (Super Mario World)",
+		"game": "Super Mario Maker 2",
+		"category": "Super Mario Maker",
+		"author": "Koji Kondo",
+		"alt_name": "airship_smw"
+	},
+	"desert_world": {
+		"name": "Desert (Super Mario World)",
+		"game": "Super Mario Maker 2",
+		"category": "Super Mario Maker",
+		"author": "Koji Kondo",
+		"alt_name": "desert_smw"
+	},
+	"castle_world": {
+		"name": "Castle",
+		"game": "Super Mario World",
+		"author": "Koji Kondo",
+		"effect": 2,
+		"alt_name": "castle_smw"
+	},
+	"ground_u": {
+		"name": "Ground",
+		"game": "New Super Mario Bros. U",
+		"site_name": "Ground (NSMBU)",
+		"category": "New Super Mario Bros."
+	},
+	"athletic_u": {
+		"name": "Athletic",
+		"game": "New Super Mario Bros. U",
+		"site_name": "Athletic (NSMBU)",
+		"category": "New Super Mario Bros."
+	},
+	"jungle_u": {
+		"name": "Jungle",
+		"game": "New Super Mario Bros. U",
+		"site_name": "Jungle (NSMBU)",
+		"category": "New Super Mario Bros.",
+		"alt_name": "jungle_wii"
+	},
+	"snow_u": {
+		"name": "Snow",
+		"game": "New Super Mario Bros. U",
+		"site_name": "Snow (NSMBU)",
+		"effect": 1,
+		"category": "New Super Mario Bros."
+	},
+	"ground_wii": {
+		"name": "Ground",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Ground (NSMBWii)",
+		"category": "New Super Mario Bros."
+	},
+	"athletic_wii": {
+		"name": "Athletic",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Athletic (NSMBWii)",
+		"category": "New Super Mario Bros."
+	},
+	"underwater_wii": {
+		"name": "Underwater",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Underwater (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"alt_name": "underwater_u"
+	},
+	"underground_wii": {
+		"name": "Underground",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Underground (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"alt_name": "underground_u"
+	},
+	"ghost_house_wii": {
+		"name": "Ghost House",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Ghost House (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"alt_name": "ghost_house_u"
+	},
+	"snow_wii": {
+		"name": "Snow",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Snow (NSMBWii)",
+		"effect": 1,
+		"category": "New Super Mario Bros."
+	},
+	"airship_wii": {
+		"name": "Airship",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Airship (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"alt_name": "airship_u"
+	},
+	"airship_boss_wii": {
+		"name": "Airship Boss (Bowser Jr.)",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Airship Boss (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"alt_name": "airship_boss_u"
+	},
+	"desert_wii": {
+		"name": "Desert",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Desert (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"alt_name": "desert_u"
+	},
+	"castle_wii": {
+		"name": "Castle",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Castle (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"effect": 2,
+		"alt_name": "castle_u"
+	},
+	"boss_wii": {
+		"name": "Castle Boss",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Castle Boss (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"alt_name": "castle_boss_u"
+	},
+	"volcano_wii": {
+		"name": "Volcano",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Volcano (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"effect": 2,
+		"alt_name": "volcano_u"
+	},
+	"tower_wii": {
+		"name": "Tower",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Tower (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"alt_name": "tower_u"
+	},
+	"tower_boss_wii": {
+		"name": "Tower Boss",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Tower Boss (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"alt_name": "tower_boss_u"
+	},
+	"beach_wii": {
+		"name": "Beach",
+		"game": "New Super Mario Bros. Wii",
+		"site_name": "Beach (NSMBWii)",
+		"category": "New Super Mario Bros.",
+		"alt_name": "beach_u"
+	},
+	"cotton_island": {
+		"game": "Plok!",
+		"name": "Cotton Island",
+		"author": "Tim Follin",
+		"url": "http://www.youtube.com/watch?v=W80Hp7wHtrw"
+	},
+	"snake": {
+		"game": "Hiveswap",
+		"name": "That's How I Beat Snake",
+		"author": "Toby Fox & James Roach",
+		"url": "http://www.youtube.com/watch?v=FO7d5l2hqUg"
+	},
+	"final_spice": {
+		"game": "Hiveswap",
+		"name": "Final Spice",
+		"author": "Toby Fox & James Roach",
+		"url": "http://www.youtube.com/watch?v=XxtCbhRWwkk"
+	},
+	"table_for_tooth": {
+		"game": "Hiveswap",
+		"name": "Table for Tooth",
+		"author": "Toby Fox & James Roach",
+		"url": "http://www.youtube.com/watch?v=7ENYWUSLS44"
+	},
+	"plok_boss": {
+		"game": "Plok!",
+		"name": "Boss",
+		"author": "Tim Follin",
+		"url": "http://www.youtube.com/watch?v=fixc63xMXeY"
+	},
+	"dead_test_subject": {
+		"game": "Aperture Tag",
+		"name": "You Are A Dead Test Subject",
+		"author": "Harry Callaghan",
+		"url": "http://www.youtube.com/watch?v=mra7UNn5D-4",
+		"alt_name": "test_subject"
+	},
+	"insane": {
+		"game": "Aperture Tag",
+		"name": "Certifiably Insane",
+		"author": "Harry Callaghan",
+		"url": "http://www.youtube.com/watch?v=gROHOA-pK-g",
+		"alt_name":"certifiably_insane"
 	}
 }
