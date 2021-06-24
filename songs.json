@@ -370,6 +370,24 @@
 		"effect": 2,
 		"url": "https://youtu.be/kG70yPDXHDY"
 	},
+	"madness": {
+		"name": "Madness",
+		"game": "Friday Night Funkin': Tricky Mod",
+		"category": "Friday Night Funkin'",
+		"site_name": "Improbable Outset (Tricky Mod)",
+		"color": "#8B0000",
+		"effect": 2,
+		"url": "https://youtu.be/kG70yPDXHDY"
+	},
+	"expurgation": {
+		"name": "Expurgation",
+		"game": "Friday Night Funkin': Tricky Mod",
+		"category": "Friday Night Funkin'",
+		"site_name": "Improbable Outset (Tricky Mod)",
+		"color": "#8B0000",
+		"effect": 2,
+		"url": "https://youtu.be/kG70yPDXHDY"
+	},
 	"have_a_nice_talk": {
 		"name": "Have a Nice Talk",
 		"game": "Mario & Luigi: Bowser's Inside Story",
