@@ -658,44 +658,51 @@
 		"game": "Plok!",
 		"name": "Cotton Island",
 		"author": "Tim Follin",
-		"url": "http://www.youtube.com/watch?v=W80Hp7wHtrw"
+		"url": "https://youtu.be/W80Hp7wHtrw"
 	},
 	"snake": {
 		"game": "Hiveswap",
 		"name": "That's How I Beat Snake",
 		"author": "Toby Fox & James Roach",
-		"url": "http://www.youtube.com/watch?v=FO7d5l2hqUg"
+		"url": "https://youtu.be/FO7d5l2hqUg"
 	},
 	"final_spice": {
 		"game": "Hiveswap",
 		"name": "Final Spice",
 		"author": "Toby Fox & James Roach",
-		"url": "http://www.youtube.com/watch?v=XxtCbhRWwkk"
+		"url": "https://youtu.be/XxtCbhRWwkk"
 	},
 	"table_for_tooth": {
 		"game": "Hiveswap",
 		"name": "Table for Tooth",
 		"author": "Toby Fox & James Roach",
-		"url": "http://www.youtube.com/watch?v=7ENYWUSLS44"
+		"url": "https://youtu.be/7ENYWUSLS44"
 	},
 	"plok_boss": {
 		"game": "Plok!",
 		"name": "Boss",
 		"author": "Tim Follin",
-		"url": "http://www.youtube.com/watch?v=fixc63xMXeY"
+		"url": "https://youtu.be/fixc63xMXeY"
 	},
 	"dead_test_subject": {
 		"game": "Aperture Tag",
 		"name": "You Are A Dead Test Subject",
 		"author": "Harry Callaghan",
-		"url": "http://www.youtube.com/watch?v=mra7UNn5D-4",
+		"url": "https://youtu.be/mra7UNn5D-4",
 		"alt_name": "test_subject"
 	},
 	"insane": {
 		"game": "Aperture Tag",
 		"name": "Certifiably Insane",
 		"author": "Harry Callaghan",
-		"url": "http://www.youtube.com/watch?v=gROHOA-pK-g",
-		"alt_name":"certifiably_insane"
+		"url": "https://youtu.be/gROHOA-pK-g",
+		"alt_name": "certifiably_insane"
+	},
+	"qumu": {
+		"game": "Super Mario 3D World + Bowser's Fury",
+		"category": "Other",
+		"name": "Scamper Shores (Qumu Remix) (Bowser's Fury)",
+		"author": "Qumu",
+		"url": "https://youtu.be/UAOGPIOL_JE"
 	}
 }
