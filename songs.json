@@ -183,6 +183,14 @@
 		"effect": 2,
 		"category": "Bowser's Fury"
 	},
+	"qumu": {
+		"game": "Super Mario 3D World + Bowser's Fury",
+		"category": "Other",
+		"name": "Scamper Shores (Qumu Remix)",
+		"site_name":"Scamper Shores (Qumu Remix) (Bowser's Fury)",
+		"author": "Qumu",
+		"url": "https://youtu.be/UAOGPIOL_JE"
+	},
 	"tostarena": {
 		"name": "Tostarena Ruins",
 		"game": "Super Mario Odyssey"
@@ -697,12 +705,5 @@
 		"author": "Harry Callaghan",
 		"url": "https://youtu.be/gROHOA-pK-g",
 		"alt_name": "certifiably_insane"
-	},
-	"qumu": {
-		"game": "Super Mario 3D World + Bowser's Fury",
-		"category": "Other",
-		"name": "Scamper Shores (Qumu Remix) (Bowser's Fury)",
-		"author": "Qumu",
-		"url": "https://youtu.be/UAOGPIOL_JE"
 	}
 }
