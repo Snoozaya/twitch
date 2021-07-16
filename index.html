@@ -21,7 +21,8 @@
 <script>
 	// I am awful at coding javascript, sorry for people who know how to actually code javascript :(
 	
-	var htmlVerNumber = 1
+	var curDate = new Date();
+	var htmlVerNumber = curDate.getMonth();
 	
 	function loadJSON(callback) {   
 		var xobj = new XMLHttpRequest();

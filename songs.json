@@ -77,6 +77,7 @@
 		"name": "Waluigi Pinball",
 		"game": "Mario Kart DS",
 		"color": "#9400D3",
+		"color2": "#FFFF00",
 		"category": "Mario Kart"
 	},
 	"event_battle": {
@@ -300,13 +301,21 @@
 	"spookeez": {
 		"name": "Spookeez",
 		"game": "Friday Night Funkin'",
-		"color": "#00FFFF",
+		"color2": "#FF8000",
+		"color": "#FFFFFF",
 		"url": "https://youtu.be/EiNwUpco4OI"
+	},
+	"south": {
+		"name": "South",
+		"game": "Friday Night Funkin'",
+		"color2": "#FF8000",
+		"color": "#FFFFFF",
+		"url": "https://youtu.be/g-ncy3BS4AI"
 	},
 	"monster": {
 		"name": "Monster",
 		"game": "Friday Night Funkin'",
-		"color": "#00FFFF",
+		"color": "#FFFF00",
 		"url": "https://youtu.be/NQSkjR7P3_A"
 	},
 	"satin_panties": {
@@ -330,7 +339,8 @@
 	"winter_horrorland": {
 		"name": "Winter Horrorland",
 		"game": "Friday Night Funkin'",
-		"color": "#00FFFF",
+		"color": "#FFFF00",
+		"effect": 1,
 		"url": "https://youtu.be/D-vapQ1RdL4"
 	},
 	"senpai": {
@@ -386,6 +396,15 @@
 		"color": "#8B0000",
 		"effect": 2,
 		"url": "https://youtu.be/GZmoHrq0mEY"
+	},
+	"hellclown": {
+		"name": "HELLCLOWN",
+		"game": "Friday Night Funkin': Tricky Mod",
+		"category": "Friday Night Funkin'",
+		"site_name": "HELLCLOWN (Tricky Mod)",
+		"color": "#8B0000",
+		"effect": 2,
+		"url": "https://youtu.be/FlONT3RVgHs"
 	},
 	"expurgation": {
 		"name": "Expurgation",
@@ -705,5 +724,80 @@
 		"author": "Harry Callaghan",
 		"url": "https://youtu.be/gROHOA-pK-g",
 		"alt_name": "certifiably_insane"
+	},
+	"kanoko_town": {
+		"game": "Pokemon Black and White",
+		"name": "Kanoko Town",
+		"category": "Pokemon",
+		"site_name": "Kanoko Town (Black & White)"
+	},
+	"lets_go": {
+		"game": "Pokemon Black and White",
+		"name": "Let's Go Together!",
+		"category": "Pokemon",
+		"site_name": "Let's Go Together! (Black & White)"
+	},
+	"pigstep": {
+		"game": "Minecraft",
+		"author": "Lena Raine",
+		"name": "Pigstep",
+		"color": "#FF0000",
+		"effect": 2
+	},
+	"cat": {
+		"game": "Minecraft",
+		"author": "C418",
+		"name": "Cat",
+		"color2": "#00FF00",
+		"color": "#964B00"
+	},
+	"dog": {
+		"game": "Minecraft",
+		"author": "C418",
+		"name": "Dog",
+		"color2": "#00FF00",
+		"color": "#964B00"
+	},
+	"blocks": {
+		"game": "Minecraft",
+		"author": "C418",
+		"name": "Blocks",
+		"color2": "#00FF00",
+		"color": "#964B00"
+	},
+	"strad": {
+		"game": "Minecraft",
+		"author": "C418",
+		"name": "Strad",
+		"color2": "#00FF00",
+		"color": "#964B00"
+	},
+	"eleven": {
+		"game": "Minecraft",
+		"author": "C418",
+		"name": "Eleven",
+		"color2": "#008000",
+		"color": "#4a2500"
+	},
+	"wet_hands": {
+		"game": "Minecraft",
+		"author": "C418",
+		"name": "Wet Hands",
+		"color2": "#00FF00",
+		"color": "#964B00"
+	},
+	"dry_hands": {
+		"game": "Minecraft",
+		"author": "C418",
+		"name": "Dry Hands",
+		"color2": "#00FF00",
+		"color": "#964B00"
+	},
+	"sweden": {
+		"game": "Minecraft",
+		"author": "C418",
+		"name": "Sweden",
+		"color2": "#00FF00",
+		"color": "#964B00"
 	}
 }
