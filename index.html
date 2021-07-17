@@ -27,7 +27,7 @@
 	function loadJSON(callback) {   
 		var xobj = new XMLHttpRequest();
 		xobj.overrideMimeType("application/json");
-		xobj.open('GET', 'songs.json?ver=' + htmlVerNumber, true);
+		xobj.open('GET', 'songs.json?ver=' + htmlVerNumber, true); // Prevent browsers from caching the page, and if it does cache, then htmlVerNumber above will change every month so that it has a cache for each seperate month.
 		xobj.onreadystatechange = function () {
 			if (xobj.readyState == 4 && xobj.status == "200") {
 				callback(JSON.parse(xobj.responseText));

@@ -140,7 +140,9 @@
 	"captain_toad": {
 		"name": "Adventures of Captain Toad",
 		"site_name": "The Adventures of Captain Toad",
-		"game": "Super Mario 3D World"
+		"game": "Super Mario 3D World",
+		"color": "#FFFFFF",
+		"color2": "#FF0000"
 	},
 	"piranha_creeper_creek": {
 		"name": "Piranha Creeper Creek",
@@ -286,11 +288,28 @@
 		"game": "Friday Night Funkin'",
 		"url": "https://youtu.be/OsSDYf5yMOE"
 	},
+	"dont_stop_chiptune": {
+		"name": "Game Over (Chiptune)",
+		"game": "Friday Night Funkin'",
+		"url": "https://youtu.be/OsSDYf5yMOE"
+	},
 	"test": {
 		"name": "Test (Unused)",
 		"game": "Friday Night Funkin'",
 		"color": "#00FFFF",
 		"url": "https://youtu.be/qn3n4hyZRJg"
+	},
+	"bopeebo": {
+		"name": "Bopeebo",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/V60N12UFNN4"
+	},
+	"fresh": {
+		"name": "Fresh",
+		"game": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/mx82b-3A--Q"
 	},
 	"dad_battle": {
 		"name": "Dad Battle",
@@ -303,6 +322,7 @@
 		"game": "Friday Night Funkin'",
 		"color2": "#FF8000",
 		"color": "#FFFFFF",
+		"holiday": 1,
 		"url": "https://youtu.be/EiNwUpco4OI"
 	},
 	"south": {
@@ -310,12 +330,14 @@
 		"game": "Friday Night Funkin'",
 		"color2": "#FF8000",
 		"color": "#FFFFFF",
+		"holiday": 1,
 		"url": "https://youtu.be/g-ncy3BS4AI"
 	},
 	"monster": {
 		"name": "Monster",
 		"game": "Friday Night Funkin'",
 		"color": "#FFFF00",
+		"holiday": 1,
 		"url": "https://youtu.be/NQSkjR7P3_A"
 	},
 	"satin_panties": {
@@ -341,6 +363,7 @@
 		"game": "Friday Night Funkin'",
 		"color": "#FFFF00",
 		"effect": 1,
+		"holiday": 2,
 		"url": "https://youtu.be/D-vapQ1RdL4"
 	},
 	"senpai": {
@@ -379,41 +402,94 @@
 		"color": "#00FFFF",
 		"url": "https://youtu.be/GBD2B9bDD5I"
 	},
+	"lo_fight": {
+		"name": "Lo-Fight",
+		"game": "Friday Night Funkin': V.S. Whitty",
+		"category": "Friday Night Funkin'",
+		"site_name": "Lo-Fight (V.S. Whitty)",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/EEvOXZbKgBo"
+	},
+	"overhead": {
+		"name": "Overhead",
+		"game": "Friday Night Funkin': V.S. Whitty",
+		"category": "Friday Night Funkin'",
+		"site_name": "Overhead (V.S. Whitty)",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/5Pu5V_y5KKE"
+	},
+	"ballistic": {
+		"name": "Ballistic",
+		"game": "Friday Night Funkin': V.S. Whitty",
+		"category": "Friday Night Funkin'",
+		"site_name": "Ballistic (V.S. Whitty)",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/Rk7GquhH7Wc"
+	},
 	"improbable_outset": {
 		"name": "Improbable Outset",
-		"game": "Friday Night Funkin': Tricky Mod",
+		"game": "Friday Night Funkin': V.S. Tricky",
 		"category": "Friday Night Funkin'",
-		"site_name": "Improbable Outset (Tricky Mod)",
+		"site_name": "Improbable Outset (V.S. Tricky)",
 		"color": "#8B0000",
 		"effect": 2,
+		"holiday": 1,
 		"url": "https://youtu.be/kG70yPDXHDY"
 	},
 	"madness": {
 		"name": "Madness",
-		"game": "Friday Night Funkin': Tricky Mod",
+		"game": "Friday Night Funkin': V.S. Tricky",
 		"category": "Friday Night Funkin'",
-		"site_name": "Madness (Tricky Mod)",
+		"site_name": "Madness (V.S. Tricky)",
 		"color": "#8B0000",
 		"effect": 2,
+		"holiday": 1,
 		"url": "https://youtu.be/GZmoHrq0mEY"
 	},
 	"hellclown": {
 		"name": "HELLCLOWN",
-		"game": "Friday Night Funkin': Tricky Mod",
+		"game": "Friday Night Funkin': V.S. Tricky",
 		"category": "Friday Night Funkin'",
-		"site_name": "HELLCLOWN (Tricky Mod)",
-		"color": "#8B0000",
+		"site_name": "HELLCLOWN (V.S. Tricky)",
+		"color": "#FF0000",
 		"effect": 2,
+		"holiday": 1,
 		"url": "https://youtu.be/FlONT3RVgHs"
 	},
 	"expurgation": {
 		"name": "Expurgation",
-		"game": "Friday Night Funkin': Tricky Mod",
+		"game": "Friday Night Funkin': V.S. Tricky",
 		"category": "Friday Night Funkin'",
-		"site_name": "Expurgation (Tricky Mod)",
+		"site_name": "Expurgation (V.S. Tricky)",
 		"color": "#8B0000",
 		"effect": 2,
+		"holiday": 1,
 		"url": "https://youtu.be/WmXn3L5bQy4"
+	},
+	"my_battle": {
+		"name": "My Battle",
+		"game": "Friday Night Funkin': V.S. Tabi",
+		"category": "Friday Night Funkin'",
+		"site_name": "My Battle (V.S. Tabi)",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/ro7w7tQYkDY"
+	},
+	"last_chance": {
+		"name": "Last Chance",
+		"game": "Friday Night Funkin': V.S. Tabi",
+		"category": "Friday Night Funkin'",
+		"site_name": "Last Chance (V.S. Tabi)",
+		"color": "#00FFFF",
+		"url": "https://youtu.be/wU0efwwUw9c"
+	},
+	"genocide": {
+		"name": "Genocide",
+		"game": "Friday Night Funkin': V.S. Tabi",
+		"category": "Friday Night Funkin'",
+		"site_name": "Genocide (V.S. Tabi)",
+		"color": "#FF0000",
+		"effect": 2,
+		"url": "https://youtu.be/VXrq9cUWS2M"
 	},
 	"have_a_nice_talk": {
 		"name": "Have a Nice Talk",
@@ -425,7 +501,9 @@
 		"name": "Short Break in Toad Town",
 		"game": "Mario & Luigi: Bowser's Inside Story",
 		"site_name": "Short Break in Toad Town (Bowser's Inside Story)",
-		"category": "Mario & Luigi"
+		"category": "Mario & Luigi",
+		"color": "#FFFFFF",
+		"color2": "#FF0000"
 	},
 	"tough_guy_alert": {
 		"name": "Tough Guy Alert",
@@ -459,15 +537,18 @@
 	},
 	"vampire_killer": {
 		"name": "Vampire Killer",
-		"game": "Castlevania"
+		"game": "Castlevania",
+		"holiday": 1
 	},
 	"stalker": {
 		"name": "Stalker",
-		"game": "Castlevania"
+		"game": "Castlevania",
+		"holiday": 1
 	},
 	"out_of_time": {
 		"name": "Out of Time",
-		"game": "Castlevania"
+		"game": "Castlevania",
+		"holiday": 1
 	},
 	"golden_trophy": {
 		"name": "Combat (Golden Trophy)",
@@ -512,7 +593,8 @@
 		"name": "Ghost House",
 		"game": "Super Mario World",
 		"author": "Koji Kondo",
-		"alt_name": "ghost_house_smw"
+		"alt_name": "ghost_house_smw",
+		"holiday": 1
 	},
 	"forest_world": {
 		"name": "Forest (Super Mario World)",
@@ -527,7 +609,8 @@
 		"category": "Super Mario Maker",
 		"author": "Koji Kondo",
 		"effect": 1,
-		"alt_name": "snow_smw"
+		"alt_name": "snow_smw",
+		"holiday": 2
 	},
 	"airship_world": {
 		"name": "Airship (Super Mario World)",
@@ -574,7 +657,8 @@
 		"game": "New Super Mario Bros. U",
 		"site_name": "Snow (NSMBU)",
 		"effect": 1,
-		"category": "New Super Mario Bros."
+		"category": "New Super Mario Bros.",
+		"holiday": 2
 	},
 	"ground_wii": {
 		"name": "Ground",
@@ -607,14 +691,16 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Ghost House (NSMBWii)",
 		"category": "New Super Mario Bros.",
-		"alt_name": "ghost_house_u"
+		"alt_name": "ghost_house_u",
+		"holiday": 1
 	},
 	"snow_wii": {
 		"name": "Snow",
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Snow (NSMBWii)",
 		"effect": 1,
-		"category": "New Super Mario Bros."
+		"category": "New Super Mario Bros.",
+		"holiday": 2
 	},
 	"airship_wii": {
 		"name": "Airship",
@@ -799,5 +885,9 @@
 		"name": "Sweden",
 		"color2": "#00FF00",
 		"color": "#964B00"
+	},
+	"fight_against_monsters": {
+		"name": "Fight Against Monsters",
+		"game": "Super Mario RPG"
 	}
 }
