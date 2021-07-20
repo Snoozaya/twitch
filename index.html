@@ -155,13 +155,13 @@
 							song['alias'] = [song['alias']]
 						}
 						song['alias'].forEach(function (aliasIndex){
+							console.log(song['alias'][aliasIndex])
 							possibleCommands.push(song['alias'][aliasIndex])
 						})
 					}
 					
 					let commands = []
 					for (let i = 0; i < possibleCommands.length; i++) {
-						console.log(possibleCommands[i])
 						let command = document.createElement("P");
 						let commandText = document.createTextNode("!add "+(possibleCommands[i] || index));
 						command.appendChild(commandText);
