@@ -159,6 +159,7 @@
 						})
 					}
 					
+					let commands = []
 					for (let i = 0; i < possibleCommands.length; i++) {
 						let command = document.createElement("P");
 						let commandText = document.createTextNode("!add "+(possibleCommands[i] || index));
@@ -174,7 +175,9 @@
 					pastFirstOne = true
 					
 					element.appendChild(title);
-					element.appendChild(command);
+					for (let i = 0; i < commands.length; i++) {
+						element.appendChild(commands[i]);
+					}
 					title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 				}
 			})
