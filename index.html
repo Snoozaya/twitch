@@ -149,11 +149,14 @@
 					else {
 						title.appendChild(titleText);
 					}
+					let possibleCommands = [index]
 					
-					let command = document.createElement("P");
-					let commandText = document.createTextNode("!add "+index);
-					command.appendChild(commandText);
-					command.style = "font-family:arial black; text-align: center; color:#FFFFFF"
+					for (let i = 0; i < possibleCommands.length; i++) {
+						let command = document.createElement("P");
+						let commandText = document.createTextNode("!add "+(possibleCommands[i] || index));
+						command.appendChild(commandText);
+						command.style = "font-family:arial black; text-align: center; color:#FFFFFF"
+					}
 					
 					if(pastFirstOne) {
 						let hrLine3 = document.createElement("HR")
