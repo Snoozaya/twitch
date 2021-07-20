@@ -154,7 +154,7 @@
 						if(typeof song['alias'] == 'string' || song['alias'] instanceof String) {
 							song['alias'] = [song['alias']]
 						}
-						categories.forEach(async function (aliasIndex){
+						song['alias'].forEach(async function (aliasIndex){
 							possibleCommands.push(index)
 						}
 					}
