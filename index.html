@@ -155,8 +155,7 @@
 							song['alias'] = [song['alias']]
 						}
 						song['alias'].forEach(function (aliasIndex){
-							console.log(aliasIndex)
-							possibleCommands.push(song['alias'][aliasIndex])
+							possibleCommands.push(aliasIndex || index)
 						})
 					}
 					
