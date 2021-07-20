@@ -150,6 +150,14 @@
 						title.appendChild(titleText);
 					}
 					let possibleCommands = [index]
+					if(song['alias'] ) {
+						if(typeof song['alias'] == 'string' || song['alias'] instanceof String) {
+							song['alias'] = [song['alias']]
+						}
+						categories.forEach(async function (aliasIndex){
+							possibleCommands.push(index)
+						}
+					}
 					
 					for (let i = 0; i < possibleCommands.length; i++) {
 						let command = document.createElement("P");
