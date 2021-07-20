@@ -165,6 +165,8 @@
 						let commandText = document.createTextNode("!add "+(possibleCommands[i] || index));
 						command.appendChild(commandText);
 						command.style = "font-family:arial black; text-align: center; color:#FFFFFF"
+						
+						commands.push(command)
 					}
 					
 					if(pastFirstOne) {
