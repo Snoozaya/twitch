@@ -4,6 +4,7 @@
 		"author": "Toby Fox",
 		"game": "Undertale",
 		"color": "#FF0000",
+		"tags": ["undertale"],
 		"url": "https://youtu.be/g6aia0GQMRw"
 	},
 	"stronger_monsters": {
@@ -11,6 +12,7 @@
 		"author": "Toby Fox",
 		"game": "Undertale",
 		"color": "#FF0000",
+		"tags": ["undertale"],
 		"url": "https://youtu.be/lXtwWBLLLbk"
 	},
 	"battle_against_a_true_hero": {
@@ -18,6 +20,7 @@
 		"author": "Toby Fox",
 		"game": "Undertale",
 		"color": "#00FF00",
+		"tags": ["undertale"],
 		"url": "https://youtu.be/DcERQHg3iy8"
 	},
 	"megalovania": {
@@ -25,6 +28,7 @@
 		"author": "Toby Fox",
 		"game": "Undertale",
 		"color": "#0000FF",
+		"tags": ["undertale","smash"],
 		"url": "https://youtu.be/RFFdvIqzrls"
 	},
 	"enemy_approaching_yellow": {
@@ -33,6 +37,7 @@
 		"category": "Undertale",
 		"site_name": "Enemy Approaching Yellow (Undertale Yellow)",
 		"color": "#FFFF00",
+		"tags": ["undertale","yellow","undertale yellow","undertale_yellow"],
 		"alias": "enemy_yellow"
 	},
 	"enemy_retreating": {
@@ -41,6 +46,7 @@
 		"category": "Undertale",
 		"site_name": "Enemy Retreating Yellow (Undertale Yellow)",
 		"color": "#FFFF00",
+		"tags": ["undertale","yellow","undertale yellow","undertale_yellow"],
 		"alias": "enemy_retreating_yellow"
 	},
 	"fever_pitch": {
@@ -49,6 +55,7 @@
 		"category": "Undertale",
 		"site_name": "Fever Pitch (Undertale Yellow)",
 		"color": "#FFFF00",
+		"tags": ["undertale","yellow","undertale yellow","undertale_yellow"],
 		"holiday": 1
 	},
 	"forlorn": {
@@ -58,42 +65,50 @@
 		"category": "Undertale",
 		"site_name": "Forlorn (Undertale Yellow)",
 		"color": "#FFFF00",
+		"tags": ["undertale","yellow","undertale yellow","undertale_yellow"],
 		"holiday": 1
 	},
 	"super_duper": {
 		"name": "Super-Duper Mario Bros.",
 		"game": "Mario Party 9",
+		"tags": ["mario","party","marioparty"],
 		"url": "https://youtu.be/Hzyif3Mbyio"
 	},
 	"bowser_jr": {
 		"name": "Bowser Jr. Battle 4",
 		"game": "Mario Party 9",
+		"tags": ["mario","party","marioparty"],
 		"url": "https://youtu.be/WOC-n6UOIOw"
 	},
 	"bowser_jr_mad": {
 		"name": "Bowser Jr.'s Mad",
 		"game": "Mario Party 9",
+		"tags": ["mario","party","marioparty"],
 		"url": "https://youtu.be/IOPdyowRYf8"
 	},
 	"flower_garden": {
 		"name": "Flower Garden",
 		"author": "Koji Kondo",
+		"tags": ["yoshi"],
 		"game": "Yoshi's Island"
 	},
 	"castle": {
 		"name": "Castle & Fortress",
 		"author": "Koji Kondo",
 		"effect": 2,
+		"tags": ["yoshi"],
 		"game": "Yoshi's Island"
 	},
 	"mini_boss": {
 		"name": "Mini-boss",
 		"author": "Koji Kondo",
+		"tags": ["yoshi"],
 		"game": "Yoshi's Island"
 	},
 	"baby_bowser": {
 		"name": "Baby Bowser",
 		"author": "Koji Kondo",
+		"tags": ["yoshi"],
 		"game": "Yoshi's Island"
 	},
 	"electrodrome": {
@@ -101,6 +116,7 @@
 		"game": "Mario Kart 8",
 		"site_name": "Electrodrome (MK8)",
 		"category": "Mario Kart",
+		"tags": ["mario","kart","mariokart","mk8","8"],
 		"alias": [
 			"electrodome"
 		]
@@ -110,6 +126,7 @@
 		"site_name": "Mount Wario (MK8)",
 		"game": "Mario Kart 8",
 		"category": "Mario Kart",
+		"tags": ["mario","kart","mariokart","mk8","8"],
 		"alias": [
 			"mountain_wario"
 		]
@@ -120,6 +137,7 @@
 		"game": "Mario Kart 8",
 		"category": "Mario Kart",
 		"alias": "bowser_castle",
+		"tags": ["mario","kart","mariokart","mk8","8"],
 		"effect": 2,
 		"color": "#FF0000"
 	},
@@ -127,12 +145,14 @@
 		"name": "Mario Circuit",
 		"game": "Mario Kart Wii",
 		"site_name": "Mario Circuit (Wii)",
+		"tags": ["mario","kart","mariokart","mkwii","wii"],
 		"category": "Mario Kart",
 		"alias": "luigi_circuit"
 	},
 	"coconut_mall": {
 		"name": "Coconut Mall",
 		"game": "Mario Kart Wii",
+		"tags": ["mario","kart","mariokart","mkwii","wii"],
 		"category": "Mario Kart"
 	},
 	"toads_factory": {
@@ -142,11 +162,13 @@
 		"alias": "toad_factory",
 		"color": "#FFFFFF",
 		"color2": "#FF0000",
+		"tags": ["mario","kart","mariokart","mkwii","wii","toad"],
 		"coloroption": 6
 	},
 	"airship_fortress": {
 		"name": "Airship Fortress",
 		"game": "Mario Kart DS",
+		"tags": ["mario","kart","mariokart","mkds","ds"],
 		"category": "Mario Kart"
 	},
 	"waluigi_pinball": {
@@ -154,112 +176,137 @@
 		"game": "Mario Kart DS",
 		"color": "#9400D3",
 		"color2": "#FFFF00",
+		"tags": ["mario","kart","mariokart","mkds","ds","wah","waluigi"],
 		"category": "Mario Kart"
 	},
 	"event_battle": {
 		"name": "Event Battle",
+		"tags": ["mario","paper","papermario","origami"],
 		"game": "Paper Mario: The Origami King"
 	},
 	"red_streamer": {
 		"name": "Red Streamer Battle",
+		"tags": ["mario","paper","papermario","origami"],
 		"game": "Paper Mario: The Origami King"
 	},
 	"vellumental": {
 		"name": "Vellumental Area Battle",
+		"tags": ["mario","paper","papermario","origami"],
 		"game": "Paper Mario: The Origami King"
 	},
 	"autumn_battle": {
 		"name": "Autumn Mountain Battle",
+		"tags": ["mario","paper","papermario","origami"],
 		"game": "Paper Mario: The Origami King",
 		"alias": "autumn_mountain"
 	},
 	"dino_piranha": {
 		"name": "Dino Piranha",
+		"tags": ["mario","galaxy","mariogalaxy","supermariogalaxy","3dmario"],
 		"game": "Super Mario Galaxy"
 	},
 	"enter_bowser_jr": {
 		"name": "Enter Bowser Jr!",
+		"tags": ["mario","galaxy","mariogalaxy","supermariogalaxy","3dmario"],
 		"game": "Super Mario Galaxy"
 	},
 	"kamella": {
 		"name": "Kamella",
+		"tags": ["mario","galaxy","mariogalaxy","supermariogalaxy","3dmario"],
 		"game": "Super Mario Galaxy"
 	},
 	"aquatic_race": {
 		"name": "Aquatic Race",
+		"tags": ["mario","galaxy","mariogalaxy","supermariogalaxy","3dmario"],
 		"game": "Super Mario Galaxy"
 	},
 	"galaxy_reactor": {
 		"name": "Bowser's Galaxy Reactor",
+		"tags": ["mario","galaxy","mariogalaxy","supermariogalaxy","3dmario"],
 		"game": "Super Mario Galaxy"
 	},
 	"bunny_chase": {
 		"name": "Chase the Bunnies!",
+		"tags": ["mario","galaxy","mariogalaxy","supermariogalaxy","3dmario"],
 		"game": "Super Mario Galaxy"
 	},
 	"flying_mario": {
 		"name": "Flying Mario",
+		"tags": ["mario","galaxy","mariogalaxy","supermariogalaxy","3dmario"],
 		"game": "Super Mario Galaxy"
 	},
 	"super_bell_hill": {
 		"name": "Super Bell Hill",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
 		"game": "Super Mario 3D World"
 	},
 	"double_cherry_pass": {
 		"name": "Double Cherry Pass",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
 		"game": "Super Mario 3D World"
 	},
 	"plunging_falls": {
 		"name": "Plunging Falls",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
 		"game": "Super Mario 3D World"
 	},
 	"captain_toad": {
 		"name": "Adventures of Captain Toad",
 		"site_name": "The Adventures of Captain Toad",
 		"game": "Super Mario 3D World",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","toad","3dmario"],
 		"color": "#FFFFFF",
 		"color2": "#FF0000",
 		"coloroption": 6
 	},
 	"piranha_creeper_creek": {
 		"name": "Piranha Creeper Creek",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
 		"game": "Super Mario 3D World"
 	},
 	"lava_lake_keep": {
 		"name": "Bowser's Lava Lake Keep",
 		"effect": 2,
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
 		"game": "Super Mario 3D World"
 	},
 	"fort_fire_bros": {
 		"name": "Fort Fire Bros",
 		"effect": 2,
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
 		"game": "Super Mario 3D World"
 	},
 	"beep_block_skyway": {
 		"name": "Beep Block Skyway",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
 		"game": "Super Mario 3D World"
 	},
 	"motley": {
 		"name": "Motley Bossblob",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
 		"game": "Super Mario 3D World"
 	},
 	"hisstocrat": {
 		"name": "Hisstocrat",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
 		"game": "Super Mario 3D World"
 	},
 	"scamper_shores": {
 		"name": "Scamper Shores",
 		"game": "Super Mario 3D World + Bowser's Fury",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","bowsersfury","bowser","fury","bowserfury","3dmario"],
 		"category": "Bowser's Fury"
 	},
 	"pounce_bounce": {
 		"name": "Pounce Bounce Isle",
 		"game": "Super Mario 3D World + Bowser's Fury",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","bowsersfury","bowser","fury","bowserfury","3dmario"],
 		"category": "Bowser's Fury"
 	},
 	"mount_magmeow": {
 		"name": "Mount Magmeow",
 		"game": "Super Mario 3D World + Bowser's Fury",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","bowsersfury","bowser","fury","bowserfury","3dmario"],
 		"effect": 2,
 		"category": "Bowser's Fury"
 	},
@@ -268,27 +315,43 @@
 		"category": "Other",
 		"name": "Scamper Shores (Qumu Remix)",
 		"site_name": "Scamper Shores (Qumu Remix)",
+		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","bowsersfury","bowser","fury","bowserfury","3dmario","remix"],
 		"author": "Qumu",
 		"url": "https://youtu.be/UAOGPIOL_JE"
 	},
+	"blue_sky": {
+		"game": "Riddle School 3",
+		"category": "Other",
+		"name": "Blue Sky",
+		"site_name": "Blue Sky (Riddle School 3)",
+		"tags": ["riddle_school","riddleschool","school"],
+		"author": "ParagonX9",
+		"alias": ["bluesky"],
+		"url": "https://www.newgrounds.com/audio/listen/5437"
+	},
 	"tostarena": {
 		"name": "Tostarena Ruins",
+		"tags": ["mario","odyssey","marioodyssey","supermarioodyssey","3dmario"],
 		"game": "Super Mario Odyssey"
 	},
 	"honeylune_ridge": {
 		"name": "Honeylune Ridge: Caves",
+		"tags": ["mario","odyssey","marioodyssey","supermarioodyssey","3dmario"],
 		"game": "Super Mario Odyssey"
 	},
 	"desert_hill": {
 		"name": "Desert Hills",
+		"tags": ["mario","3","smb3","mario3"],
 		"game": "Super Mario Bros. 3"
 	},
 	"above_ground": {
 		"name": "Above Ground Theme",
+		"tags": ["mario","3","smb3","mario3"],
 		"game": "Super Mario Bros. 3"
 	},
 	"boom_boom": {
 		"name": "Boom Boom",
+		"tags": ["mario","3","smb3","mario3"],
 		"game": "Super Mario Bros. 3"
 	},
 	"cp_violation": {
@@ -296,6 +359,7 @@
 		"game": "Half-Life 2",
 		"author": "Kelly Bailey",
 		"category": "Half-Life",
+		"tags": ["half-life","hl","halflife","valve"],
 		"url": "https://youtu.be/K5FsGscsY78"
 	},
 	"guard_down": {
@@ -303,6 +367,7 @@
 		"game": "Half-Life 2: Episode One",
 		"author": "Kelly Bailey",
 		"category": "Half-Life",
+		"tags": ["half-life","hl","halflife","ep1","valve"],
 		"url": "https://youtu.be/l1Ac6FlD9VU"
 	},
 	"hospital": {
@@ -310,6 +375,7 @@
 		"game": "Half-Life 2: Episode One",
 		"author": "Kelly Bailey",
 		"category": "Half-Life",
+		"tags": ["half-life","hl","halflife","ep1","valve"],
 		"url": "https://youtu.be/jVqigQOMxKA"
 	},
 	"hunting_party": {
@@ -317,6 +383,7 @@
 		"game": "Half-Life 2: Episode Two",
 		"author": "Kelly Bailey",
 		"category": "Half-Life",
+		"tags": ["half-life","hl","halflife","ep2","valve"],
 		"url": "https://youtu.be/Xx7S1CWpa3w"
 	},
 	"sector_sweep": {
@@ -324,6 +391,7 @@
 		"game": "Half-Life 2: Episode Two",
 		"author": "Kelly Bailey",
 		"category": "Half-Life",
+		"tags": ["half-life","hl","halflife","ep2","valve"],
 		"url": "https://youtu.be/tTFUgzMqV5A"
 	},
 	"last_legs": {
@@ -331,12 +399,14 @@
 		"game": "Half-Life 2: Episode Two",
 		"author": "Kelly Bailey",
 		"category": "Half-Life",
+		"tags": ["half-life","hl","halflife","ep2","valve"],
 		"url": "https://youtu.be/OCUUBYKCo24"
 	},
 	"anti_citizen": {
 		"name": "Anti-Citizen",
 		"game": "Half-Life: Alyx",
 		"author": "Mike Morasky",
+		"tags": ["half-life","hl","halflife","alyx","valve"],
 		"category": "Half-Life"
 	},
 	"scanning_hostile_biodats": {
@@ -344,6 +414,7 @@
 		"game": "Half-Life: Alyx",
 		"author": "Mike Morasky",
 		"category": "Half-Life",
+		"tags": ["half-life","hl","halflife","alyx","valve"],
 		"url": "https://youtu.be/dc_cpu_L18M"
 	},
 	"outbreak": {
@@ -351,6 +422,7 @@
 		"game": "Half-Life: Alyx",
 		"author": "Mike Morasky",
 		"category": "Half-Life",
+		"tags": ["half-life","hl","halflife","alyx","valve"],
 		"url": "https://youtu.be/lV84tQaaNDo"
 	},
 	"beasts_of_prey": {
@@ -358,7 +430,124 @@
 		"game": "Half-Life: Alyx",
 		"author": "Mike Morasky",
 		"category": "Half-Life",
+		"tags": ["half-life","hl","halflife","alyx","valve"],
 		"url": "https://youtu.be/xv_MNYbr0z0"
+	},
+	"still_alive": {
+		"name": "Still Alive",
+		"game": "Portal",
+		"category": "Portal",
+		"tags": ["portal","portal1","valve"],
+		"alias": ["stillalive"],
+		"color": "#27a7d8",
+		"color2": "#ff9a00",
+		"colorstyle": 2,
+		"url": "https://youtu.be/kpGGZK-no7U"
+	},
+	"want_you_gone": {
+		"name": "Want You Gone",
+		"game": "Portal 2",
+		"category": "Portal",
+		"tags": ["portal","portal2","valve"],
+		"alias": ["wantyougone"],
+		"color": "#27a7d8",
+		"color2": "#ff9a00",
+		"colorstyle": 2,
+		"url": "https://youtu.be/kfqLsXH-HHQ"
+	},
+	"dead_test_subject": {
+		"game": "Aperture Tag",
+		"name": "You Are A Dead Test Subject",
+		"author": "Harry Callaghan",
+		"tags": ["portal","aperture_tag"],
+		"color": "#27a7d8",
+		"color2": "#ff9a00",
+		"colorstyle": 2,
+		"url": "https://youtu.be/mra7UNn5D-4",
+		"alias": "test_subject"
+	},
+	"insane": {
+		"game": "Aperture Tag",
+		"name": "Certifiably Insane",
+		"author": "Harry Callaghan",
+		"tags": ["portal","aperture_tag"],
+		"color": "#27a7d8",
+		"color2": "#ff9a00",
+		"colorstyle": 2,
+		"url": "https://youtu.be/gROHOA-pK-g",
+		"alias": "certifiably_insane"
+	},
+	"firestorm": {
+		"name": "Firestorm",
+		"game": "Portal Stories: Mel",
+		"site_name": "Firestorm (Portal Stories: Mel)",
+		"category": "Portal",
+		"tags": ["portal","mel","portal_stories"],
+		"alias": ["fire_storm"],
+		"color": "#27a7d8",
+		"color2": "#ff9a00",
+		"colorstyle": 2,
+		"url": "https://youtu.be/YBV2Q-WxDOE"
+	},
+	"long_way_down": {
+		"name": "Long Way Down",
+		"game": "Portal Stories: Mel",
+		"site_name": "Long Way Down (Portal Stories: Mel)",
+		"category": "Portal",
+		"tags": ["portal","mel","portal_stories"],
+		"alias": ["longwaydown"],
+		"color": "#27a7d8",
+		"color2": "#ff9a00",
+		"colorstyle": 2,
+		"url": "https://youtu.be/KGfdBCCGvNc"
+	},
+	"obscuration": {
+		"name": "Obscuration",
+		"game": "Portal Stories: Mel",
+		"site_name": "Obscuration (Portal Stories: Mel)",
+		"category": "Portal",
+		"tags": ["portal","mel","portal_stories"],
+		"color": "#27a7d8",
+		"color2": "#ff9a00",
+		"colorstyle": 2,
+		"url": "https://youtu.be/f_Bmj3Cb1so"
+	},
+	"system_corruption": {
+		"name": "System Corruption",
+		"game": "Portal Stories: Mel",
+		"site_name": "System Corruption (Portal Stories: Mel)",
+		"category": "Portal",
+		"tags": ["portal","mel","portal_stories"],
+		"alias": ["systemcorruption","corruption"],
+		"color": "#27a7d8",
+		"color2": "#ff9a00",
+		"colorstyle": 2,
+		"url": "https://youtu.be/j4k8vInD0JY"
+	},
+	"medic": {
+		"name": "MEDIC!",
+		"game": "Team Fortress 2",
+		"category": "Team Fortress",
+		"tags": ["tf","tf2","valve"],
+		"color": "#FF0000",
+		"url": "https://youtu.be/-6NQx4WRRg0"
+	},
+	"robots": {
+		"name": "ROBOTS!",
+		"game": "Team Fortress 2",
+		"category": "Team Fortress",
+		"tags": ["tf","tf2","valve"],
+		"color": "#00ffff",
+		"colorstyle": 4,
+		"url": "https://youtu.be/vw-WJkJK210"
+	},
+	"badman": {
+		"name": "One Bad Man",
+		"game": "Left 4 Dead 2",
+		"category": "Other",
+		"tags": ["l4d","left4dead","l4d2","left4dead2","valve"],
+		"alias": ["onebadman","bad_man","one_bad_man"],
+		"url": "https://youtu.be/iyH_NxJ86vs"
 	},
 	"dont_stop": {
 		"name": "Game Over",
@@ -563,8 +752,6 @@
 		"category": "Friday Night Funkin'",
 		"site_name": "Ballistic (V.S. Whitty)",
 		"color": "#00cccc",
-		"color2": "#00FFFF",
-		"colorstyle": 2,
 		"tags": ["fnf","whitty"],
 		"url": "https://youtu.be/Rk7GquhH7Wc"
 	},
@@ -640,14 +827,83 @@
 		"tags": ["fnf","tabi"],
 		"url": "https://youtu.be/VXrq9cUWS2M"
 	},
+	"scopophobia": {
+		"name": "Scopophobia",
+		"game": "Friday Night Foundation",
+		"author": "MPRanger",
+		"category": "Friday Night Funkin'",
+		"site_name": "Scopophobia (Foundation)",
+		"color": "#FFFFFF",
+		"color2": "#000000",
+		"colorstyle":4,
+		"holiday": 1,
+		"volume": 1.5,
+		"tags": ["fnf","foundation","scp"],
+		"url": "https://youtu.be/1QwnXRqurB0"
+	},
+	"recontainment": {
+		"name": "Recontainment",
+		"game": "Friday Night Foundation",
+		"author": "Tsuraran",
+		"category": "Friday Night Funkin'",
+		"site_name": "Recontainment (Foundation)",
+		"color": "#0000FF",
+		"volume": 2,
+		"tags": ["fnf","foundation","scp"],
+		"url": "https://youtu.be/vaehpRRvCPU"
+	},
+	"playtime": {
+		"name": "Playtime",
+		"game": "Friday Night Foundation",
+		"author": "Tsuraran",
+		"category": "Friday Night Funkin'",
+		"site_name": "Playtime (Foundation)",
+		"color": "#ff8000",
+		"volume": 1.5,
+		"tags": ["fnf","foundation","scp"],
+		"url": "https://youtu.be/N-YfO7TMCb0"
+	},
+	"mayhem": {
+		"name": "Mayhem",
+		"game": "Friday Night Foundation",
+		"author": "MPRanger",
+		"category": "Friday Night Funkin'",
+		"site_name": "Mayhem (Foundation)",
+		"color": "#476647",
+		"volume": 1.5,
+		"tags": ["fnf","foundation","scp"],
+		"url": "https://youtu.be/-Ts3YnjQKQw"
+	},
+	"gamemode": {
+		"name": "Gamemode 1",
+		"game": "Friday Night Foundation",
+		"author": "JamiesName",
+		"category": "Friday Night Funkin'",
+		"site_name": "Gamemode 1 (Foundation)",
+		"color": "#333333",
+		"volume": 1.5,
+		"tags": ["fnf","foundation","scp"],
+		"alias": ["gamemode1","gamemode_1","gamemode_creative","gamemodecreative"],
+		"url": "https://youtu.be/az14gJSCbLk"
+	},
+	"ballin": {
+		"name": "Ballin'",
+		"game": "Friday Night Foundation",
+		"author": "Tsuraran",
+		"category": "Friday Night Funkin'",
+		"site_name": "Ballin' (Foundation)",
+		"color": "#FF0000",
+		"volume": 1.5,
+		"tags": ["fnf","foundation","scp"],
+		"alias": ["balling"],
+		"url": "https://youtu.be/GQytq_A3Kq0"
+	},
 	"have_a_nice_talk": {
 		"name": "Have a Nice Talk",
 		"game": "Mario & Luigi: Bowser's Inside Story",
 		"site_name": "Have a Nice Talk (Bowser's Inside Story)",
 		"category": "Mario & Luigi",
-		"tags": [
-			"calm"
-		]
+		"tags": ["calm","mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis"]
 	},
 	"toad_town": {
 		"name": "Short Break in Toad Town",
@@ -657,38 +913,41 @@
 		"color": "#FFFFFF",
 		"color2": "#FF0000",
 		"coloroption": 10,
-		"tags": [
-			"calm"
-		]
+		"tags": ["calm","mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis","toad"]
 	},
 	"tough_guy_alert": {
 		"name": "Tough Guy Alert",
 		"game": "Mario & Luigi: Bowser's Inside Story",
 		"site_name": "Tough Guy Alert (Bowser's Inside Story)",
+		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis"],
 		"category": "Mario & Luigi"
 	},
 	"show_time": {
 		"name": "SHOW TIME!",
 		"game": "Mario & Luigi: Bowser's Inside Story",
 		"site_name": "SHOW TIME! (Bowser's Inside Story)",
+		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis"],
 		"category": "Mario & Luigi"
 	},
 	"grand_finale": {
 		"name": "The Grand Finale",
 		"game": "Mario & Luigi: Bowser's Inside Story",
 		"site_name": "The Grand Finale (Bowser's Inside Story)",
+		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis"],
 		"category": "Mario & Luigi"
 	},
 	"charge_and_clash": {
 		"name": "Charge and Clash!",
 		"game": "Bowser Jr.'s Journey",
 		"site_name": "Charge and Clash! (Bowser's Jr.'s Journey)",
+		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis"],
 		"category": "Mario & Luigi"
 	},
 	"greenhorn_forest": {
 		"name": "Greenhorn Forest",
 		"game": "Wario World",
 		"volume": 0.5,
+		"tags": ["wario","wah"],
 		"category": "Other"
 	},
 	"vampire_killer": {
@@ -714,11 +973,13 @@
 	"battle_64": {
 		"name": "Battle 64",
 		"game": "Super Bomberman R Online",
+		"tags" : ["bomberman"],
 		"url": "https://youtu.be/cWnxAsrFd7o"
 	},
 	"setup": {
 		"name": "Setup Menu",
 		"game": "Super Bomberman R Online",
+		"tags": ["bomberman"],
 		"url": "https://youtu.be/9WCC87hMB3A"
 	},
 	"p_switch": {
@@ -729,36 +990,42 @@
 			"p_switch_smw",
 			"p_switch_world"
 		],
+		"tags": ["mario","world","marioworld","2dmario"],
 		"color": "#8888f8"
 	},
 	"ground_world": {
 		"name": "Ground",
 		"game": "Super Mario World",
 		"author": "Koji Kondo",
+		"tags": ["mario","world","marioworld","2dmario"],
 		"alias": "ground_smw"
 	},
 	"athletic_world": {
 		"name": "Athletic",
 		"game": "Super Mario World",
 		"author": "Koji Kondo",
+		"tags": ["mario","world","marioworld","2dmario"],
 		"alias": "athletic_smw"
 	},
 	"underground_world": {
 		"name": "Underground",
 		"game": "Super Mario World",
 		"author": "Koji Kondo",
+		"tags": ["mario","world","marioworld","2dmario"],
 		"alias": "underground_smw"
 	},
 	"underwater_world": {
 		"name": "Underwater",
 		"game": "Super Mario World",
 		"author": "Koji Kondo",
+		"tags": ["mario","world","marioworld","2dmario"],
 		"alias": "underwater_smw"
 	},
 	"ghost_house_world": {
 		"name": "Ghost House",
 		"game": "Super Mario World",
 		"author": "Koji Kondo",
+		"tags": ["mario","world","marioworld","2dmario"],
 		"alias": "ghost_house_smw",
 		"holiday": 1
 	},
@@ -767,6 +1034,7 @@
 		"game": "Super Mario Maker 2",
 		"category": "Super Mario Maker",
 		"author": "Koji Kondo",
+		"tags": ["mario","world","marioworld","2dmario","mariomaker","mm2","mariomaker2"],
 		"alias": "forest_smw"
 	},
 	"snow_world": {
@@ -776,6 +1044,7 @@
 		"author": "Koji Kondo",
 		"effect": 1,
 		"alias": "snow_smw",
+		"tags": ["mario","world","marioworld","2dmario","mariomaker","mm2","mariomaker2"],
 		"holiday": 2
 	},
 	"airship_world": {
@@ -783,12 +1052,14 @@
 		"game": "Super Mario Maker 2",
 		"category": "Super Mario Maker",
 		"author": "Koji Kondo",
+		"tags": ["mario","world","marioworld","2dmario","mariomaker","mm2","mariomaker2"],
 		"alias": "airship_smw"
 	},
 	"desert_world": {
 		"name": "Desert (Super Mario World)",
 		"game": "Super Mario Maker 2",
 		"category": "Super Mario Maker",
+		"tags": ["mario","world","marioworld","2dmario","mariomaker","mm2","mariomaker2"],
 		"author": "Koji Kondo",
 		"alias": "desert_smw"
 	},
@@ -798,24 +1069,28 @@
 		"author": "Koji Kondo",
 		"effect": 2,
 		"alias": "castle_smw",
+		"tags": ["mario","world","marioworld","2dmario"],
 		"color": "#FF0000"
 	},
 	"ground_u": {
 		"name": "Ground",
 		"game": "New Super Mario Bros. U",
 		"site_name": "Ground (NSMBU)",
+		"tags": ["mario","nsmb","nsmbu","u"],
 		"category": "New Super Mario Bros."
 	},
 	"athletic_u": {
 		"name": "Athletic",
 		"game": "New Super Mario Bros. U",
 		"site_name": "Athletic (NSMBU)",
+		"tags": ["mario","nsmb","nsmbu","u"],
 		"category": "New Super Mario Bros."
 	},
 	"jungle_u": {
 		"name": "Jungle",
 		"game": "New Super Mario Bros. U",
 		"site_name": "Jungle (NSMBU)",
+		"tags": ["mario","nsmb","nsmbu","u"],
 		"category": "New Super Mario Bros.",
 		"alias": "jungle_wii"
 	},
@@ -825,18 +1100,21 @@
 		"site_name": "Snow (NSMBU)",
 		"effect": 1,
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u"],
 		"holiday": 2
 	},
 	"ground_wii": {
 		"name": "Ground",
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Ground (NSMBWii)",
+		"tags": ["mario","nsmb","nsmbwii","wii"],
 		"category": "New Super Mario Bros."
 	},
 	"athletic_wii": {
 		"name": "Athletic",
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Athletic (NSMBWii)",
+		"tags": ["mario","nsmb","nsmbwii","wii"],
 		"category": "New Super Mario Bros."
 	},
 	"underwater_wii": {
@@ -844,6 +1122,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Underwater (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"alias": "underwater_u"
 	},
 	"underground_wii": {
@@ -851,6 +1130,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Underground (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"alias": "underground_u"
 	},
 	"ghost_house_wii": {
@@ -858,6 +1138,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Ghost House (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"alias": "ghost_house_u",
 		"holiday": 1
 	},
@@ -867,6 +1148,7 @@
 		"site_name": "Snow (NSMBWii)",
 		"effect": 1,
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"holiday": 2
 	},
 	"airship_wii": {
@@ -874,6 +1156,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Airship (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"alias": "airship_u"
 	},
 	"airship_boss_wii": {
@@ -881,6 +1164,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Airship Boss (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"alias": "airship_boss_u"
 	},
 	"desert_wii": {
@@ -888,6 +1172,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Desert (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"alias": "desert_u"
 	},
 	"castle_wii": {
@@ -895,6 +1180,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Castle (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"color": "#FF0000",
 		"effect": 2,
 		"alias": "castle_u"
@@ -904,6 +1190,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Castle Boss (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"color": "#FF0000",
 		"effect": 2,
 		"alias": "castle_boss_u"
@@ -913,6 +1200,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Volcano (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"color": "#FF0000",
 		"effect": 2,
 		"alias": "volcano_u"
@@ -922,6 +1210,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Tower (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"alias": "tower_u"
 	},
 	"tower_boss_wii": {
@@ -929,6 +1218,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Tower Boss (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"alias": "tower_boss_u"
 	},
 	"beach_wii": {
@@ -936,14 +1226,15 @@
 		"game": "New Super Mario Bros. Wii",
 		"site_name": "Beach (NSMBWii)",
 		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"alias": "beach_u"
 	},
 	"cotton_island": {
 		"game": "Plok!",
 		"name": "Cotton Island",
 		"author": "Tim Follin",
-		"url": "https://youtu.be/W80Hp7wHtrw",
-		"alias": "this_should_only_happen_when_aliased"
+		"tags": ["plok"],
+		"url": "https://youtu.be/W80Hp7wHtrw"
 	},
 	"snake": {
 		"game": "Hiveswap",
@@ -967,33 +1258,37 @@
 		"game": "Plok!",
 		"name": "Boss",
 		"author": "Tim Follin",
+		"tags": ["plok"],
 		"url": "https://youtu.be/fixc63xMXeY"
 	},
-	"dead_test_subject": {
-		"game": "Aperture Tag",
-		"name": "You Are A Dead Test Subject",
-		"author": "Harry Callaghan",
-		"url": "https://youtu.be/mra7UNn5D-4",
-		"alias": "test_subject"
+	"gym_battle": {
+		"game": "Pokemon Yellow/Blue/Red",
+		"name": "Gym Battle",
+		"category": "Pokemon",
+		"tags": ["calm","pokemon"],
+		"site_name": "Gym Battle (Yellow/Blue/Red)"
 	},
-	"insane": {
-		"game": "Aperture Tag",
-		"name": "Certifiably Insane",
-		"author": "Harry Callaghan",
-		"url": "https://youtu.be/gROHOA-pK-g",
-		"alias": "certifiably_insane"
+	"lavender_town": {
+		"game": "Pokemon Yellow/Blue/Red",
+		"name": "Lavender Town",
+		"category": "Pokemon",
+		"holiday": 1,
+		"tags": ["calm","pokemon"],
+		"color": "#ce27ff",
+		"site_name": "Lavender Town (Yellow/Blue/Red)"
 	},
 	"kanoko_town": {
 		"game": "Pokemon Black and White",
 		"name": "Kanoko Town",
 		"category": "Pokemon",
-		"tags": ["calm"],
+		"tags": ["calm","pokemon"],
 		"site_name": "Kanoko Town (Black & White)"
 	},
 	"lets_go": {
 		"game": "Pokemon Black and White",
 		"name": "Let's Go Together!",
 		"category": "Pokemon",
+		"tags": ["pokemon"],
 		"site_name": "Let's Go Together! (Black & White)"
 	},
 	"pigstep": {
@@ -1001,18 +1296,21 @@
 		"author": "Lena Raine",
 		"name": "Pigstep",
 		"color": "#FF0000",
+		"tags": "minecraft",
 		"effect": 2
 	},
 	"cat": {
 		"game": "Minecraft",
 		"author": "C418",
 		"name": "Cat",
+		"tags": "minecraft",
 		"color": "#00FF00"
 	},
 	"dog": {
 		"game": "Minecraft",
 		"author": "C418",
 		"name": "Dog",
+		"tags": "minecraft",
 		"color": "#00FF00"
 	},
 	"blocks": {
@@ -1020,7 +1318,8 @@
 		"author": "C418",
 		"name": "Blocks",
 		"tags": [
-			"calm"
+			"calm",
+			"minecraft"
 		],
 		"color": "#00FF00"
 	},
@@ -1029,7 +1328,8 @@
 		"author": "C418",
 		"name": "Strad",
 		"tags": [
-			"calm"
+			"calm",
+			"minecraft"
 		],
 		"color": "#00FF00"
 	},
@@ -1037,14 +1337,30 @@
 		"game": "Minecraft",
 		"author": "C418",
 		"name": "Eleven",
+		"tags": [
+			"calm",
+			"minecraft"
+		],
 		"color": "#008000"
+	},
+	"subwoofer": {
+		"game": "Minecraft",
+		"author": "C418",
+		"name": "Subwoofer Lullaby",
+		"tags": [
+			"calm",
+			"minecraft"
+		],
+		"alias": ["subwoofer_lullaby","subwooferlullaby"],
+		"color": "#00FF00"
 	},
 	"wet_hands": {
 		"game": "Minecraft",
 		"author": "C418",
 		"name": "Wet Hands",
 		"tags": [
-			"calm"
+			"calm",
+			"minecraft"
 		],
 		"color": "#00FF00"
 	},
@@ -1053,7 +1369,8 @@
 		"author": "C418",
 		"name": "Dry Hands",
 		"tags": [
-			"calm"
+			"calm",
+			"minecraft"
 		],
 		"color": "#00FF00"
 	},
@@ -1062,38 +1379,44 @@
 		"author": "C418",
 		"name": "Sweden",
 		"tags": [
-			"calm"
+			"calm",
+			"minecraft"
 		],
 		"color": "#00FF00"
 	},
 	"fight_against_monsters": {
 		"name": "Fight Against Monsters",
+		"tags": ["mario","mariorpg","supermariorpg"],
 		"game": "Super Mario RPG"
 	},
 	"delfino_plaza": {
 		"name": "Delfino Plaza",
 		"author": "Koji Kondo",
-		"tags": ["calm"],
+		"tags": ["calm","mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
 		"game": "Super Mario Sunshine"
 	},
 	"ricco_harbor": {
 		"name": "Ricco Harbor",
 		"author": "Koji Kondo",
+		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
 		"game": "Super Mario Sunshine"
 	},
 	"vs_boss": {
 		"name": "VS Boss",
 		"author": "Koji Kondo",
+		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
 		"game": "Super Mario Sunshine"
 	},
 	"meet_bowser_jr": {
 		"name": "Meet Bowser Jr.",
 		"author": "Koji Kondo",
+		"tags": ["calm","mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
 		"game": "Super Mario Sunshine"
 	},
 	"mecha_bowser": {
 		"name": "Mecha Bowser",
 		"author": "Koji Kondo",
+		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
 		"game": "Super Mario Sunshine"
 	},
 	"2pm": {
@@ -1102,18 +1425,14 @@
 		"category": "Animal Crossing",
 		"site_name": "2 PM (New Horizons)",
 		"volume": 3,
-		"tags": [
-			"calm"
-		]
+		"tags": ["calm","ac","animalcrossing","animal_crossing","new_horizons","newhorizons"]
 	},
 	"7pm": {
 		"name": "7 PM",
 		"game": "Animal Crossing: New Leaf",
 		"category": "Animal Crossing",
 		"site_name": "Prologue (New Leaf)",
-		"tags": [
-			"calm"
-		]
+		"tags": ["calm","ac","animalcrossing","animal_crossing","new_leaf","newleaf"]
 	},
 	"prologue": {
 		"name": "Prologue",
@@ -1121,14 +1440,13 @@
 		"category": "Animal Crossing",
 		"site_name": "Prologue (New Horizons)",
 		"volume": 3,
-		"tags": [
-			"calm"
-		]
+		"tags": ["calm","ac","animalcrossing","animal_crossing","new_horizons","newhorizons"]
 	},
 	"vs_ridley": {
 		"name": "VS. Ridley (Smash Ver.)",
 		"game": "Super Metroid",
 		"alias": "ridley",
+		"tags": ["metroid","ridley","smash"],
 		"category": "Other"
 	},
 	"trial": {
@@ -1140,7 +1458,7 @@
 		"color2": "#FFFFFF",
 		"color3": "#FF0000",
 		"colorstyle": 3,
-		"tags": ["calm"],
+		"tags": ["calm","court","aa","ace_attorney","pheonix","pheonix_wright","wright"],
 		"alias": [
 			"turnabout_courtroom",
 			"courtroom"
@@ -1155,6 +1473,7 @@
 		"color2": "#FFFFFF",
 		"color3": "#FF0000",
 		"colorstyle": 3,
+		"tags": ["court","aa","ace_attorney","pheonix","pheonix_wright","wright"],
 		"alias": [
 			"pressing_pursuit"
 		]
@@ -1168,6 +1487,7 @@
 		"color2": "#FFFFFF",
 		"color3": "#FF0000",
 		"colorstyle": 3,
+		"tags": ["court","aa","ace_attorney","pheonix","pheonix_wright","wright","mia","mia_fey","fey"],
 		"alias": [
 			"pursuit"
 		]
@@ -1181,6 +1501,7 @@
 		"color2": "#FFFFFF",
 		"color3": "#FF0000",
 		"colorstyle": 3,
+		"tags": ["court","aa","ace_attorney","pheonix","pheonix_wright","wright","apollo","apollo_justice","justice"],
 		"alias": [
 			"objection_2016",
 			"objection!"
