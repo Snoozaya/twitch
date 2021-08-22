@@ -105,7 +105,7 @@
 	
 	const params = new URLSearchParams(window.location.search)
 	var songPresets = []
-	loadJSON(function(presets) {
+	loadJSON(function(presets,"presets.json") {
 		rawdata = JSON.stringify(presets);
 		songPresets = JSON.parse(rawdata);
 	
