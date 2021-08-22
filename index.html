@@ -105,7 +105,7 @@
 	
 	const params = new URLSearchParams(window.location.search)
 	var songPresets = []
-	loadJSON(function(presets,"presets.json") {
+	loadJSON(function(presets) {
 		rawdata = JSON.stringify(presets);
 		songPresets = JSON.parse(rawdata);
 	
@@ -250,7 +250,7 @@
 				rndcmdElement.style.display = "block"
 			}
 		})
-	})
+	},"presets.json")
 	
 	lightModeOn = Number(params.get('light') || 0) > 0
 	
