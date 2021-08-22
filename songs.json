@@ -1,34 +1,25 @@
 {
 	"enemy_approaching": {
 		"name": "Enemy Approaching",
-		"author": "Toby Fox",
-		"game": "Undertale",
-		"color": "#FF0000",
-		"tags": ["undertale"],
+		"preset": "undertale",
 		"url": "https://youtu.be/g6aia0GQMRw"
 	},
 	"stronger_monsters": {
 		"name": "Stronger Monsters",
-		"author": "Toby Fox",
-		"game": "Undertale",
-		"color": "#FF0000",
-		"tags": ["undertale"],
+		"preset": "undertale",
 		"url": "https://youtu.be/lXtwWBLLLbk"
 	},
 	"battle_against_a_true_hero": {
 		"name": "Battle Against a True Hero",
-		"author": "Toby Fox",
-		"game": "Undertale",
+		"preset": "undertale",
 		"color": "#00FF00",
-		"tags": ["undertale"],
 		"url": "https://youtu.be/DcERQHg3iy8"
 	},
 	"megalovania": {
 		"name": "MEGALOVANIA (Smash Ver.)",
-		"author": "Toby Fox",
-		"game": "Undertale",
+		"preset": "undertale",
 		"color": "#0000FF",
-		"tags": ["undertale","smash"],
+		"tags": ["smash"],
 		"url": "https://youtu.be/RFFdvIqzrls"
 	},
 	"enemy_approaching_yellow": {
