@@ -5,5 +5,11 @@
 		"category": "Undertale",
 		"color": "#FF0000",
 		"tags": ["undertale"]
+	},
+	"fnf": {
+		"game": "Friday Night Funkin'",
+		"category": "Friday Night Funkin'",
+		"color": "#00FFFF",
+		"tags": ["fnf"]
 	}
 }
