@@ -26,10 +26,10 @@
 	var htmlVerNumber = curDate.getMonth();
 	var showAliases = false
 	
-	function loadJSON(callback) {   
+	function loadJSON(callback,jsonName) {   
 		var xobj = new XMLHttpRequest();
 		xobj.overrideMimeType("application/json");
-		xobj.open('GET', 'songs.json?ver=' + htmlVerNumber, true); // Prevent browsers from caching the page, and if it does cache, then htmlVerNumber above will change every month so that it has a cache for each seperate month.
+		xobj.open('GET', (jsonName || "songs.json")+'?ver=' + htmlVerNumber, true); // Prevent browsers from caching the page, and if it does cache, then htmlVerNumber above will change every month so that it has a cache for each seperate month.
 		xobj.onreadystatechange = function () {
 			if (xobj.readyState == 4 && xobj.status == "200") {
 				callback(JSON.parse(xobj.responseText));
@@ -103,99 +103,152 @@
 	}
 	
 	const params = new URLSearchParams(window.location.search)
+	var songPresets = []
+	loadJSON(function(presets) {
+		rawdata = JSON.stringify(presets);
+		songPresets = JSON.parse(rawdata);
 	
-	loadJSON(function(json) {
-		json = JSON.stringify(json);
-		songs = JSON.parse(json);
-		showAliases = Number(params.get('aliases') || params.get('alias') || params.get('showaliases') || params.get('showalias') || 0) > 0
-		//songs = sortData(songs)
-		let categories = getAllCategories(songs)
-		//console.log(categories)
-		categories.forEach(async function (catIndex){
-			let category = document.createElement("H1");
-			let categoryText = document.createTextNode(catIndex);
-			category.appendChild(categoryText);
-			category.style = "font-family:arial black; text-align: center; color:#FFFFFF"
-			var element = document.getElementById("div1");
-			
-			let hrLine = document.createElement("HR")
-			hrLine.style = "width:60%; color:#FFFFFF"
-			element.appendChild(hrLine)
-			
-			element.appendChild(category);
-			
-			let hrLine2 = document.createElement("HR")
-			hrLine2.style = "width:50%; color:#FFFFFF"
-			element.appendChild(hrLine2)
-			
-			let pastFirstOne = false
-			Object.keys(songs).forEach(function (index){
-				let song = songs[index]
-				let songGame = song['game'] || song['author'] || '???'
-				let songCategory = song['category'] || song['game'] || song['author'] || 'Other'
-				let songText = (song['site_name'] || song["name"] || index || "???")
-				if(song && songCategory == catIndex) {
-					if(songCategory.toLowerCase() == "other" && songGame != '???') {
-						songText = songText + " (" + songGame + ")"
-					}
-					let title = document.createElement("H2");
-					let titleText = document.createTextNode(songText);
-					title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
+		Object.keys(songPresets).forEach(function (index){
+			if(songPresets[index]['alt_name'] && !songPresets[index]['alias']) {
+				songPresets[index]['alias'] = songPresets[index]['alt_name']
+				delete songPresets[index]['alt_name']
+			}
+				
+			if(songPresets[index]['aliases'] || songPresets[index]['aliass']) {
+				songPresets[index]['alias'] = (songPresets[index]['aliases'] || songPresets[index]['aliass'])
+				delete songPresets[index]['aliases']
+			}
+				
+			if(songPresets[index]['tag']) {
+				songPresets[index]['tags'] = songPresets[index]['tag'];
+				delete songPresets[index]['tag'];
+			}
+				
+			if(songPresets[index]['color3'] && !songPresets[index]['color2']) {
+				songPresets[index]['color2'] = songPresets[index]['color3']
+				delete songPresets[index]['color3']
+			}
+				
+			if(songPresets[index]['color2'] && !songPresets[index]['color']) {
+				songPresets[index]['color'] = songPresets[index]['color2']
+				delete songPresets[index]['color2']
+			}
+				
+				
+			if(typeof songPresets[index]['tags'] == 'string' || songPresets[index]['tags'] instanceof String) {
+				songPresets[index]['tags'] = [songPresets[index]['tags']]
+			}
+		})
+	
+		loadJSON(function(json) {
+			json = JSON.stringify(json);
+			songs = JSON.parse(json);
+			showAliases = Number(params.get('aliases') || params.get('alias') || params.get('showaliases') || params.get('showalias') || 0) > 0
+			//songs = sortData(songs)
+			let categories = getAllCategories(songs)
+			//console.log(categories)
+			categories.forEach(async function (catIndex){
+				let category = document.createElement("H1");
+				let categoryText = document.createTextNode(catIndex);
+				category.appendChild(categoryText);
+				category.style = "font-family:arial black; text-align: center; color:#FFFFFF"
+				var element = document.getElementById("div1");
+				
+				let hrLine = document.createElement("HR")
+				hrLine.style = "width:60%; color:#FFFFFF"
+				element.appendChild(hrLine)
+				
+				element.appendChild(category);
+				
+				let hrLine2 = document.createElement("HR")
+				hrLine2.style = "width:50%; color:#FFFFFF"
+				element.appendChild(hrLine2)
+				
+				let pastFirstOne = false
+				Object.keys(songs).forEach(function (index){
+					let song = songs[index]
+					let songGame = song['game'] || song['author'] || '???'
+					let songCategory = song['category'] || song['game'] || song['author'] || 'Other'
+					let songText = (song['site_name'] || song["name"] || index || "???")
 					
-					if (song['url']) {
-						let titleUrl = document.createElement("A")
-						titleUrl.style = "font-family:arial black; text-align: center; color:#FFFFFF"
-						titleUrl.href = song['url']
-						titleUrl.appendChild(titleText);
-						title.appendChild(titleUrl)
-					}
-					else {
-						title.appendChild(titleText);
-					}
-					let possibleCommands = [index]
-					if(song['alias'] && showAliases) {
-						if(typeof song['alias'] == 'string' || song['alias'] instanceof String) {
-							song['alias'] = [song['alias']]
-						}
-						song['alias'].forEach(function (aliasIndex){
-							possibleCommands.push(aliasIndex || index)
+					if(song['preset'] && songPresets[song['preset']]) {
+						let songPreset = songPresets[song['preset']]
+						Object.keys(songPreset).forEach(function (presetIndex){
+							if(presetIndex == "tags" && songPreset[presetIndex] && songs[index][presetIndex]) {
+								Object.keys(songPreset[presetIndex]).forEach(function (tagIndex){
+									songs[index][presetIndex].push(songPreset[presetIndex][tagIndex])
+								})
+							}
+							
+							if(songPreset[presetIndex] && !songs[index][presetIndex]) {
+								songs[index][presetIndex] = songPreset[presetIndex]
+							}
 						})
 					}
 					
-					let commands = []
-					for (let i = 0; i < possibleCommands.length; i++) {
-						let command = document.createElement("P");
-						let commandText = document.createTextNode("!add "+(possibleCommands[i] || index));
-						command.appendChild(commandText);
-						command.style = "font-family:arial black; text-align: center; color:#FFFFFF"
+					if(song && songCategory == catIndex) {
+						if(songCategory.toLowerCase() == "other" && songGame != '???') {
+							songText = songText + " (" + songGame + ")"
+						}
+						let title = document.createElement("H2");
+						let titleText = document.createTextNode(songText);
+						title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 						
-						commands.push(command)
+						if (song['url']) {
+							let titleUrl = document.createElement("A")
+							titleUrl.style = "font-family:arial black; text-align: center; color:#FFFFFF"
+							titleUrl.href = song['url']
+							titleUrl.appendChild(titleText);
+							title.appendChild(titleUrl)
+						}
+						else {
+							title.appendChild(titleText);
+						}
+						let possibleCommands = [index]
+						if(song['alias'] && showAliases) {
+							if(typeof song['alias'] == 'string' || song['alias'] instanceof String) {
+								song['alias'] = [song['alias']]
+							}
+							song['alias'].forEach(function (aliasIndex){
+								possibleCommands.push(aliasIndex || index)
+							})
+						}
+						
+						let commands = []
+						for (let i = 0; i < possibleCommands.length; i++) {
+							let command = document.createElement("P");
+							let commandText = document.createTextNode("!add "+(possibleCommands[i] || index));
+							command.appendChild(commandText);
+							command.style = "font-family:arial black; text-align: center; color:#FFFFFF"
+							
+							commands.push(command)
+						}
+						
+						if(pastFirstOne) {
+							let hrLine3 = document.createElement("HR")
+							hrLine3.style = "width:30%; color:#FFFFFF"
+							element.appendChild(hrLine3)
+						}
+						pastFirstOne = true
+						
+						element.appendChild(title);
+						for (let i = 0; i < commands.length; i++) {
+							element.appendChild(commands[i]);
+						}
+						title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
 					}
-					
-					if(pastFirstOne) {
-						let hrLine3 = document.createElement("HR")
-						hrLine3.style = "width:30%; color:#FFFFFF"
-						element.appendChild(hrLine3)
-					}
-					pastFirstOne = true
-					
-					element.appendChild(title);
-					for (let i = 0; i < commands.length; i++) {
-						element.appendChild(commands[i]);
-					}
-					title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
-				}
+				})
+				//let hrLine4 = document.createElement("HR")
+				//hrLine4.style = "width:30%; color:#FFFFFF"
+				//element.appendChild(hrLine4)
 			})
-			//let hrLine4 = document.createElement("HR")
-			//hrLine4.style = "width:30%; color:#FFFFFF"
-			//element.appendChild(hrLine4)
+			document.getElementById('div1').style.display = "block"
+			
+			let rndcmdElement = document.getElementById('rndcmd')
+			if(rndcmdElement) {
+				rndcmdElement.style.display = "block"
+			}
 		})
-		document.getElementById('div1').style.display = "block"
-		
-		let rndcmdElement = document.getElementById('rndcmd')
-		if(rndcmdElement) {
-			rndcmdElement.style.display = "block"
-		}
 	})
 	
 	lightModeOn = Number(params.get('light') || 0) > 0
