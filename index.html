@@ -145,7 +145,26 @@
 			json = JSON.stringify(json);
 			songs = JSON.parse(json);
 			showAliases = Number(params.get('aliases') || params.get('alias') || params.get('showaliases') || params.get('showalias') || 0) > 0
-			//songs = sortData(songs)
+			Object.keys(songs).forEach(function (index){
+				let song = songs[index]
+				if(song['preset'] && songPresets[song['preset']]) {
+					let songPreset = songPresets[song['preset']]
+					Object.keys(songPreset).forEach(function (presetIndex){
+						if(presetIndex == "tags" && songPreset[presetIndex] && songs[index][presetIndex]) {
+							Object.keys(songPreset[presetIndex]).forEach(function (tagIndex){
+								if(!songs[index][presetIndex].includes(songPreset[presetIndex][tagIndex])) {
+									songs[index][presetIndex].push(songPreset[presetIndex][tagIndex])
+								}
+							})
+						}
+							
+						if(songPreset[presetIndex] && !songs[index][presetIndex]) {
+							songs[index][presetIndex] = songPreset[presetIndex]
+						}
+					})
+				}
+			})
+			
 			let categories = getAllCategories(songs)
 			//console.log(categories)
 			categories.forEach(async function (catIndex){
@@ -170,22 +189,7 @@
 					let song = songs[index]
 					let songGame = song['game'] || song['author'] || '???'
 					let songCategory = song['category'] || song['game'] || song['author'] || 'Other'
-					let songText = (song['site_name'] || song["name"] || index || "???")
-					
-					if(song['preset'] && songPresets[song['preset']]) {
-						let songPreset = songPresets[song['preset']]
-						Object.keys(songPreset).forEach(function (presetIndex){
-							if(presetIndex == "tags" && songPreset[presetIndex] && songs[index][presetIndex]) {
-								Object.keys(songPreset[presetIndex]).forEach(function (tagIndex){
-									songs[index][presetIndex].push(songPreset[presetIndex][tagIndex])
-								})
-							}
-							
-							if(songPreset[presetIndex] && !songs[index][presetIndex]) {
-								songs[index][presetIndex] = songPreset[presetIndex]
-							}
-						})
-					}
+					let songText = song['site_name'] || song["name"] || index || "???"
 					
 					if(song && songCategory == catIndex) {
 						if(songCategory.toLowerCase() == "other" && songGame != '???') {
