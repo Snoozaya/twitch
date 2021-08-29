@@ -304,13 +304,14 @@
 		"effect": 2,
 		"category": "Bowser's Fury"
 	},
-	"qumu": {
+	"scamper_shores_remix": {
 		"game": "Super Mario 3D World + Bowser's Fury",
 		"category": "Other",
 		"name": "Scamper Shores (Qumu Remix)",
 		"site_name": "Scamper Shores (Qumu Remix)",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","bowsersfury","bowser","fury","bowserfury","3dmario","remix"],
 		"author": "Qumu",
+		"alias": ["qumu","scamper_shore_remix"],
 		"url": "https://youtu.be/UAOGPIOL_JE"
 	},
 	"blue_sky": {
@@ -647,7 +648,7 @@
 		"color": "#FF0000",
 		"color2": "#FFFFFF",
 		"effect": 1,
-		"holiday": 2,
+		"holiday": 3,
 		"tags": ["week5"],
 		"url": "https://youtu.be/u-t2_woDvzc"
 	},
@@ -657,7 +658,7 @@
 		"color": "#FF0000",
 		"color2": "#FFFFFF",
 		"effect": 1,
-		"holiday": 2,
+		"holiday": 3,
 		"tags": ["week5"],
 		"url": "https://youtu.be/2dOxuzIaEmA"
 	},
@@ -666,7 +667,7 @@
 		"preset": "fnf",
 		"color": "#FFFF00",
 		"effect": 1,
-		"holiday": 2,
+		"holiday": 3,
 		"tags": ["week5"],
 		"url": "https://youtu.be/D-vapQ1RdL4"
 	},
@@ -711,6 +712,18 @@
 		"color": "#00FFFF",
 		"tags": ["week7"],
 		"url": "https://youtu.be/GBD2B9bDD5I"
+	},
+	"ghastly": {
+		"name": "Ghastly",
+		"game": "Friday Night Funkin': D-Side",
+		"preset": "fnf",
+		"site_name": "Ghastly (D-Side)",
+		"color2": "#FF8000",
+		"color": "#FFFFFF",
+		"coloroption":8,
+		"holiday":1,
+		"tags": ["d-side"],
+		"url": "https://youtu.be/A7m5LOYTMNI"
 	},
 	"lo_fight": {
 		"name": "Lo-Fight",
@@ -809,6 +822,32 @@
 		"effect": 2,
 		"tags": ["tabi"],
 		"url": "https://youtu.be/VXrq9cUWS2M"
+	},
+	"chiller": {
+		"name": "Chiller",
+		"game": "Friday Night Funkin': Corruption",
+		"preset": "fnf",
+		"site_name": "Chiller (Corruption)",
+		"color2":"#E12F79",
+		"color":"#1F1A30",
+		"colorstyle": 4,
+		"coloroption":2,
+		"holiday":1,
+		"tags": ["corruption"],
+		"url": "https://youtu.be/-UPjKMFkwk0"
+	},
+	"tormentor": {
+		"name": "Tormentor",
+		"game": "Friday Night Funkin': Corruption",
+		"preset": "fnf",
+		"site_name": "Tormentor (Corruption)",
+		"color2":"#E12F79",
+		"color":"#1F1A30",
+		"colorstyle": 4,
+		"coloroption":2,
+		"holiday":1,
+		"tags": ["corruption"],
+		"url": "https://youtu.be/v8Ya3EjkiNU"
 	},
 	"locked_in": {
 		"name": "Locked In",
@@ -1287,89 +1326,65 @@
 		"site_name": "Let's Go Together! (Black & White)"
 	},
 	"cat": {
-		"game": "Minecraft",
-		"author": "C418",
+		"preset": "minecraft",
 		"name": "Cat",
-		"tags": "minecraft",
-		"color": "#00FF00"
+		"tags": "minecraft"
 	},
 	"dog": {
-		"game": "Minecraft",
-		"author": "C418",
+		"preset": "minecraft",
 		"name": "Dog",
-		"tags": "minecraft",
-		"color": "#00FF00"
+		"tags": "minecraft"
 	},
 	"blocks": {
-		"game": "Minecraft",
-		"author": "C418",
+		"preset": "minecraft",
 		"name": "Blocks",
 		"tags": [
-			"calm",
-			"minecraft"
-		],
-		"color": "#00FF00"
+			"calm"
+		]
 	},
 	"strad": {
-		"game": "Minecraft",
-		"author": "C418",
+		"preset": "minecraft",
 		"name": "Strad",
 		"tags": [
-			"calm",
-			"minecraft"
-		],
-		"color": "#00FF00"
+			"calm"
+		]
 	},
 	"eleven": {
-		"game": "Minecraft",
-		"author": "C418",
+		"preset": "minecraft",
 		"name": "Eleven",
 		"tags": [
-			"calm",
-			"minecraft"
+			"calm"
 		],
 		"color": "#008000"
 	},
 	"subwoofer": {
-		"game": "Minecraft",
-		"author": "C418",
+		"preset": "minecraft",
 		"name": "Subwoofer Lullaby",
 		"tags": [
-			"calm",
-			"minecraft"
+			"calm"
 		],
-		"alias": ["subwoofer_lullaby","subwooferlullaby"],
-		"color": "#00FF00"
+		"alias": ["subwoofer_lullaby","subwooferlullaby"]
 	},
 	"wet_hands": {
-		"game": "Minecraft",
-		"author": "C418",
+		"preset": "minecraft",
 		"name": "Wet Hands",
 		"tags": [
-			"calm",
-			"minecraft"
-		],
-		"color": "#00FF00"
+			"calm"
+		]
 	},
 	"dry_hands": {
-		"game": "Minecraft",
-		"author": "C418",
+		"preset": "minecraft",
 		"name": "Dry Hands",
 		"tags": [
-			"calm",
-			"minecraft"
-		],
-		"color": "#00FF00"
+			"calm"
+		]
 	},
 	"sweden": {
-		"game": "Minecraft",
-		"author": "C418",
+		"preset": "minecraft",
 		"name": "Sweden",
 		"tags": [
-			"calm",
-			"minecraft"
-		],
-		"color": "#00FF00"
+			"calm"
+		]
 	},
 	"fight_against_monsters": {
 		"name": "Fight Against Monsters",
@@ -1454,13 +1469,8 @@
 	"cornered": {
 		"name": "Pressing Pursuit ~ Cornered",
 		"game": "Pheonix Wright - Ace Attorney",
-		"category": "Ace Attorney",
 		"site_name": "Pressing Pursuit ~ Cornered (Pheonix Wright)",
-		"color": "#0000FF",
-		"color2": "#FFFFFF",
-		"color3": "#FF0000",
-		"colorstyle": 3,
-		"tags": ["court","aa","ace_attorney","pheonix","pheonix_wright","wright"],
+		"preset": "ace_attorney",
 		"alias": [
 			"pressing_pursuit"
 		]
@@ -1468,13 +1478,9 @@
 	"caught": {
 		"name": "Pursuit ~ Caught",
 		"game": "Ace Attorney - Trials and Tribulations",
-		"category": "Ace Attorney",
 		"site_name": "Pursuit ~ Caught (Trials and Tribulations)",
-		"color": "#0000FF",
-		"color2": "#FFFFFF",
-		"color3": "#FF0000",
-		"colorstyle": 3,
-		"tags": ["court","aa","ace_attorney","pheonix","pheonix_wright","wright","mia","mia_fey","fey"],
+		"preset": "ace_attorney",
+		"tags": ["mia","mia_fey","fey"],
 		"alias": [
 			"pursuit"
 		]
@@ -1482,13 +1488,9 @@
 	"objection": {
 		"name": "Objection! 2016",
 		"game": "Ace Attorney: Spirit of Justice",
-		"category": "Ace Attorney",
 		"site_name": "Objection! 2016 (Spirit of Justice)",
-		"color": "#0000FF",
-		"color2": "#FFFFFF",
-		"color3": "#FF0000",
-		"colorstyle": 3,
-		"tags": ["court","aa","ace_attorney","pheonix","pheonix_wright","wright","apollo","apollo_justice","justice"],
+		"preset": "ace_attorney",
+		"tags": ["apollo","apollo_justice","justice"],
 		"alias": [
 			"objection_2016",
 			"objection!"

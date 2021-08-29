@@ -11,5 +11,21 @@
 		"category": "Friday Night Funkin'",
 		"color": "#00FFFF",
 		"tags": ["fnf"]
+	},
+	"ace_attorney": {
+		"game": "Ace Attorney",
+		"category": "Ace Attorney",
+		"color": "#0000FF",
+		"color2": "#FFFFFF",
+		"color3": "#FF0000",
+		"colorstyle": 3,
+		"tags": ["court","aa","ace_attorney","pheonix","pheonix_wright","wright"]
+	},
+	"minecraft": {
+		"game": "Minecraft",
+		"category": "Minecraft",
+		"author": "C418",
+		"color": "#00FF00",
+		"tags": ["minecraft"]
 	}
 }
