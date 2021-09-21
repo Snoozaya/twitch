@@ -22,6 +22,99 @@
 		"tags": ["smash"],
 		"url": "https://youtu.be/RFFdvIqzrls"
 	},
+	"lancer": {
+		"name": "Lancer",
+		"preset": "deltarune",
+		"url": "https://youtu.be/GAhBQH0Kf1I",
+		"color": "#5585bd",
+		"volume": 1.5
+	},
+	"rude_buster": {
+		"name": "Rude Buster",
+		"preset": "deltarune",
+		"url": "https://youtu.be/GPL5Hkl11IQ",
+		"tags": ["ch1"],
+		"volume": 1.5
+	},
+	"empty_town": {
+		"name": "Empty Town",
+		"preset": "deltarune",
+		"url": "https://youtu.be/p8jCS2nSMmI",
+		"tags": ["ch1"],
+		"volume": 1.5
+	},
+	"field_of_hopes_and_dreams": {
+		"name": "Field of Hopes and Dreams",
+		"preset": "deltarune",
+		"url": "https://youtu.be/ymNgfwgh1TU",
+		"volume": 1.5,
+		"tags": ["ch1"],
+		"alias": ["field_of_h&d","field_of_hope","field_of_dreams","field_of_hopes"]
+	},
+	"chaos_king": {
+		"name": "Chaos King",
+		"preset": "deltarune",
+		"url": "https://youtu.be/tPwzoZ-e664",
+		"color": "#5585bd",
+		"tags": ["ch1"],
+		"volume": 1.5
+	},
+	"cyber_world": {
+		"name": "A CYBER'S WORLD?",
+		"preset": "deltarune",
+		"url": "https://youtu.be/H-CHNm712O0",
+		"volume": 1.5,
+		"tags": ["ch2"],
+		"alias": ["a_cyber_world","a_cybers_world","cybers_world"]
+	},
+	"smart_race": {
+		"name": "Smart Race",
+		"preset": "deltarune",
+		"url": "https://youtu.be/kymGhRtQ0gs",
+		"volume": 1.5,
+		"tags": ["ch2"],
+		"alias": ["berdly"]
+	},
+	"welcome_to_the_city": {
+		"name": "WELCOME TO THE CITY",
+		"preset": "deltarune",
+		"url": "https://youtu.be/aRLAHlxWnDU",
+		"volume": 1.5,
+		"tags": ["ch2"],
+		"alias": ["the_city"]
+	},
+	"big_shot": {
+		"name": "NOW'S YOUR CHANCE TO BE A",
+		"preset": "deltarune",
+		"url": "https://youtu.be/0FW2vQe0cOE",
+		"volume": 1.5,
+		"tags": ["ch2"],
+		"alias": ["nows_your_chance_to_be_a","nows_your_chance_to_be_a_big_shot","spamton"]
+	},
+	"pandora_palace": {
+		"name": "Pandora Palace",
+		"preset": "deltarune",
+		"url": "https://youtu.be/0FW2vQe0cOE",
+		"volume": 1.5,
+		"tags": ["ch2"],
+		"alias": ["mansion"]
+	},
+	"queen_battle": {
+		"name": "Attack of the Killer Queen",
+		"preset": "deltarune",
+		"url": "https://youtu.be/X7Jo32PMVP4",
+		"volume": 1.5,
+		"color": "#5585bd",
+		"tags": ["ch2"],
+		"alias": "attack_of_the_killer_queen"
+	},
+	"powers_combined": {
+		"name": "Knock You Down !!",
+		"preset": "deltarune",
+		"volume": 1.5,
+		"tags": ["ch2"],
+		"url": "https://youtu.be/Y1YSQKT5xQQ"
+	},
 	"enemy_approaching_yellow": {
 		"name": "Enemy Approaching Yellow",
 		"author": "MyNewSoundtrack",
@@ -716,11 +809,10 @@
 	"ghastly": {
 		"name": "Ghastly",
 		"game": "Friday Night Funkin': D-Side",
-		"preset": "fnf",
 		"site_name": "Ghastly (D-Side)",
+		"preset": "fnf",
 		"color2": "#FF8000",
 		"color": "#FFFFFF",
-		"coloroption":8,
 		"holiday":1,
 		"tags": ["d-side"],
 		"url": "https://youtu.be/A7m5LOYTMNI"
@@ -730,6 +822,7 @@
 		"game": "Friday Night Funkin': V.S. Whitty",
 		"preset": "fnf",
 		"site_name": "Lo-Fight (V.S. Whitty)",
+		"volume": 2,
 		"tags": ["whitty"],
 		"url": "https://youtu.be/EEvOXZbKgBo"
 	},
@@ -738,6 +831,7 @@
 		"game": "Friday Night Funkin': V.S. Whitty",
 		"preset": "fnf",
 		"site_name": "Overhead (V.S. Whitty)",
+		"volume": 2,
 		"color": "#00FFFF",
 		"tags": ["whitty"],
 		"url": "https://youtu.be/5Pu5V_y5KKE"
@@ -748,6 +842,7 @@
 		"preset": "fnf",
 		"site_name": "Ballistic (V.S. Whitty)",
 		"color": "#00cccc",
+		"volume": 2,
 		"tags": ["whitty"],
 		"url": "https://youtu.be/Rk7GquhH7Wc"
 	},
@@ -856,7 +951,7 @@
 		"preset": "fnf",
 		"site_name": "Locked In (Foundation)",
 		"color": "#600000",
-		"volume": 1.5,
+		"volume": 2.25,
 		"holiday": 1,
 		"tags": ["foundation","scp"],
 		"url": "https://youtu.be/RiwB8yf-IuE"
@@ -871,7 +966,7 @@
 		"color2": "#000000",
 		"colorstyle":4,
 		"holiday": 1,
-		"volume": 1.25,
+		"volume": 1.5,
 		"tags": ["foundation","scp"],
 		"url": "https://youtu.be/1QwnXRqurB0"
 	},
@@ -882,7 +977,7 @@
 		"preset": "fnf",
 		"site_name": "Recontainment (Foundation)",
 		"color": "#0000FF",
-		"volume": 1.5,
+		"volume": 2.25,
 		"tags": ["foundation","scp"],
 		"url": "https://youtu.be/vaehpRRvCPU"
 	},
@@ -893,7 +988,7 @@
 		"preset": "fnf",
 		"site_name": "Playtime (Foundation)",
 		"color": "#ff8000",
-		"volume": 1.5,
+		"volume": 2.25,
 		"tags": ["foundation","scp"],
 		"url": "https://youtu.be/N-YfO7TMCb0"
 	},
@@ -904,7 +999,7 @@
 		"preset": "fnf",
 		"site_name": "Mayhem (Foundation)",
 		"color": "#476647",
-		"volume": 1.25,
+		"volume": 1.5,
 		"tags": ["foundation","scp"],
 		"url": "https://youtu.be/-Ts3YnjQKQw"
 	},
@@ -915,7 +1010,7 @@
 		"preset": "fnf",
 		"site_name": "Gamemode 1 (Foundation)",
 		"color": "#333333",
-		"volume": 1.25,
+		"volume": 1.5,
 		"tags": ["foundation","scp"],
 		"alias": ["gamemode_1","gamemode_creative"],
 		"url": "https://youtu.be/az14gJSCbLk"
@@ -927,10 +1022,48 @@
 		"preset": "fnf",
 		"site_name": "Ballin' (Foundation)",
 		"color": "#FF0000",
-		"volume": 1.5,
+		"volume": 2.25,
 		"tags": ["foundation","scp"],
 		"alias": ["balling"],
 		"url": "https://youtu.be/GQytq_A3Kq0"
+	},
+	"headache": {
+		"name": "Headache",
+		"game": "Friday Night Funkin': Smoke 'Em Out Struggle",
+		"author": "atsuiver",
+		"preset": "fnf",
+		"site_name": "Headache (Smoke 'Em Out Struggle)",
+		"color": "#00ff90",
+		"tags": ["garcello","smoke_em_out","smoke_em_out_struggle"]
+	},
+	"nerves": {
+		"name": "Nerves",
+		"game": "Friday Night Funkin': Smoke 'Em Out Struggle",
+		"author": "atsuiver",
+		"preset": "fnf",
+		"site_name": "Nerves (Smoke 'Em Out Struggle)",
+		"color": "#00ff90",
+		"tags": ["garcello","smoke_em_out","smoke_em_out_struggle"]
+	},
+	"release": {
+		"name": "Release",
+		"game": "Friday Night Funkin': Smoke 'Em Out Struggle",
+		"author": "atsuiver",
+		"preset": "fnf",
+		"site_name": "Release (Smoke 'Em Out Struggle)",
+		"color": "#00ff90",
+		"colorstyle": 4,
+		"tags": ["garcello","smoke_em_out","smoke_em_out_struggle"]
+	},
+	"fading": {
+		"name": "Fading",
+		"game": "Friday Night Funkin': Smoke 'Em Out Struggle",
+		"author": "atsuiver",
+		"preset": "fnf",
+		"site_name": "Fading (Smoke 'Em Out Struggle)",
+		"color": "#00ff90",
+		"colorstyle": 4,
+		"tags": ["garcello","smoke_em_out","smoke_em_out_struggle"]
 	},
 	"have_a_nice_talk": {
 		"name": "Have a Nice Talk",
@@ -1007,14 +1140,23 @@
 	"battle_64": {
 		"name": "Battle 64",
 		"game": "Super Bomberman R Online",
-		"tags" : ["bomberman"],
-		"url": "https://youtu.be/cWnxAsrFd7o"
+		"tags": ["bomberman"],
+		"volume": 0.65,
+		"url": "https://youtu.be/CJ2K8u68Rms"
+	},
+	"battle_64_final": {
+		"name": "Battle 64 Final Phase",
+		"game": "Super Bomberman R Online",
+		"tags": ["bomberman"],
+		"volume": 0.65,
+		"url": "https://youtu.be/oiCFUYixaek"
 	},
 	"setup": {
 		"name": "Setup Menu",
 		"game": "Super Bomberman R Online",
 		"tags": ["bomberman"],
-		"url": "https://youtu.be/9WCC87hMB3A"
+		"volume": 0.65,
+		"url": "https://youtu.be/C0hUDeG24Wg"
 	},
 	"p_switch": {
 		"name": "P-Switch",
@@ -1268,6 +1410,7 @@
 		"name": "Cotton Island",
 		"author": "Tim Follin",
 		"tags": ["plok"],
+		"volume": 3,
 		"url": "https://youtu.be/W80Hp7wHtrw"
 	},
 	"snake": {
@@ -1299,7 +1442,7 @@
 		"game": "Pokemon Yellow/Blue/Red",
 		"name": "Gym Battle",
 		"category": "Pokemon",
-		"tags": ["calm","pokemon"],
+		"tags": ["pokemon"],
 		"site_name": "Gym Battle (Yellow/Blue/Red)"
 	},
 	"lavender_town": {
@@ -1385,6 +1528,27 @@
 		"tags": [
 			"calm"
 		]
+	},
+	"overworld": {
+		"preset": "terraria",
+		"name": "Overworld Day",
+		"tags": ["calm"]
+	},
+	"underground": {
+		"preset": "terraria",
+		"name": "Underground",
+		"tags": ["calm"]
+	},
+	"boss1": {
+		"preset": "terraria",
+		"name": "Boss 1",
+		"alias": "boss"
+	},
+	"alt_underground": {
+		"preset": "terraria",
+		"name": "Alternate Underground",
+		"tags": ["calm"],
+		"alias": ["alternate_underground","underground_alt","underground_alternate"]
 	},
 	"fight_against_monsters": {
 		"name": "Fight Against Monsters",
