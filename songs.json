@@ -40,7 +40,7 @@
 		"name": "Empty Town",
 		"preset": "deltarune",
 		"url": "https://youtu.be/p8jCS2nSMmI",
-		"tags": ["ch1"],
+		"tags": ["ch1","calm"],
 		"volume": 1.5
 	},
 	"field_of_hopes_and_dreams": {
@@ -94,7 +94,7 @@
 	"pandora_palace": {
 		"name": "Pandora Palace",
 		"preset": "deltarune",
-		"url": "https://youtu.be/0FW2vQe0cOE",
+		"url": "https://youtu.be/Mb0O6X9K3P0",
 		"volume": 1.5,
 		"tags": ["ch2"],
 		"alias": ["mansion"]
