@@ -4,6 +4,25 @@
 		"preset": "undertale",
 		"url": "https://youtu.be/g6aia0GQMRw"
 	},
+	"bonetrousle": {
+		"name": "Bonetrousle",
+		"preset": "undertale",
+		"color": "#003EFF",
+		"alias": ["papyrus","nyeh_heh_heh","nyehhehheh"],
+		"url": "https://youtu.be/AKAiUtWZ4xY"
+	},
+	"spear_of_justice": {
+		"name": "Spear Of Justice",
+		"preset": "undertale",
+		"color": "#00C700",
+		"alias": ["undyne"],
+		"url": "https://youtu.be/ApWpYmO7G28"
+	},
+	"metal_crusher": {
+		"name": "Metal Crusher",
+		"preset": "undertale",
+		"url": "https://youtu.be/2CvQKExckSk"
+	},
 	"stronger_monsters": {
 		"name": "Stronger Monsters",
 		"preset": "undertale",
@@ -12,7 +31,8 @@
 	"battle_against_a_true_hero": {
 		"name": "Battle Against a True Hero",
 		"preset": "undertale",
-		"color": "#00FF00",
+		"color": "#00C700",
+		"alias": ["undying"],
 		"url": "https://youtu.be/DcERQHg3iy8"
 	},
 	"megalovania": {
@@ -33,14 +53,14 @@
 		"name": "Rude Buster",
 		"preset": "deltarune",
 		"url": "https://youtu.be/GPL5Hkl11IQ",
-		"tags": ["ch1"],
+		"tags": ["ch1","chapter1","ch2","chapter2"],
 		"volume": 1.5
 	},
 	"empty_town": {
 		"name": "Empty Town",
 		"preset": "deltarune",
 		"url": "https://youtu.be/p8jCS2nSMmI",
-		"tags": ["ch1","calm"],
+		"tags": ["ch1","chapter1","calm"],
 		"volume": 1.5
 	},
 	"field_of_hopes_and_dreams": {
@@ -48,72 +68,95 @@
 		"preset": "deltarune",
 		"url": "https://youtu.be/ymNgfwgh1TU",
 		"volume": 1.5,
-		"tags": ["ch1"],
+		"tags": ["ch1","chapter1"],
 		"alias": ["field_of_h&d","field_of_hope","field_of_dreams","field_of_hopes"]
+	},
+	"vs_susie": {
+		"name": "Vs. Susie",
+		"preset": "deltarune",
+		"url": "https://youtu.be/cGuDpoJNImA",
+		"tags": ["ch1","chapter1"],
+		"alias": ["susie"],
+		"volume": 1.5
 	},
 	"chaos_king": {
 		"name": "Chaos King",
 		"preset": "deltarune",
 		"url": "https://youtu.be/tPwzoZ-e664",
 		"color": "#5585bd",
-		"tags": ["ch1"],
+		"tags": ["ch1","chapter1"],
 		"volume": 1.5
 	},
 	"cyber_world": {
 		"name": "A CYBER'S WORLD?",
 		"preset": "deltarune",
-		"url": "https://youtu.be/H-CHNm712O0",
+		"url": "https://youtu.be/In3y0C7mQvA",
 		"volume": 1.5,
-		"tags": ["ch2"],
+		"tags": ["ch2","chapter2"],
 		"alias": ["a_cyber_world","a_cybers_world","cybers_world"]
 	},
 	"smart_race": {
 		"name": "Smart Race",
 		"preset": "deltarune",
-		"url": "https://youtu.be/kymGhRtQ0gs",
+		"url": "https://youtu.be/HZO3xw91eHw",
 		"volume": 1.5,
-		"tags": ["ch2"],
+		"tags": ["ch2","chapter2"],
 		"alias": ["berdly"]
 	},
 	"welcome_to_the_city": {
 		"name": "WELCOME TO THE CITY",
 		"preset": "deltarune",
-		"url": "https://youtu.be/aRLAHlxWnDU",
+		"url": "https://youtu.be/uiou1f5nzlU",
 		"volume": 1.5,
-		"tags": ["ch2"],
+		"tags": ["ch2","chapter2"],
 		"alias": ["the_city"]
 	},
-	"big_shot": {
+	"spamton": {
+		"name": "Spamton",
+		"preset": "deltarune",
+		"url": "https://youtu.be/cSm5gKlmw2M",
+		"volume": 1.5,
+		"tags": ["ch2","chapter2"]
+	},
+	"nows_your_chance": {
 		"name": "NOW'S YOUR CHANCE TO BE A",
 		"preset": "deltarune",
-		"url": "https://youtu.be/0FW2vQe0cOE",
+		"url": "https://youtu.be/2GbBD_7AsGA",
 		"volume": 1.5,
-		"tags": ["ch2"],
-		"alias": ["nows_your_chance_to_be_a","nows_your_chance_to_be_a_big_shot","spamton"]
+		"tags": ["ch2","chapter2"],
+		"alias": ["nows_your_chance_to_be_a","nows_your_chance_to_be_a_big_shot","now_your_chance"]
+	},
+	"big_shot": {
+		"name": "BIG SHOT",
+		"preset": "deltarune",
+		"url": "https://youtu.be/uivFFnCI8tM",
+		"volume": 1.25,
+		"tags": ["ch2","chapter2"]
 	},
 	"pandora_palace": {
 		"name": "Pandora Palace",
 		"preset": "deltarune",
-		"url": "https://youtu.be/Mb0O6X9K3P0",
+		"url": "https://youtu.be/q-5cXVcCOUs",
 		"volume": 1.5,
-		"tags": ["ch2"],
+		"tags": ["ch2","chapter2"],
 		"alias": ["mansion"]
 	},
 	"queen_battle": {
 		"name": "Attack of the Killer Queen",
 		"preset": "deltarune",
-		"url": "https://youtu.be/X7Jo32PMVP4",
+		"url": "https://youtu.be/vBjscyFC3jo",
 		"volume": 1.5,
 		"color": "#5585bd",
-		"tags": ["ch2"],
-		"alias": "attack_of_the_killer_queen"
+		"tags": ["ch2","chapter2"],
+		"alias": ["attack_of_the_killer_queen","killer_queen"]
 	},
-	"powers_combined": {
+	"knock_you_down": {
 		"name": "Knock You Down !!",
 		"preset": "deltarune",
 		"volume": 1.5,
-		"tags": ["ch2"],
-		"url": "https://youtu.be/Y1YSQKT5xQQ"
+		"tags": ["ch2","chapter2"],
+		"alias": ["powers_combined","power_combined","knock_you_down!!"],
+		"url": "https://youtu.be/e4EZa--N028"
 	},
 	"enemy_approaching_yellow": {
 		"name": "Enemy Approaching Yellow",
@@ -954,6 +997,7 @@
 		"volume": 2.25,
 		"holiday": 1,
 		"tags": ["foundation","scp"],
+		"alias": ["173","scp-173"],
 		"url": "https://youtu.be/RiwB8yf-IuE"
 	},
 	"scopophobia": {
@@ -968,6 +1012,7 @@
 		"holiday": 1,
 		"volume": 1.5,
 		"tags": ["foundation","scp"],
+		"alias": ["096","scp-096"],
 		"url": "https://youtu.be/1QwnXRqurB0"
 	},
 	"recontainment": {
@@ -979,6 +1024,7 @@
 		"color": "#0000FF",
 		"volume": 2.25,
 		"tags": ["foundation","scp"],
+		"alias": ["mtf","mobile_task_force"],
 		"url": "https://youtu.be/vaehpRRvCPU"
 	},
 	"playtime": {
@@ -990,6 +1036,7 @@
 		"color": "#ff8000",
 		"volume": 2.25,
 		"tags": ["foundation","scp"],
+		"alias": ["999","scp-999"],
 		"url": "https://youtu.be/N-YfO7TMCb0"
 	},
 	"mayhem": {
@@ -1001,6 +1048,7 @@
 		"color": "#476647",
 		"volume": 1.5,
 		"tags": ["foundation","scp"],
+		"alias": ["chaos_insurgency"],
 		"url": "https://youtu.be/-Ts3YnjQKQw"
 	},
 	"gamemode": {
@@ -1012,7 +1060,7 @@
 		"color": "#333333",
 		"volume": 1.5,
 		"tags": ["foundation","scp"],
-		"alias": ["gamemode_1","gamemode_creative"],
+		"alias": ["gamemode_1","gamemode_creative","4335","scp-4335"],
 		"url": "https://youtu.be/az14gJSCbLk"
 	},
 	"ballin": {
@@ -1024,8 +1072,21 @@
 		"color": "#FF0000",
 		"volume": 2.25,
 		"tags": ["foundation","scp"],
-		"alias": ["balling"],
+		"alias": ["balling","018","scp-018"],
 		"url": "https://youtu.be/GQytq_A3Kq0"
+	},
+	"spiteful": {
+		"name": "Spiteful",
+		"game": "Friday Night Foundation",
+		"author": "Lemonemy",
+		"preset": "fnf",
+		"site_name": "Spiteful (Foundation)",
+		"color": "#600000",
+		"volume": 1.5,
+		"holiday": 1,
+		"tags": ["foundation","scp"],
+		"alias": ["flesh","flesh_that_hates","610","scp-610"],
+		"url": "https://youtu.be/27K9XOge8Pc"
 	},
 	"headache": {
 		"name": "Headache",
@@ -1120,16 +1181,19 @@
 	"vampire_killer": {
 		"name": "Vampire Killer",
 		"game": "Castlevania",
+		"volume": 2.5,
 		"holiday": 1
 	},
 	"stalker": {
 		"name": "Stalker",
 		"game": "Castlevania",
+		"volume": 2.5,
 		"holiday": 1
 	},
 	"out_of_time": {
 		"name": "Out of Time",
 		"game": "Castlevania",
+		"volume": 2.5,
 		"holiday": 1
 	},
 	"golden_trophy": {
