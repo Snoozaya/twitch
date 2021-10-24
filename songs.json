@@ -1519,7 +1519,7 @@
 		"game": "Pokemon Yellow/Blue/Red",
 		"name": "Gym Battle",
 		"category": "Pokemon",
-		"tags": ["pokemon"],
+		"tags": ["pokemon"]
 	},
 	"lavender_town": {
 		"game": "Pokemon Yellow/Blue/Red",
@@ -1527,19 +1527,19 @@
 		"category": "Pokemon",
 		"holiday": 1,
 		"tags": ["calm","pokemon"],
-		"color": "#ce27ff",
+		"color": "#ce27ff"
 	},
 	"kanoko_town": {
 		"game": "Pokemon Black and White",
 		"name": "Kanoko Town",
 		"category": "Pokemon",
-		"tags": ["calm","pokemon"],
+		"tags": ["calm","pokemon"]
 	},
 	"lets_go": {
 		"game": "Pokemon Black and White",
 		"name": "Let's Go Together!",
 		"category": "Pokemon",
-		"tags": ["pokemon"],
+		"tags": ["pokemon"]
 	},
 	"cat": {
 		"preset": "minecraft",
