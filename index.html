@@ -1,298 +1,380 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:black;">
-<div id="div1" style="display:block;">
-<button onclick="swapLightDark()">Swap between light/dark</button>
-<div style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" >
-<h1 style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>Song Request Commands</strong></h1>
-<p style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>This stream supports song requests from a pre-determined list. The commands below will list what commands work.</strong></p>
-<p style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>!replace to replace your song in the queue. !currentsong to view the current song</strong></p>
-<p style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>If you have any suggestions, feel free to post them in #suggestions on my <a href="https://discord.gg/tg3D3mp9DB" style="font-family:arial black; color:#FFFFFF">discord server!</a></strong></p>
-<p style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>Some of these songs only play randomly during specific holidays, but the command can be used at anytime.</strong></p>
-<p style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>Sorry that this page looks awful. I am not a web designer and I was rushing to make this page.</strong></p>
-<hr>
-</div>
-</div>
-<hr>
-<hr style="width:15%; color:#FFFFFF">
-<p style="font-family:arial black; text-align: center; color:#FFFFFF"><a href="https://www.twitch.tv/nubz4lifstream" style="font-family:arial black; text-align: center; color:#FFFFFF">twitch.tv/nubz4lifstream</a></p>
-<!-- <div id="rndcmd" style="display:none;">
-<h1 style="font-family:arial black; text-align: center; color:#FFFFFF"><strong>Random</strong></h2>
-<p style="font-family:arial black; text-align: center; color:#FFFFFF">!add random</p>
-</div> -->
-<script>
-	// I am awful at coding javascript, sorry for people who know how to actually code javascript :(
-	
-	var curDate = new Date();
-	var htmlVerNumber = curDate.getMonth();
-	var showAliases = false
-	
-	function loadJSON(callback,jsonName) {   
-		var xobj = new XMLHttpRequest();
-		xobj.overrideMimeType("application/json");
-		xobj.open('GET', (jsonName || "songs.json")+'?ver=' + htmlVerNumber, true); // Prevent browsers from caching the page, and if it does cache, then htmlVerNumber above will change every month so that it has a cache for each seperate month.
-		xobj.onreadystatechange = function () {
-			if (xobj.readyState == 4 && xobj.status == "200") {
-				callback(JSON.parse(xobj.responseText));
-			}
-		};
-		xobj.send(null);  
-	}
-	
-	var songs = []
-	function compare( a, b ) {
-		a = songs[a]
-		b = songs[b]
-		let aProp = (a["game"] || a["author"] || a["name"] || "???")
-		let bProp = (b["game"] || b["author"] || b["name"] || "???")
-		let aName = a["name"] || "???"
-		let bName = b["name"] || "???"
-		if ( aProp < bProp ){
-			return -1;
-		}
-		if ( aProp > bProp ){
-			return 1;
-		}
-		if ( aName < bName ) {
-			return -1
-		}
-		if ( aName > bName ) {
-			return 1
-		}
-		return 0;
-	}
-	
-	function sortData(data) {
-		let ordered = {};
-		let compareFunction = compare
-		Object.keys(data).sort(compareFunction).forEach(function(key) {
-			ordered[key] = data[key];
-		});
-		return ordered;
-	}
-	
-	function getAllCategories(songs) {
-		let categories = []
-		Object.keys(songs).forEach(async function(index) {
-			var song = songs[index]
-			var songCategory = song['category'] || song['game'] || song['author'] || 'Other'
+	<link rel="icon" href="favicon.png">
+	<head>
+		<title>Music @ twitch.tv/nubz4lifstream</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+		
+		<style>
+			body{margin: 0;padding: 0;width: 100%;background-color: #404040;}
 			
-			if(!categories.includes(songCategory)) {
-				categories.unshift(songCategory)
-			}
-		})
-		return categories.sort(function(a,b) {
-			var nameA = a.toLowerCase()
-			var nameB = b.toLowerCase()
-			
-			if(nameA == "other") {
-				return 1
-			}
-			else if(nameB == "other") {
-				return -1
+			.music-item {
+				width: 100%;
+				margin: 0;
 			}
 			
-			if (nameA < nameB) {
-				return -1;
+			.category-name {
+				border-style: none;
+				border-width: 20;
+				background: none;
+				padding: 0;
+				margin: 25;
+				background-color: #000;
+				font-weight: bold;
+				font-size: 48px;
+				display: block;
 			}
-			if (nameA > nameB) {
-				return 1;
+			
+			.music-copy-input {
+				border-style: none;
+				border-width: 0;
+				background: none;
+				padding: 0;
+				background-color: #000;
+				margin-top: -1px;
+				font-weight: bold;
+				font-size: 24px;
+				vertical-align: middle;
+				display: inline-block;
 			}
-
-			return 0;
-		})
-	}
+			
+			.music-copy-button {
+				display: inline;
+				margin: 0;
+				color: #aaa;
+			}
+			
+			.music-data-list * {
+				font-size: 85%;
+				display: inline;
+				margin: 0;
+				color: #aaa;
+			}
+			
+			.music-data-source {
+				display: inline;
+				margin: 0;
+				color: #aaa;
+			}
+			
+			.music-data-division {
+				margin: 0.5em 1em;
+			}
+			
+			#content {
+				box-sizing: border-box;
+				width: 90%;
+				max-width: 80em;
+				margin: 0 auto;
+				padding: 2em;
+				padding-bottom: 5em;
+				background-color: #000;
+			}
+			
+			body, input, a {
+				font-size: 18px;
+				font-family: "Arial Black";
+				text-align: left;
+				line-height: 24px;
+				color: #fff;
+			}
+			
+			p {
+				display: block;
+				margin-block-start: 1em;
+				margin-block-end: 1em;
+				margin-inline-start: 0px;
+				margin-inline-end: 0px;
+			}
+			
+			h1 {
+				margin: 0.5em 0;
+			}
+			
+			h1, h1 * {
+				font-size: 32px;
+			}
+			
+			hr {
+				margin: 0;
+				height: 0.75em;
+				border-style: none;
+				border-width: 0;
+				background: linear-gradient(to right, rgba(100,100,100,1), rgba(100,100,100,0));
+			}
+			
+			hr.minor {
+				height: 0.25em;
+				margin: 1.5em 0;
+				background: linear-gradient(to right, rgba(100,100,100,1), rgba(100,100,100,0));
+			}
+		</style>
+	</head>
 	
-	const params = new URLSearchParams(window.location.search)
-	var songPresets = []
-	loadJSON(function(presets) {
-		rawdata = JSON.stringify(presets);
-		songPresets = JSON.parse(rawdata);
-	
-		Object.keys(songPresets).forEach(function (index){
-			if(songPresets[index]['alt_name'] && !songPresets[index]['alias']) {
-				songPresets[index]['alias'] = songPresets[index]['alt_name']
-				delete songPresets[index]['alt_name']
-			}
+	<body>
+		<div id="content">
+			<h1>
+				Music for
+				<span>
+					<a href="https://www.twitch.tv/nubz4lifstream">twitch.tv/nubz4lifstream</a>
+				</span>
+			</h1>
+			<hr>
+			
+			<div id='music-help'>
+				<p>My twitch channel will sometimes allow you to request music from a pre-determined list by using the <strong>!play</strong> command.</p>
 				
-			if(songPresets[index]['aliases'] || songPresets[index]['aliass']) {
-				songPresets[index]['alias'] = (songPresets[index]['aliases'] || songPresets[index]['aliass'])
-				delete songPresets[index]['aliases']
+				<p>If you see a music visualiser on the screen, then you can type any of these commands in chat to request a song!</p>
+				<p></p>
+				<p>I try to credit all music with the author and source, if you own any of the music in this list and wish for me not to use it, you can contact me at <strong>nubz4lif#0001</strong> on Discord.</p>
+			</div>
+			<div id="music-list">
+			</div>
+			
+			<noscript>
+				<hr class="minor">
+				<h3><strong>This page requires javascript to work as all the songs are loaded from a .json file. Please enable javascript for this page to make it work properly!</strong></h3>
+			</noscript>
+			
+			<hr>
+			<!-- <a href="https://www.twitch.tv/nubz4lifstream">twitch.tv/nubz4lifstream</a> -->
+		<script>
+			var curDate = new Date();
+			var htmlVerNumber = curDate.getMonth();
+			var showAliases = false
+			
+			const musicList = document.getElementById("music-list");
+			
+			function loadJSON(callback,jsonName) {   
+				var xobj = new XMLHttpRequest();
+				xobj.overrideMimeType("application/json");
+				xobj.open('GET', (jsonName || "songs.json")+'?ver=' + htmlVerNumber, true); // Prevent browsers from caching the page, and if it does cache, then htmlVerNumber above will change every month so that it has a cache for each seperate month.
+				xobj.onreadystatechange = function () {
+					if (xobj.readyState == 4 && xobj.status == "200") {
+						callback(JSON.parse(xobj.responseText));
+					}
+				};
+				xobj.send(null);  
 			}
-				
-			if(songPresets[index]['tag']) {
-				songPresets[index]['tags'] = songPresets[index]['tag'];
-				delete songPresets[index]['tag'];
+			
+			function getCategoryDiv(category,shouldntCreate) {
+				let categoryDivName = "div-category-"+(category.toLowerCase().replaceAll(" ","-").replaceAll("_","-"))
+				let categoryDiv = document.getElementById(categoryDivName);
+				if(!categoryDiv && !shouldntCreate) {
+					let hrLine = document.createElement("hr")
+					let hrLine2 = document.createElement("hr")
+					let hrLine3 = document.createElement("hr")
+					hrLine3.className = "minor"
+					
+					categoryDiv = document.createElement("div")
+					categoryDiv.id = categoryDivName
+					
+					let categoryTitle = document.createElement("p")
+					categoryTitle.className = "category-name"
+					categoryTitle.appendChild(document.createTextNode(category))
+					
+					categoryDiv.appendChild(hrLine)
+					musicList.appendChild(categoryDiv)
+					categoryDiv.appendChild(categoryTitle)
+					categoryDiv.appendChild(hrLine2)
+					categoryDiv.appendChild(hrLine3)
+					return categoryDiv
+				}
+				return categoryDiv
 			}
+		
+			function addMusicItem(fileName,name,categoryName,author,game,url,source) {
+				let category = getCategoryDiv(categoryName || game || author || "Other")
 				
-			if(songPresets[index]['color3'] && !songPresets[index]['color2']) {
-				songPresets[index]['color2'] = songPresets[index]['color3']
-				delete songPresets[index]['color3']
+				let musicItem = document.createElement("div")
+				musicItem.id = "div-music-" + ((fileName || name || author || game).replaceAll(" ","-").replaceAll("_","-"))
+				musicItem.className = "music-item"
+				category.appendChild(musicItem)
+				
+				let musicCommand = "!play "+fileName.toLowerCase()
+				
+				let musicCmdElement = document.createElement("input")
+				musicCmdElement.className = "music-copy-input"
+				musicCmdElement.value = musicCommand
+				musicCmdElement.readOnly = true
+				
+				let musicCopy = document.createElement("a")
+				musicCopy.href = "javascript:void(0)"
+				musicCopy.className = "music-copy-button"
+				musicCopy.appendChild(document.createTextNode("[copy]"))
+				musicCopy.lastTimeout
+				musicCopy.onclick = function() { 
+					musicCmdElement.select(); 
+					document.execCommand('copy') 
+					
+					if(musicCopy.lastTimeout) {
+						clearTimeout(musicCopy.lastTimeout)
+					}
+					
+					musicCopy.textContent = "[copied]"
+					musicCopy.lastTimeout = setTimeout(function(){ musicCopy.textContent = "[copy]"; }, 3000);
+				}
+				
+				let musicSource = (name || fileName)+" - "+(game || author || categoryName)
+				
+				let musicSourceDiv = document.createElement("div")
+				musicSourceDiv.className = "music-data-division"
+				musicSourceDiv.id = musicItem.id+"-sources"
+				
+				let musicSourceElement = document.createElement("span")
+				musicSourceElement.className = "music-data-source"
+				if(!url) {
+					musicSourceElement.appendChild(document.createTextNode("Source: "+musicSource))
+				}
+				else {
+					//<a href="https://www.twitch.tv/nubz4lifstream">twitch.tv/nubz4lifstream</a>
+					musicSourceElement.appendChild(document.createTextNode("Source: "))
+					
+					let musicSourceURL = document.createElement("a")
+					musicSourceURL.href = url
+					musicSourceURL.className = musicSourceElement.className
+					musicSourceURL.appendChild(document.createTextNode(musicSource))
+					musicSourceElement.appendChild(musicSourceURL)
+				}
+				
+				let musicSourceFieldsDiv = document.createElement("div")
+				musicSourceFieldsDiv.className = "music-data-list"
+				function addField(div,name,text,url) {
+					let musicField = document.createElement("span")
+					musicField.className = "music-data-name"
+					musicField.appendChild(document.createTextNode(name+": "))
+					
+					let musicFieldURL = document.createElement("a")
+					musicFieldURL.appendChild(document.createTextNode(text))
+					if(url) {
+						musicFieldURL.href = url
+					}
+					
+					if(musicSourceFieldsDiv.childElementCount > 0) {
+						let musicFieldDot = document.createElement("span")
+						musicFieldDot.appendChild(document.createTextNode(" \u2022 "))
+						musicSourceFieldsDiv.appendChild(musicFieldDot)
+					}
+					
+					musicField.appendChild(musicFieldURL)
+					musicSourceFieldsDiv.appendChild(musicField)
+				}
+				
+				if(name) {
+					addField(musicSourceFieldsDiv,"Music",name)
+				}
+				
+				if(game) {
+					addField(musicSourceFieldsDiv,"Game",game)
+				}
+				
+				if(author) {
+					addField(musicSourceFieldsDiv,"Artist",author)
+				}
+				
+				musicSourceDiv.appendChild(musicSourceElement)
+				musicSourceDiv.appendChild(musicSourceFieldsDiv)
+				
+				musicItem.appendChild(musicCmdElement)
+				musicItem.appendChild(musicCopy)
+				musicItem.appendChild(musicSourceDiv)
+				
+				let hrLine = document.createElement("hr")
+				hrLine.className = "minor"
+				
+				category.appendChild(hrLine)
 			}
+			
+			//addMusicItem('test-file','Test File','Test Category','Test Author','Test Game','https://www.google.com','https://www.example.com')
+			//addMusicItem('test-file2','Test File #2','Test Category','Test Author','Test Game','https://www.google.com','https://www.example.com')
+			
+			const params = new URLSearchParams(window.location.search)
+			var songPresets = []
+			loadJSON(function(presets) {
+				rawdata = JSON.stringify(presets);
+				songPresets = JSON.parse(rawdata);
+			
+				Object.keys(songPresets).forEach(function (index){
+					if(songPresets[index]['alt_name'] && !songPresets[index]['alias']) {
+						songPresets[index]['alias'] = songPresets[index]['alt_name']
+						delete songPresets[index]['alt_name']
+					}
+						
+					if(songPresets[index]['aliases'] || songPresets[index]['aliass']) {
+						songPresets[index]['alias'] = (songPresets[index]['aliases'] || songPresets[index]['aliass'])
+						delete songPresets[index]['aliases']
+					}
+						
+					if(songPresets[index]['tag']) {
+						songPresets[index]['tags'] = songPresets[index]['tag'];
+						delete songPresets[index]['tag'];
+					}
+						
+					if(songPresets[index]['color3'] && !songPresets[index]['color2']) {
+						songPresets[index]['color2'] = songPresets[index]['color3']
+						delete songPresets[index]['color3']
+					}
+						
+					if(songPresets[index]['color2'] && !songPresets[index]['color']) {
+						songPresets[index]['color'] = songPresets[index]['color2']
+						delete songPresets[index]['color2']
+					}
+						
+						
+					if(typeof songPresets[index]['tags'] == 'string' || songPresets[index]['tags'] instanceof String) {
+						songPresets[index]['tags'] = [songPresets[index]['tags']]
+					}
+				})
 				
-			if(songPresets[index]['color2'] && !songPresets[index]['color']) {
-				songPresets[index]['color'] = songPresets[index]['color2']
-				delete songPresets[index]['color2']
-			}
-				
-				
-			if(typeof songPresets[index]['tags'] == 'string' || songPresets[index]['tags'] instanceof String) {
-				songPresets[index]['tags'] = [songPresets[index]['tags']]
-			}
-		})
-	
-		loadJSON(function(json) {
-			json = JSON.stringify(json);
-			songs = JSON.parse(json);
-			showAliases = Number(params.get('aliases') || params.get('alias') || params.get('showaliases') || params.get('showalias') || 0) > 0
-			Object.keys(songs).forEach(function (index){
-				let song = songs[index]
-				if(song['preset'] && songPresets[song['preset']]) {
-					let songPreset = songPresets[song['preset']]
-					Object.keys(songPreset).forEach(function (presetIndex){
-						if(presetIndex == "tags" && songPreset[presetIndex] && songs[index][presetIndex]) {
-							Object.keys(songPreset[presetIndex]).forEach(function (tagIndex){
-								if(!songs[index][presetIndex].includes(songPreset[presetIndex][tagIndex])) {
-									songs[index][presetIndex].push(songPreset[presetIndex][tagIndex])
+				loadJSON(function(json) {
+					json = JSON.stringify(json);
+					songs = JSON.parse(json);
+					Object.keys(songs).forEach(function (index){
+						let song = songs[index]
+						if(song['preset'] && songPresets[song['preset']]) {
+							let songPreset = songPresets[song['preset']]
+							Object.keys(songPreset).forEach(function (presetIndex){
+								if(presetIndex == "tags" && songPreset[presetIndex] && songs[index][presetIndex]) {
+									Object.keys(songPreset[presetIndex]).forEach(function (tagIndex){
+										if(!songs[index][presetIndex].includes(songPreset[presetIndex][tagIndex])) {
+											songs[index][presetIndex].push(songPreset[presetIndex][tagIndex])
+										}
+									})
+								}
+									
+								if(songPreset[presetIndex] && !songs[index][presetIndex]) {
+									songs[index][presetIndex] = songPreset[presetIndex]
 								}
 							})
 						}
-							
-						if(songPreset[presetIndex] && !songs[index][presetIndex]) {
-							songs[index][presetIndex] = songPreset[presetIndex]
+					})
+					
+					Object.keys(songs).forEach(function (index){
+						let song = songs[index]
+						if(song && song['name']) {
+							//function addMusicItem(fileName,name,categoryName,author,game,url,source)
+							addMusicItem(index,song['site_name'] || song['name'],song['category'],song['author'],song['game'],song['url'])
 						}
 					})
-				}
-			})
-			
-			let categories = getAllCategories(songs)
-			//console.log(categories)
-			categories.forEach(async function (catIndex){
-				let category = document.createElement("H1");
-				let categoryText = document.createTextNode(catIndex);
-				category.appendChild(categoryText);
-				category.style = "font-family:arial black; text-align: center; color:#FFFFFF"
-				var element = document.getElementById("div1");
-				
-				let hrLine = document.createElement("HR")
-				hrLine.style = "width:60%; color:#FFFFFF"
-				element.appendChild(hrLine)
-				
-				element.appendChild(category);
-				
-				let hrLine2 = document.createElement("HR")
-				hrLine2.style = "width:50%; color:#FFFFFF"
-				element.appendChild(hrLine2)
-				
-				let pastFirstOne = false
-				Object.keys(songs).forEach(function (index){
-					let song = songs[index]
-					let songGame = song['game'] || song['author'] || '???'
-					let songCategory = song['category'] || song['game'] || song['author'] || 'Other'
-					let songText = song['site_name'] || song["name"] || index || "???"
 					
-					if(song && songCategory == catIndex) {
-						if(songCategory.toLowerCase() == "other" && songGame != '???') {
-							songText = songText + " (" + songGame + ")"
-						}
-						let title = document.createElement("H2");
-						let titleText = document.createTextNode(songText);
-						title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
-						
-						if (song['url']) {
-							let titleUrl = document.createElement("A")
-							titleUrl.style = "font-family:arial black; text-align: center; color:#FFFFFF"
-							titleUrl.href = song['url']
-							titleUrl.appendChild(titleText);
-							title.appendChild(titleUrl)
-						}
-						else {
-							title.appendChild(titleText);
-						}
-						let possibleCommands = [index]
-						if(song['alias'] && showAliases) {
-							if(typeof song['alias'] == 'string' || song['alias'] instanceof String) {
-								song['alias'] = [song['alias']]
-							}
-							song['alias'].forEach(function (aliasIndex){
-								possibleCommands.push(aliasIndex || index)
-							})
-						}
-						
-						let commands = []
-						for (let i = 0; i < possibleCommands.length; i++) {
-							let command = document.createElement("P");
-							let commandText = document.createTextNode("!add "+(possibleCommands[i] || index));
-							command.appendChild(commandText);
-							command.style = "font-family:arial black; text-align: center; color:#FFFFFF"
-							
-							commands.push(command)
-						}
-						
-						if(pastFirstOne) {
-							let hrLine3 = document.createElement("HR")
-							hrLine3.style = "width:30%; color:#FFFFFF"
-							element.appendChild(hrLine3)
-						}
-						pastFirstOne = true
-						
-						element.appendChild(title);
-						for (let i = 0; i < commands.length; i++) {
-							element.appendChild(commands[i]);
-						}
-						title.style = "font-family:arial black; text-align: center; color:#FFFFFF"
+					let otherCategory = getCategoryDiv("Other",true)
+					if(otherCategory) {
+						musicList.appendChild(otherCategory)
+					}
+					
+					let elementsArray = document.querySelectorAll("input");
+					console.log(elementsArray)
+					elementsArray.forEach(function(elem) {
+						elem.addEventListener("input", resizeInput);
+						resizeInput.call(elem)
+					});
+					
+					function resizeInput() {
+						this.style.width = this.value.length + "ch";
+						console.log(this)
 					}
 				})
-				//let hrLine4 = document.createElement("HR")
-				//hrLine4.style = "width:30%; color:#FFFFFF"
-				//element.appendChild(hrLine4)
-			})
-			document.getElementById('div1').style.display = "block"
-			
-			let rndcmdElement = document.getElementById('rndcmd')
-			if(rndcmdElement) {
-				rndcmdElement.style.display = "block"
-			}
-		})
-	},"presets.json")
-	
-	lightModeOn = Number(params.get('light') || 0) > 0
-	
-	function swapLightDark() {
-		params.set('light', (!(lightModeOn || false) ? 1 : 0));
-
-		window.history.replaceState({}, '', `${location.pathname}?${params}`);
-		location.reload()
-	}
-	
-	if(lightModeOn) {
-		javascript: (
-			function () { 
-			// the css we are going to inject
-			var css = 'html {-webkit-filter: invert(100%);' +
-				'-moz-filter: invert(100%);' + 
-				'-o-filter: invert(100%);' + 
-				'-ms-filter: invert(100%); }',
-
-			head = document.getElementsByTagName('head')[0],
-			style = document.createElement('style');
-
-			// a hack, so you can "invert back" clicking the bookmarklet again
-			if (!window.counter) { window.counter = 1;} else  { window.counter ++;
-			if (window.counter % 2 == 0) { var css ='html {-webkit-filter: invert(0%); -moz-filter:    invert(0%); -o-filter: invert(0%); -ms-filter: invert(0%); }'}
-			 };
-
-			style.type = 'text/css';
-			if (style.styleSheet){
-			style.styleSheet.cssText = css;
-			} else {
-			style.appendChild(document.createTextNode(css));
-			}
-
-			//injecting the css to the head
-			head.appendChild(style);
-		}());
-	}
-</script>
-</body>
+			},"presets.json")
+		</script>
+	</body>
 </html>
