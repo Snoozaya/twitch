@@ -987,6 +987,33 @@
 		"tags": ["corruption"],
 		"url": "https://youtu.be/v8Ya3EjkiNU"
 	},
+	"neuroses": {
+		"name": "Neuroses",
+		"game": "Friday Night Funkin': Corruption",
+		"preset": "fnf",
+		"site_name": "Neuroses (Corruption)",
+		"color2":"#E12F79",
+		"color":"#1F1A30",
+		"colorstyle": 4,
+		"coloroption":2,
+		"holiday":1,
+		"tags": ["corruption"],
+		"url": "https://youtu.be/t6f-pB8iRss"
+	},
+	"discharge": {
+		"name": "Discharge",
+		"game": "Friday Night Funkin': Corruption",
+		"preset": "fnf",
+		"site_name": "Discharge (Corruption)",
+		"color2":"#E12F79",
+		"color":"#1F1A30",
+		"colorstyle": 4,
+		"coloroption":2,
+		"holiday":1,
+		"tags": ["corruption"],
+		"alias": ["strength_of_will"]
+		"url": "https://youtu.be/o57KYltJ-Tk"
+	},
 	"locked_in": {
 		"name": "Locked In",
 		"game": "Friday Night Foundation",
@@ -1125,6 +1152,62 @@
 		"color": "#00ff90",
 		"colorstyle": 4,
 		"tags": ["garcello","smoke_em_out","smoke_em_out_struggle"]
+	},
+	"god_eater": {
+		"name": "GOD EATER",
+		"game": "Friday Night Funkin': The Shaggy Mod",
+		"author": "srPerez",
+		"preset": "fnf",
+		"site_name": "GOD EATER (The Shaggy Mod)",
+		"color": "#4b3372",
+		"colorstyle": 4,
+		"url": "https://youtu.be/-pDcgQfLcKo",
+		"alias": "godeater",
+		"tags": ["shaggy","vs_shaggy","pshaggy"]
+	},
+	"thunderstorm": {
+		"name": "Thunderstorm",
+		"game": "Friday Night Funkin': The Shaggy Mod",
+		"author": "Saruky",
+		"preset": "fnf",
+		"site_name": "Thunderstorm (The Shaggy Mod)",
+		"color": "#d11a1a",
+		"url": "https://youtu.be/We7MPb-fmVA",
+		"tags": ["shaggy","vs_shaggy","rshaggy"]
+	},
+	"disassembler": {
+		"name": "Disassembler",
+		"game": "Friday Night Funkin': The Shaggy Mod",
+		"author": "Joan Atlas",
+		"preset": "fnf",
+		"site_name": "Disassembler (The Shaggy Mod)",
+		"color": "#d11a1a",
+		"url": "https://youtu.be/xg8RhE5show",
+		"alias": ["dissasembler","dissassembler","disasembler"],
+		"tags": ["shaggy","vs_shaggy","rshaggy"]
+	},
+	"astral_calamity": {
+		"name": "Astral calamity",
+		"game": "Friday Night Funkin': The Shaggy Mod",
+		"author": "srPerez",
+		"preset": "fnf",
+		"site_name": "Talladega (The Shaggy Mod)",
+		"color2": "#144800",
+		"color": "000000",
+		"colorstyle": 4,
+		"coloroption": 2,
+		"url": "https://youtu.be/wfT27eaqOVs",
+		"tags": ["shaggy","vs_shaggy","wbshaggy"]
+	},
+	"talladega": {
+		"name": "Talladega",
+		"game": "Friday Night Funkin': The Shaggy Mod",
+		"author": "srPerez",
+		"preset": "fnf",
+		"site_name": "Talladega (The Shaggy Mod)",
+		"color": "#144800",
+		"url": "https://youtu.be/xg8RhE5show",
+		"tags": ["shaggy","vs_shaggy","zshaggy","zephyrus"]
 	},
 	"have_a_nice_talk": {
 		"name": "Have a Nice Talk",
