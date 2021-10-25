@@ -1728,34 +1728,40 @@
 	},
 	"krofs_cave": {
 		"preset": "kemikziel",
+		"url": "https://kemikziel.bandcamp.com/album/a-land-of-tales-yet-to-be-told-ep",
 		"album": "A Land of Tales Yet to be Told EP",
 		"alias": "krof_cave",
 		"name": "Krof's Cave"
 	},
 	"norfrost": {
 		"preset": "kemikziel",
+		"url": "https://kemikziel.bandcamp.com/album/a-land-of-tales-yet-to-be-told-ep",
 		"album": "A Land of Tales Yet to be Told EP",
 		"alias": "nofrost",
 		"name": "Norfrost"
 	},
 	"wolf_castle": {
 		"preset": "kemikziel",
+		"url": "https://kemikziel.bandcamp.com/album/a-land-of-tales-yet-to-be-told-ep",
 		"album": "A Land of Tales Yet to be Told EP",
 		"name": "Wolf Castle"
 	},
 	"stomp_marsh": {
 		"preset": "kemikziel",
+		"url": "https://kemikziel.bandcamp.com/album/a-land-of-tales-yet-to-be-told-ep",
 		"album": "A Land of Tales Yet to be Told EP",
 		"name": "Stomp Marsh"
 	},
 	"sky_trail": {
 		"preset": "kemikziel",
+		"url": "https://kemikziel.bandcamp.com/album/a-land-of-tales-yet-to-be-told-ep",
 		"album": "A Land of Tales Yet to be Told EP",
 		"alias": "sky_trial",
 		"name": "Sky Trail"
 	},
 	"no_rest": {
 		"preset": "kemikziel",
+		"url": "https://kemikziel.bandcamp.com/album/a-land-of-tales-yet-to-be-told-ep",
 		"album": "A Land of Tales Yet to be Told EP",
 		"name": "No Rest"
 	}
