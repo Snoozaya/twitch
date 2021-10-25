@@ -40,6 +40,13 @@
 		"category": "Terraria",
 		"author": "Scott Lloyd Shelly",
 		"color": "#00FF00",
-		"tags": ["minecraft"]
+		"tags": ["terraria"]
+	},
+	"kemikziel": {
+		"author": "Kemikziel",
+		"album": "A Land of Tales Yet to be Told EP",
+		"tags": ["kemi","kemikziel"],
+		"color": "#668600",
+		"url": "https://kemikziel.bandcamp.com/"
 	}
 }

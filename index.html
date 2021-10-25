@@ -183,7 +183,7 @@
 				return categoryDiv
 			}
 		
-			function addMusicItem(fileName,name,categoryName,author,game,url,source) {
+			function addMusicItem(fileName,name,categoryName,author,game,url,album) {
 				let category = getCategoryDiv(categoryName || game || author || "Other")
 				
 				let musicItem = document.createElement("div")
@@ -266,6 +266,10 @@
 				
 				if(game) {
 					addField(musicSourceFieldsDiv,"Game",game)
+				}
+				
+				if(album) {
+					addField(musicSourceFieldsDiv,"Album",album)
 				}
 				
 				if(author) {
@@ -353,7 +357,7 @@
 						let song = songs[index]
 						if(song && song['name']) {
 							//function addMusicItem(fileName,name,categoryName,author,game,url,source)
-							addMusicItem(index,song['site_name'] || song['name'],song['category'],song['author'],song['game'],song['url'])
+							addMusicItem(index,song['site_name'] || song['name'],song['category'],song['author'],song['game'],song['url'],song['album'])
 						}
 					})
 					
