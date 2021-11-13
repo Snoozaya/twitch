@@ -13,6 +13,18 @@
 		"color": "#FF0000",
 		"tags": ["deltarune"]
 	},
+	"hl": {
+		"author":"Kelly Bailey",
+		"game":"Half-Life",
+		"category":"Half-Life",
+		"tags": ["half-life","hl","halflife","valve"],
+		"color": "#ff8000"
+	},
+	"kirby": {
+		"category":"Kirby",
+		"color":"#FFD6E8",
+		"tags": ["kirby"]
+	},
 	"fnf": {
 		"game": "Friday Night Funkin'",
 		"category": "Friday Night Funkin'",
