@@ -18,11 +18,26 @@
 				border-width: 20;
 				background: none;
 				padding: 0;
-				margin: 25;
+				padding: 25;
 				background-color: #000;
 				font-weight: bold;
 				font-size: 48px;
+				display: inline-block;
+				white-space: nowrap;
+			}
+			
+			.icon, .icon-text {
 				display: block;
+				vertical-align: middle;
+				white-space: nowrap;
+				width: 128px;
+				height: 128px;
+				transform: translateY(-64px);
+				float: left;
+				text-align: center;
+				margin: 0 auto;
+				margin-left: auto;
+				margin-right: auto;
 			}
 			
 			.music-copy-input {
@@ -100,6 +115,7 @@
 				height: 0.75em;
 				border-style: none;
 				border-width: 0;
+				
 				background: linear-gradient(to right, rgba(100,100,100,1), rgba(100,100,100,0));
 			}
 			
@@ -126,9 +142,11 @@
 				
 				<p>If you see a music visualiser on the screen, then you can type any of these commands in chat to request a song!</p>
 				
+				<p>I also try to maintain a <strong><a href="https://www.youtube.com/playlist?list=PLklKscz0XhO19JSwlz33TWntaYjS2ouBi">YouTube playlist</a></strong> that contains every song, but it may not be up to date. This list pulls straight from the .json file that the actual music player uses so it should always be up to date.</p>
+				
 				<p>If you have a song you want to be added to this list, feel free to suggest it in <strong>#suggestions on <a href="https://bit.ly/NUBZDISCORD">my discord server!</a></strong></p>
 				
-				<p>I try to credit all music with the artist(s) and source, if you own any of the music in this list and wish for me not to use it, you can contact me at <strong>nubz4lif#0001</strong> on Discord.</p>
+				<p>I try to credit all music with the artist(s) and source, if you own any of the music in this list and wish for me not to use it, or feel like you're not properly credited, you can contact me at <strong>nubz4lif#0001</strong> on Discord.</p>
 			</div>
 			<div id="music-list">
 			</div>
@@ -159,7 +177,7 @@
 				xobj.send(null);  
 			}
 			
-			function getCategoryDiv(category,shouldntCreate) {
+			function getCategoryDiv(category,shouldntCreate,imgSource) {
 				let categoryDivName = "div-category-"+(category.toLowerCase().replaceAll(" ","-").replaceAll("_","-"))
 				let categoryDiv = document.getElementById(categoryDivName);
 				if(!categoryDiv && !shouldntCreate) {
@@ -171,13 +189,29 @@
 					categoryDiv = document.createElement("div")
 					categoryDiv.id = categoryDivName
 					
+					let categoryTitleSpan = document.createElement("span")
+					
 					let categoryTitle = document.createElement("p")
 					categoryTitle.className = "category-name"
 					categoryTitle.appendChild(document.createTextNode(category))
 					
+					console.log(imgSource)
+					
+					let imgSourceName = categoryDivName+"-sourceImg"
+					
+					let img			
+					if(imgSource && !document.getElementById(imgSourceName) && false) {
+						img = document.createElement("img")
+						img.src = imgSource
+						img.className = "icon"
+						img.id = imgSourceName
+						categoryTitleSpan.appendChild(img)
+					}
+					categoryTitleSpan.appendChild(categoryTitle)
+					
 					categoryDiv.appendChild(hrLine)
 					musicList.appendChild(categoryDiv)
-					categoryDiv.appendChild(categoryTitle)
+					categoryDiv.appendChild(categoryTitleSpan)
 					categoryDiv.appendChild(hrLine2)
 					categoryDiv.appendChild(hrLine3)
 					return categoryDiv
@@ -185,8 +219,8 @@
 				return categoryDiv
 			}
 		
-			function addMusicItem(fileName,name,categoryName,author,game,url,album) {
-				let category = getCategoryDiv(categoryName || game || author || "Other")
+			function addMusicItem(fileName,name,categoryName,author,game,url,album,categoryImage) {
+				let category = getCategoryDiv(categoryName || game || author || "Other",false,categoryImage)
 				
 				let musicItem = document.createElement("div")
 				musicItem.id = "div-music-" + ((fileName || name || author || game).replaceAll(" ","-").replaceAll("_","-"))
@@ -359,7 +393,7 @@
 						let song = songs[index]
 						if(song && song['name']) {
 							//function addMusicItem(fileName,name,categoryName,author,game,url,source)
-							addMusicItem(index,song['site_name'] || song['name'],song['category'],song['author'],song['game'],song['url'],song['album'])
+							addMusicItem(index,song['site_name'] || song['name'],song['category'],song['author'],song['game'],song['url'],song['album'],song['category_img'] || song['categoryimg'])
 						}
 					})
 					
@@ -369,7 +403,6 @@
 					}
 					
 					let elementsArray = document.querySelectorAll("input");
-					console.log(elementsArray)
 					elementsArray.forEach(function(elem) {
 						elem.addEventListener("input", resizeInput);
 						resizeInput.call(elem)
@@ -377,7 +410,6 @@
 					
 					function resizeInput() {
 						this.style.width = this.value.length + "ch";
-						console.log(this)
 					}
 				})
 			},"presets.json")
