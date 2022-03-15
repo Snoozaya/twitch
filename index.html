@@ -391,7 +391,7 @@
 					
 					Object.keys(songs).forEach(function (index){
 						let song = songs[index]
-						if(song && song['name']) {
+						if(song && song['name'] && !song['hidden']) {
 							//function addMusicItem(fileName,name,categoryName,author,game,url,source)
 							addMusicItem(index,song['site_name'] || song['name'],song['category'],song['author'],song['game'],song['url'],song['album'],song['category_img'] || song['categoryimg'])
 						}

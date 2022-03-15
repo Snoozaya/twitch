@@ -15,13 +15,13 @@
 		"name": "Spear Of Justice",
 		"preset": "undertale",
 		"color": "#00C700",
-		"alias": ["undyne"],
+		"tags": ["undyne"],
 		"url": "https://youtu.be/ApWpYmO7G28"
 	},
 	"metal_crusher": {
 		"name": "Metal Crusher",
 		"preset": "undertale",
-		"tag": ["mettaton","alphys"],
+		"tags": ["mettaton","alphys"],
 		"url": "https://youtu.be/2CvQKExckSk"
 	},
 	"stronger_monsters": {
@@ -33,6 +33,7 @@
 		"name": "Battle Against a True Hero",
 		"preset": "undertale",
 		"color": "#00C700",
+		"tags": ["undyne"],
 		"alias": ["undying"],
 		"url": "https://youtu.be/DcERQHg3iy8"
 	},
@@ -61,7 +62,7 @@
 		"name": "Empty Town",
 		"preset": "deltarune",
 		"url": "https://youtu.be/p8jCS2nSMmI",
-		"tags": ["ch1","chapter1","calm","chill"],
+		"tags": ["ch1","chapter1"],
 		"volume": 1.5
 	},
 	"field_of_hopes_and_dreams": {
@@ -360,10 +361,52 @@
 		"url": "https://youtu.be/k7e7Kl2OSkc",
 		"alias": "autumn_mountain"
 	},
+	"delfino_plaza": {
+		"name": "Delfino Plaza",
+		"author": "Koji Kondo",
+		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
+		"url":"https://youtu.be/E3tkgU0pQmQ",
+		"game": "Super Mario Sunshine"
+	},
+	"ricco_harbor": {
+		"name": "Ricco Harbor",
+		"author": "Koji Kondo",
+		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
+		"url":"https://youtu.be/9TQha9lWjFk",
+		"game": "Super Mario Sunshine"
+	},
+	"vs_boss": {
+		"name": "VS Boss",
+		"author": "Koji Kondo",
+		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
+		"url": "https://youtu.be/CqqElFaiO_o",
+		"game": "Super Mario Sunshine"
+	},
+	"meet_bowser_jr": {
+		"name": "Meet Bowser Jr.",
+		"author": "Koji Kondo",
+		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario","bowser_jr","bowserjr","bjr"],
+		"url":"https://youtu.be/UPR7uvXIC3A",
+		"game": "Super Mario Sunshine"
+	},
+	"mecha_bowser": {
+		"name": "Mecha Bowser",
+		"author": "Koji Kondo",
+		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
+		"url":"https://youtu.be/oXGi80uZIf4",
+		"game": "Super Mario Sunshine"
+	},
 	"dino_piranha": {
 		"name": "Dino Piranha",
 		"tags": ["mario","galaxy","mariogalaxy","supermariogalaxy","3dmario"],
 		"url": "https://youtu.be/Yqyterw15c4",
+		"game": "Super Mario Galaxy"
+	},
+	"space_junk_road": {
+		"name": "Space Junk Road",
+		"tags": ["chill","calm","mario","galaxy","mariogalaxy","supermariogalaxy","3dmario"],
+		"url": "https://youtu.be/EuYNxzSFRk8",
+		"alias": ["space_junk_galaxy"],
 		"game": "Super Mario Galaxy"
 	},
 	"enter_bowser_jr": {
@@ -402,72 +445,92 @@
 		"url": "https://youtu.be/jihuc5ffhfI",
 		"game": "Super Mario Galaxy"
 	},
+	"cosmic_cove_galaxy": {
+		"name": "Cosmic Cove Galaxy",
+		"category": "Super Mario Galaxy",
+		"tags": ["chill","calm","mario","galaxy","galaxy2","mariogalaxy2","supermariogalaxy2","3dmario"],
+		"url": "https://youtu.be/AlIdlrlv6Ak",
+		"game": "Super Mario Galaxy 2"
+	},
 	"super_bell_hill": {
 		"name": "Super Bell Hill",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
+		"url": "https://youtu.be/wFxzHKx1BYQ",
 		"game": "Super Mario 3D World"
 	},
 	"double_cherry_pass": {
 		"name": "Double Cherry Pass",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
+		"url": "https://youtu.be/LtmZJwbLjb0",
 		"game": "Super Mario 3D World"
 	},
 	"plunging_falls": {
 		"name": "Plunging Falls",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
+		"url": "https://youtu.be/J-0hzvMPdnM",
 		"game": "Super Mario 3D World"
 	},
 	"captain_toad": {
-		"name": "Adventures of Captain Toad",
-		"site_name": "The Adventures of Captain Toad",
+		"name": "Captain Toad Goes Forth",
+		"site_name": "Captain Toad Goes Forth",
 		"game": "Super Mario 3D World",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","toad","3dmario"],
+		"url": "https://youtu.be/LvSm8tmYNDU",
 		"color": "#FFFFFF",
 		"color2": "#FF0000",
+		"alias": ["adventures_of_captain_toad"],
 		"coloroption": 6
 	},
 	"piranha_creeper_creek": {
 		"name": "Piranha Creeper Creek",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
+		"url": "https://youtu.be/JF0GA_u-XQ4",
 		"game": "Super Mario 3D World"
 	},
 	"lava_lake_keep": {
 		"name": "Bowser's Lava Lake Keep",
 		"effect": 2,
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
+		"url": "https://youtu.be/kvlu234xOo4",
 		"game": "Super Mario 3D World"
 	},
 	"fort_fire_bros": {
 		"name": "Fort Fire Bros",
 		"effect": 2,
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
+		"url": "https://youtu.be/j013gslDr88",
 		"game": "Super Mario 3D World"
 	},
 	"beep_block_skyway": {
 		"name": "Beep Block Skyway",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
+		"url": "https://youtu.be/W1jh40S5sFY",
 		"game": "Super Mario 3D World"
 	},
 	"motley": {
 		"name": "Motley Bossblob",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
+		"url": "https://youtu.be/5e6aKpLTGqM",
 		"game": "Super Mario 3D World"
 	},
 	"hisstocrat": {
 		"name": "Hisstocrat",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","3dmario"],
+		"url": "https://youtu.be/qdXgHUvpAuY",
 		"game": "Super Mario 3D World"
 	},
 	"scamper_shores": {
 		"name": "Scamper Shores",
 		"game": "Super Mario 3D World + Bowser's Fury",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","bowsersfury","bowser","fury","bowserfury","3dmario"],
+		"url": "https://youtu.be/P8QtxzpBLek",
 		"category": "Bowser's Fury"
 	},
 	"pounce_bounce": {
 		"name": "Pounce Bounce Isle",
 		"game": "Super Mario 3D World + Bowser's Fury",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","bowsersfury","bowser","fury","bowserfury","3dmario"],
+		"url": "https://youtu.be/qzfyx2Ngpnw",
 		"category": "Bowser's Fury"
 	},
 	"mount_magmeow": {
@@ -475,6 +538,7 @@
 		"game": "Super Mario 3D World + Bowser's Fury",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","bowsersfury","bowser","fury","bowserfury","3dmario"],
 		"effect": 2,
+		"url": "https://youtu.be/3qtiG6GapOw",
 		"category": "Bowser's Fury"
 	},
 	"scamper_shores_remix": {
@@ -483,7 +547,7 @@
 		"name": "Scamper Shores (Qumu Remix)",
 		"tags": ["mario","3dworld","3d","mario3dworld","mario3d","supermario3dworld","bowsersfury","bowser","fury","bowserfury","3dmario","remix"],
 		"author": "Qumu",
-		"alias": ["qumu","scamper_shore_remix"],
+		"alias": ["qumu","scamper_shore_remix","scamper_shores_qumu","scamper_shore_qumu"],
 		"url": "https://youtu.be/UAOGPIOL_JE"
 	},
 	"blue_sky": {
@@ -502,31 +566,37 @@
 		"color2": "#ffffff",
 		"colorstyle": 1,
 		"coloroption": 6,
+		"url": "https://youtu.be/KDeMFxTLCIM",
 		"game": "Super Mario Odyssey"
 	},
 	"tostarena": {
 		"name": "Tostarena Ruins",
 		"tags": ["mario","odyssey","marioodyssey","supermarioodyssey","3dmario"],
+		"url": "https://youtu.be/2wWLYg-kgy0",
 		"game": "Super Mario Odyssey"
 	},
 	"honeylune_ridge": {
 		"name": "Honeylune Ridge: Caves",
 		"tags": ["mario","odyssey","marioodyssey","supermarioodyssey","3dmario"],
+		"url": "https://youtu.be/wLxvJZL-ZyQ",
 		"game": "Super Mario Odyssey"
 	},
 	"desert_hill": {
 		"name": "Desert Hills",
 		"tags": ["mario","3","smb3","mario3"],
+		"url": "https://youtu.be/eRXqOpw3uQA",
 		"game": "Super Mario Bros. 3"
 	},
 	"above_ground": {
 		"name": "Above Ground Theme",
 		"tags": ["mario","3","smb3","mario3"],
+		"url": "https://youtu.be/Q_saM7I20pY",
 		"game": "Super Mario Bros. 3"
 	},
 	"boom_boom": {
 		"name": "Boom Boom",
 		"tags": ["mario","3","smb3","mario3"],
+		"url": "https://youtu.be/03gX-re5C9g",
 		"game": "Super Mario Bros. 3"
 	},
 	"nuclear_missile_jam": {
@@ -584,6 +654,7 @@
 		"game": "Half-Life: Alyx",
 		"author": "Mike Morasky",
 		"tags": ["alyx","valve"],
+		"url": "https://youtu.be/03gX-re5C9g",
 		"preset": "hl"
 	},
 	"scanning_hostile_biodats": {
@@ -609,6 +680,14 @@
 		"preset": "hl",
 		"tags": ["alyx","valve"],
 		"url": "https://youtu.be/xv_MNYbr0z0"
+	},
+	"cauterizer": {
+		"name": "Cauterizer",
+		"game": "Half-Life: Alyx",
+		"author": "Mike Morasky",
+		"preset": "hl",
+		"tags": ["alyx","valve","strider"],
+		"url": "https://youtu.be/_rRAaUa_VAQ"
 	},
 	"still_alive": {
 		"name": "Still Alive",
@@ -735,6 +814,7 @@
 	},
 	"test": {
 		"name": "Test (Unused)",
+		"site_name": "Test",
 		"preset": "fnf",
 		"url": "https://youtu.be/qn3n4hyZRJg"
 	},
@@ -754,7 +834,15 @@
 		"name": "Dad Battle",
 		"preset": "fnf",
 		"tags": ["week1"],
-		"url": "https://youtu.be/w0WyKTSuX4U"
+		"url": "https://youtu.be/w0WyKTSuX4U",
+		"alias": "dadbattle"
+	},
+	"dad_battle_erect": {
+		"name": "Dad Battle (ERECT Remix)",
+		"preset": "fnf",
+		"tags": ["week1","erect"],
+		"url": "https://youtu.be/L3mmBIADJ-A",
+		"alias": ["dadbattle_erect","dadbattleerect","dad_battleerect"]
 	},
 	"spookeez": {
 		"name": "Spookeez",
@@ -774,11 +862,20 @@
 		"tags": ["week2"],
 		"url": "https://youtu.be/g-ncy3BS4AI"
 	},
+	"south_erect": {
+		"name": "South (ERECT Remix)",
+		"preset": "fnf",
+		"color2": "#FF8000",
+		"color": "#FFFFFF",
+		"holiday": 1,
+		"tags": ["week2","erect"],
+		"url": "https://youtu.be/85rufkoFmUk"
+	},
 	"monster": {
 		"name": "Monster",
 		"preset": "fnf",
 		"color": "#FFFF00",
-		"author": "BassetFilms",
+		"author": "Kawai Sprite (feat. BassetFilms)",
 		"holiday": 1,
 		"tags": ["week2"],
 		"url": "https://youtu.be/NQSkjR7P3_A"
@@ -969,6 +1066,24 @@
 		"tags": ["tricky"],
 		"url": "https://youtu.be/WmXn3L5bQy4"
 	},
+	"accelerant": {
+		"name": "Accelerant",
+		"game": "Friday Night Funkin' ONLINE VS.",
+		"preset": "fnf",
+		"color": "#FF0000",
+		"author": "philiplol",
+		"tags": ["tricky","hank"],
+		"url": "https://youtu.be/d2_DIMvT3FM"
+	},
+	"unloaded": {
+		"name": "Unloaded",
+		"game": "Friday Night Funkin' ONLINE VS.",
+		"preset": "fnf",
+		"color": "#285fa7",
+		"author": "philiplol",
+		"tags": ["pico","uberkids","uberkid"],
+		"url": "https://youtu.be/XqoUaS250M4"
+	},
 	"my_battle": {
 		"name": "My Battle",
 		"game": "Friday Night Funkin': V.S. Tabi",
@@ -994,6 +1109,14 @@
 		"tags": ["tabi"],
 		"url": "https://youtu.be/VXrq9cUWS2M"
 	},
+	"termination": {
+		"name": "Termination",
+		"game": "Friday Night Funkin': QT Mod",
+		"preset": "fnf",
+		"color": "#f21e83",
+		"tags": ["qt"],
+		"url": "https://youtu.be/vH3OStyCSbk"
+	},
 	"chiller": {
 		"name": "Chiller",
 		"game": "Friday Night Funkin': Corruption",
@@ -1005,6 +1128,18 @@
 		"holiday":1,
 		"tags": ["corruption"],
 		"url": "https://youtu.be/-UPjKMFkwk0"
+	},
+	"deathmatch": {
+		"name": "Deathmatch",
+		"game": "Friday Night Funkin': Corruption",
+		"preset": "fnf",
+		"color2":"#E12F79",
+		"color":"#1F1A30",
+		"colorstyle": 4,
+		"coloroption":2,
+		"holiday":1,
+		"tags": ["corruption"],
+		"url": "https://youtu.be/OL6oJSiFue0"
 	},
 	"tormentor": {
 		"name": "Tormentor",
@@ -1089,7 +1224,7 @@
 		"volume": 2.25,
 		"tags": ["foundation","scp"],
 		"alias": ["999","scp-999"],
-		"url": "https://youtu.be/N-YfO7TMCb0"
+		"url": "https://youtu.be/4TlC2wTmYZk"
 	},
 	"mayhem": {
 		"name": "Mayhem",
@@ -1142,6 +1277,7 @@
 		"author": "atsuiver",
 		"preset": "fnf",
 		"color": "#00ff90",
+		"url": "https://youtu.be/6-3vYumGwzU",
 		"tags": ["garcello","smoke_em_out","smoke_em_out_struggle"]
 	},
 	"nerves": {
@@ -1150,6 +1286,7 @@
 		"author": "atsuiver",
 		"preset": "fnf",
 		"color": "#00ff90",
+		"url": "https://youtu.be/FdCODFpjqkQ",
 		"tags": ["garcello","smoke_em_out","smoke_em_out_struggle"]
 	},
 	"release": {
@@ -1159,6 +1296,7 @@
 		"preset": "fnf",
 		"color": "#00ff90",
 		"colorstyle": 4,
+		"url": "https://youtu.be/MWTD2fnqZgQ",
 		"tags": ["garcello","smoke_em_out","smoke_em_out_struggle"]
 	},
 	"fading": {
@@ -1168,6 +1306,7 @@
 		"preset": "fnf",
 		"color": "#00ff90",
 		"colorstyle": 4,
+		"url": "https://youtu.be/DmUdZ3P97HE",
 		"tags": ["garcello","smoke_em_out","smoke_em_out_struggle"]
 	},
 	"god_eater": {
@@ -1218,14 +1357,243 @@
 		"author": "srPerez",
 		"preset": "fnf",
 		"color": "#144800",
-		"url": "https://youtu.be/xg8RhE5show",
+		"url": "https://youtu.be/jKi9gLC2EoM",
 		"tags": ["shaggy","vs_shaggy","zshaggy","zephyrus"]
+	},
+	"mushroom_plains": {
+		"name": "Mushroom Plains",
+		"game": "FNF: Super Mario Bros. Funk Mix",
+		"author": "KrystalPhantasm",
+		"preset": "fnf",
+		"color": "#be3d1d",
+		"url": "https://youtu.be/ESw57gYVUR4",
+		"tags": ["mario","smb_funk","smb_funk_mix"],
+		"alias": ["mushroom_plain","mushroom_planes","mushroom_plane"]
+	},
+	"bricks_and_lifts": {
+		"name": "Bricks and Lifts",
+		"game": "FNF: Super Mario Bros. Funk Mix",
+		"author": "KrystalPhantasm",
+		"preset": "fnf",
+		"color": "#be3d1d",
+		"url": "https://youtu.be/o2AiSZ8CU-w",
+		"tags": ["mario","smb_funk","smb_funk_mix"],
+		"alias": ["lifts_and_bricks","bricks_&_lifts","lifts_&_bricks"]
+	},
+	"lethal_lava_lair": {
+		"name": "Lethal Lava Lair",
+		"game": "FNF: Super Mario Bros. Funk Mix",
+		"author": "KrystalPhantasm",
+		"preset": "fnf",
+		"url": "https://youtu.be/NDtZmd1za5Y",
+		"color": "#FF0000",
+		"effect": 2,
+		"tags": ["mario","smb_funk","smb_funk_mix"],
+		"alias": ["lethal_lava_lare"]
+	},
+	"2_player_game": {
+		"name": "2 PLAYER GAME",
+		"game": "FNF: Super Mario Bros. Funk Mix",
+		"author": "KrystalPhantasm",
+		"preset": "fnf",
+		"color": "#04b904",
+		"url": "https://youtu.be/1gRA5E0fhCo",
+		"tags": ["mario","luigi","smb_funk","smb_funk_mix"],
+		"alias": ["2_player"]
+	},
+	"overworked": {
+		"name": "Overworked",
+		"preset": "fnf",
+		"game": "Friday Night Funkin': Pibby Corrupted",
+		"author": "SmokeDeveloper",
+		"tags": ["pibby","mordecai"],
+		"url": "https://youtu.be/4h_3XKPFfXU"
+	},
+	"last_spooktober": {
+		"name": "Last Spooktober",
+		"preset": "fnf",
+		"game": "Friday Night Funkin': Pibby Corrupted",
+		"author": "SmokeDeveloper",
+		"color2": "#FF8000",
+		"color": "#FFFFFF",
+		"holiday": 1,
+		"tags": ["pibby"],
+		"url": "https://youtu.be/q9RbWoK1BYQ"
+	},
+	"blueballed": {
+		"name": "Blueballed",
+		"preset": "fnf",
+		"game": "Friday Night Funkin': Pibby Corrupted",
+		"author": "SmokeDeveloper",
+		"tags": ["pibby"],
+		"url": "https://youtu.be/7IVADk7effA"
+	},
+	"plum": {
+		"name": "Plum",
+		"game": "Friday Night Funkin': The Holiday Mod",
+		"author": "bbpanzu",
+		"preset": "fnf",
+		"holiday": 3,
+		"url": "https://youtu.be/NXRazSy5GBc",
+		"tags": ["holiday","holiday_mod","dance_of_the_sugar_plum_fairy"]
+	},
+	"demolition": {
+		"name": "Demolition",
+		"game": "Friday Night Funkin': The Holiday Mod",
+		"author": "fluffyhairs",
+		"preset": "fnf",
+		"holiday": 3,
+		"url": "https://youtu.be/G6XNoYUQEew",
+		"tags": ["holiday","holiday_mod","eddsworld","tom"]
+	},
+	"zanta": {
+		"name": "ZANTA",
+		"game": "Friday Night Funkin': The Holiday Mod",
+		"author": "bbpanzu",
+		"preset": "fnf",
+		"url": "https://youtu.be/yeQmsKGhysI",
+		"holiday": 3,
+		"tags": ["holiday","holiday_mod","eddsworld","edd","tom","matt"],
+		"alias": ["zanta_claws","zanta_claus"]
+	},
+	"birdbrain": {
+		"name": "Birdbrain",
+		"game": "Friday Night Funkin': VS. Berdly",
+		"author": "TaeSkull",
+		"preset": "fnf",
+		"url": "https://youtu.be/7ls995xwB9o",
+		"tags": ["berdly"],
+		"alias": ["bird_brain"]
+	},
+	"celebrate": {
+		"name": "Celebrate",
+		"game": "FNF: Funkin' at Freddy's",
+		"author": "punkett",
+		"preset": "fnf",
+		"url": "https://youtu.be/qH80X2qBBdo",
+		"tags": ["freddy","freddys"],
+		"color": "#704b96",
+		"alias": ["celebration"]
+	},
+	"follow_me": {
+		"name": "Follow Me",
+		"game": "FNF: Funkin' at Freddy's",
+		"author": "punkett",
+		"preset": "fnf",
+		"url": "https://youtu.be/fwfL6GEtT6w",
+		"tags": ["freddy","freddys"],
+		"color": "#704b96",
+		"alias": ["followme"]
+	},
+	"midnight": {
+		"name": "Midnight",
+		"game": "FNF: Funkin' at Freddy's",
+		"author": "punkett",
+		"preset": "fnf",
+		"url": "https://youtu.be/D8Z1HTHyN2c",
+		"tags": ["freddy","freddys"],
+		"color": "#704b96",
+		"alias": ["mid_night"]
+	},
+	"you_cant": {
+		"name": "You Can't",
+		"game": "FNF: Funkin' at Freddy's",
+		"author": "punkett",
+		"preset": "fnf",
+		"url": "https://youtu.be/bS0K4m4V1QU",
+		"tags": ["freddy","freddys"],
+		"color": "#704b96",
+		"alias": ["you cant","you_can't"]
+	},
+	"salvage": {
+		"name": "Salvage",
+		"game": "FNF: Funkin' at Freddy's",
+		"author": "punkett",
+		"preset": "fnf",
+		"url": "https://youtu.be/Nctrx0aCHgY",
+		"tags": ["freddy","freddys"],
+		"hidden": true,
+		"color": "#665C45"
+	},
+	"nightmare": {
+		"name": "Nightmare",
+		"game": "FNF: Funkin' at Freddy's",
+		"author": "punkett",
+		"preset": "fnf",
+		"url": "https://youtu.be/3NfrS4G7ktU",
+		"tags": ["freddy","freddys"],
+		"color": "#665C45"
+	},
+	"umbra": {
+		"name": "Umbra",
+		"game": "FNF: Funkin' at Freddy's",
+		"author": "punkett",
+		"preset": "fnf",
+		"url": "https://youtu.be/uirQc7NbJyY",
+		"tags": ["freddy","freddys"],
+		"color": "#3B003B",
+		"holiday": 1,
+		"alias": ["umbre"]
+	},
+	"fourth_wall": {
+		"name": "Fourth Wall",
+		"game": "FNF: Funkin' at Freddy's",
+		"author": "Jacaris",
+		"preset": "fnf",
+		"url": "https://youtu.be/DasvPggZMWE",
+		"tags": ["freddy","freddys"],
+		"alias": ["4th_wall","4_wall"]
+	},
+	"its_a_me": {
+		"name": "It's a me",
+		"game": "FNF: Mario's Madness",
+		"author": "KINGF0X",
+		"preset": "fnf",
+		"url": "https://youtu.be/xJLnsd9EaBE",
+		"tags": ["marios_madness"],
+		"holiday": 1,
+		"color": "#280000",
+		"alias": ["it's_a_me","itsame","it'same"]
+	},
+	"golden_land": {
+		"name": "Golden Land",
+		"game": "FNF: Mario's Madness",
+		"author": "KennyL",
+		"preset": "fnf",
+		"url": "https://youtu.be/nTAMcTW77Zg",
+		"tags": ["marios_madness"],
+		"holiday": 1,
+		"color": "#464646",
+		"alias": ["goldenland"]
+	},
+	"i_hate_you": {
+		"name": "I Hate You",
+		"game": "FNF: Mario's Madness",
+		"author": "KennyL",
+		"preset": "fnf",
+		"url": "https://youtu.be/PLZA83NWK9o",
+		"tags": ["marios_madness"],
+		"holiday": 1,
+		"color": "#14b400",
+		"alias": ["ihateyou"]
+	},
+	"apparition": {
+		"name": "Apparition",
+		"game": "FNF: Mario's Madness",
+		"author": "KennyL",
+		"preset": "fnf",
+		"url": "https://youtu.be/BtulZTsJrf4",
+		"tags": ["marios_madness"],
+		"holiday": 1,
+		"color": "#a37c3c",
+		"alias": ["wario_apparition","warioapparition"]
 	},
 	"have_a_nice_talk": {
 		"name": "Have a Nice Talk",
 		"game": "Mario & Luigi: Bowser's Inside Story",
 		"category": "Mario & Luigi",
-		"tags": ["calm","chill","mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis"]
+		"url": "https://youtu.be/QQKKs67A-9U",
+		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis"]
 	},
 	"toad_town": {
 		"name": "Short Break in Toad Town",
@@ -1234,30 +1602,36 @@
 		"color": "#FFFFFF",
 		"color2": "#FF0000",
 		"coloroption": 10,
-		"tags": ["calm","chill","mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis","toad"]
+		"alias": ["short_break_in_toad_town"],
+		"url": "https://youtu.be/g6nG4-EgfFk",
+		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis","toad"]
 	},
 	"tough_guy_alert": {
 		"name": "Tough Guy Alert",
 		"game": "Mario & Luigi: Bowser's Inside Story",
 		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis"],
+		"url": "https://youtu.be/cdaL0RZLIGs",
 		"category": "Mario & Luigi"
 	},
 	"show_time": {
 		"name": "SHOW TIME!",
 		"game": "Mario & Luigi: Bowser's Inside Story",
 		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis"],
+		"url": "https://youtu.be/uEWCgkFGU0g",
 		"category": "Mario & Luigi"
 	},
 	"grand_finale": {
 		"name": "The Grand Finale",
 		"game": "Mario & Luigi: Bowser's Inside Story",
 		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis"],
+		"url": "https://youtu.be/FBLp-3Rw_u0",
 		"category": "Mario & Luigi"
 	},
 	"charge_and_clash": {
 		"name": "Charge and Clash!",
 		"game": "Bowser Jr.'s Journey",
 		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis","bowser_jr","bowserjr","bjr"],
+		"url": "https://youtu.be/ENJFuBHdCkk",
 		"category": "Mario & Luigi"
 	},
 	"greenhorn_forest": {
@@ -1265,29 +1639,34 @@
 		"game": "Wario World",
 		"volume": 0.5,
 		"tags": ["wario","wah"],
+		"url": "https://youtu.be/mxA33Jw61Kg",
 		"category": "Other"
 	},
 	"vampire_killer": {
 		"name": "Vampire Killer",
 		"game": "Castlevania",
 		"volume": 2.5,
+		"url": "https://youtu.be/btgi3TPL3AE",
 		"holiday": 1
 	},
 	"stalker": {
 		"name": "Stalker",
 		"game": "Castlevania",
 		"volume": 2.5,
+		"url": "https://youtu.be/kQMIsw5fMKc",
 		"holiday": 1
 	},
 	"out_of_time": {
 		"name": "Out of Time",
 		"game": "Castlevania",
 		"volume": 2.5,
+		"url": "https://youtu.be/NJjoZccwV8s",
 		"holiday": 1
 	},
 	"golden_trophy": {
 		"name": "Combat (Golden Trophy)",
 		"game": "Rec Room",
+		"url": "https://youtu.be/Qa5iY5DpTwc",
 		"category": "Other"
 	},
 	"battle_64": {
@@ -1319,6 +1698,7 @@
 			"p_switch_smw",
 			"p_switch_world"
 		],
+		"url": "https://youtu.be/5-owQ4arZL4",
 		"tags": ["mario","world","marioworld","2dmario"],
 		"color": "#8888f8"
 	},
@@ -1327,6 +1707,7 @@
 		"game": "Super Mario World",
 		"author": "Koji Kondo",
 		"tags": ["mario","world","marioworld","2dmario"],
+		"url": "https://youtu.be/k6K7NKyErXA",
 		"alias": "ground_smw"
 	},
 	"athletic_world": {
@@ -1334,6 +1715,7 @@
 		"game": "Super Mario World",
 		"author": "Koji Kondo",
 		"tags": ["mario","world","marioworld","2dmario"],
+		"url": "https://youtu.be/8NNaPbQQ2Fw",
 		"alias": "athletic_smw"
 	},
 	"underground_world": {
@@ -1341,6 +1723,7 @@
 		"game": "Super Mario World",
 		"author": "Koji Kondo",
 		"tags": ["mario","world","marioworld","2dmario"],
+		"url": "https://youtu.be/a8aFhDwS3og",
 		"alias": "underground_smw"
 	},
 	"underwater_world": {
@@ -1348,6 +1731,7 @@
 		"game": "Super Mario World",
 		"author": "Koji Kondo",
 		"tags": ["mario","world","marioworld","2dmario"],
+		"url": "https://youtu.be/NHPZ4iX2Q_0",
 		"alias": "underwater_smw"
 	},
 	"ghost_house_world": {
@@ -1355,6 +1739,7 @@
 		"game": "Super Mario World",
 		"author": "Koji Kondo",
 		"tags": ["mario","world","marioworld","2dmario"],
+		"url": "https://youtu.be/OY16E7Kzadg",
 		"alias": "ghost_house_smw",
 		"holiday": 1
 	},
@@ -1363,6 +1748,7 @@
 		"game": "Super Mario Maker 2",
 		"category": "Super Mario Maker",
 		"author": "Koji Kondo",
+		"url": "https://youtu.be/Qpgh-rAwzw4",
 		"tags": ["mario","world","marioworld","2dmario","mariomaker","mm2","mariomaker2"],
 		"alias": "forest_smw"
 	},
@@ -1373,6 +1759,7 @@
 		"author": "Koji Kondo",
 		"effect": 1,
 		"alias": "snow_smw",
+		"url": "https://youtu.be/TZ0uG32mf_A",
 		"tags": ["mario","world","marioworld","2dmario","mariomaker","mm2","mariomaker2"],
 		"holiday": 2
 	},
@@ -1390,6 +1777,7 @@
 		"category": "Super Mario Maker",
 		"tags": ["mario","world","marioworld","2dmario","mariomaker","mm2","mariomaker2"],
 		"author": "Koji Kondo",
+		"url": "https://youtu.be/o0u_gFvePe8",
 		"alias": "desert_smw"
 	},
 	"castle_world": {
@@ -1398,6 +1786,7 @@
 		"author": "Koji Kondo",
 		"effect": 2,
 		"alias": "castle_smw",
+		"url": "https://youtu.be/7BDuqTH3f3w",
 		"tags": ["mario","world","marioworld","2dmario"],
 		"color": "#FF0000"
 	},
@@ -1405,12 +1794,14 @@
 		"name": "Ground",
 		"game": "New Super Mario Bros. U",
 		"tags": ["mario","nsmb","nsmbu","u"],
+		"url": "https://youtu.be/j1fGMc1j3b4",
 		"category": "New Super Mario Bros."
 	},
 	"athletic_u": {
 		"name": "Athletic",
 		"game": "New Super Mario Bros. U",
 		"tags": ["mario","nsmb","nsmbu","u"],
+		"url": "https://youtu.be/sQFVLP2i8d8",
 		"category": "New Super Mario Bros."
 	},
 	"jungle_u": {
@@ -1418,6 +1809,7 @@
 		"game": "New Super Mario Bros. U",
 		"tags": ["mario","nsmb","nsmbu","u"],
 		"category": "New Super Mario Bros.",
+		"url": "https://youtu.be/hAtGHo1gtu4",
 		"alias": "jungle_wii"
 	},
 	"snow_u": {
@@ -1426,18 +1818,21 @@
 		"effect": 1,
 		"category": "New Super Mario Bros.",
 		"tags": ["mario","nsmb","nsmbu","u"],
+		"url": "https://youtu.be/idHI0HeSVR4",
 		"holiday": 2
 	},
 	"ground_wii": {
 		"name": "Ground",
 		"game": "New Super Mario Bros. Wii",
 		"tags": ["mario","nsmb","nsmbwii","wii"],
+		"url": "https://youtu.be/SPujjSFklF8",
 		"category": "New Super Mario Bros."
 	},
 	"athletic_wii": {
 		"name": "Athletic",
 		"game": "New Super Mario Bros. Wii",
 		"tags": ["mario","nsmb","nsmbwii","wii"],
+		"url": "https://youtu.be/wmd85je8ehc",
 		"category": "New Super Mario Bros."
 	},
 	"underwater_wii": {
@@ -1445,6 +1840,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"category": "New Super Mario Bros.",
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
+		"url": "https://youtu.be/1E1iCCo_ZRg",
 		"alias": "underwater_u"
 	},
 	"underground_wii": {
@@ -1452,6 +1848,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"category": "New Super Mario Bros.",
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
+		"url": "https://youtu.be/xzQmc7Cx86Y",
 		"alias": "underground_u"
 	},
 	"ghost_house_wii": {
@@ -1460,6 +1857,7 @@
 		"category": "New Super Mario Bros.",
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"alias": "ghost_house_u",
+		"url": "https://youtu.be/rCLbUzC34sg",
 		"holiday": 1
 	},
 	"snow_wii": {
@@ -1475,6 +1873,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"category": "New Super Mario Bros.",
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
+		"url":"https://youtu.be/MynpKYmBgxM",
 		"alias": "airship_u"
 	},
 	"airship_boss_wii": {
@@ -1482,6 +1881,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"category": "New Super Mario Bros.",
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii","bowser_jr","bowserjr","bjr"],
+		"url":"https://youtu.be/8jKwUdoFJrA",
 		"alias": "airship_boss_u"
 	},
 	"desert_wii": {
@@ -1489,6 +1889,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"category": "New Super Mario Bros.",
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
+		"url":"https://youtu.be/_Jpc2ZOLXRM",
 		"alias": "desert_u"
 	},
 	"castle_wii": {
@@ -1498,6 +1899,7 @@
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"color": "#FF0000",
 		"effect": 2,
+		"url":"https://youtu.be/2073iFede4w",
 		"alias": "castle_u"
 	},
 	"boss_wii": {
@@ -1507,6 +1909,7 @@
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"color": "#FF0000",
 		"effect": 2,
+		"url":"https://youtu.be/ob5f5OTM8Co",
 		"alias": "castle_boss_u"
 	},
 	"volcano_wii": {
@@ -1516,6 +1919,7 @@
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
 		"color": "#FF0000",
 		"effect": 2,
+		"url":"https://youtu.be/Lt-E4OMWTZE",
 		"alias": "volcano_u"
 	},
 	"tower_wii": {
@@ -1523,6 +1927,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"category": "New Super Mario Bros.",
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
+		"url": "https://youtu.be/JNf7ZmIAzWA",
 		"alias": "tower_u"
 	},
 	"tower_boss_wii": {
@@ -1530,6 +1935,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"category": "New Super Mario Bros.",
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
+		"url":"https://youtu.be/sUUmodPOgeY",
 		"alias": "tower_boss_u"
 	},
 	"beach_wii": {
@@ -1537,6 +1943,7 @@
 		"game": "New Super Mario Bros. Wii",
 		"category": "New Super Mario Bros.",
 		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii"],
+		"url":"https://youtu.be/hzTa02TywFE",
 		"alias": "beach_u"
 	},
 	"cotton_island": {
@@ -1546,6 +1953,13 @@
 		"tags": ["plok"],
 		"volume": 3,
 		"url": "https://youtu.be/W80Hp7wHtrw"
+	},
+	"plok_boss": {
+		"game": "Plok!",
+		"name": "Boss",
+		"author": "Tim Follin",
+		"tags": ["plok"],
+		"url": "https://youtu.be/fixc63xMXeY"
 	},
 	"snake": {
 		"game": "Hiveswap",
@@ -1565,17 +1979,11 @@
 		"author": "Toby Fox & James Roach",
 		"url": "https://youtu.be/7ENYWUSLS44"
 	},
-	"plok_boss": {
-		"game": "Plok!",
-		"name": "Boss",
-		"author": "Tim Follin",
-		"tags": ["plok"],
-		"url": "https://youtu.be/fixc63xMXeY"
-	},
 	"gym_battle": {
 		"game": "Pokemon Yellow/Blue/Red",
 		"name": "Gym Battle",
 		"category": "Pokemon",
+		"url":"https://youtu.be/0RtIsEISVFM",
 		"tags": ["pokemon"]
 	},
 	"lavender_town": {
@@ -1583,13 +1991,15 @@
 		"name": "Lavender Town",
 		"category": "Pokemon",
 		"holiday": 1,
-		"tags": ["calm","chill","pokemon"],
+		"url": "https://youtu.be/YLEw185e7SM",
+		"tags": ["pokemon"],
 		"color": "#ce27ff"
 	},
 	"kanoko_town": {
 		"game": "Pokemon Black and White",
 		"name": "Kanoko Town",
 		"category": "Pokemon",
+		"url": "https://youtu.be/WKEPPQ340q8",
 		"tags": ["calm","chill","pokemon"]
 	},
 	"accumula_town": {
@@ -1597,49 +2007,56 @@
 		"name": "Accumula Town",
 		"category": "Pokemon",
 		"alias": "accamula_town",
-		"tags": ["calm","chill","pokemon"]
+		"url":"https://youtu.be/259C4AaOHn0",
+		"tags": ["pokemon"]
 	},
 	"lets_go": {
 		"game": "Pokemon Black and White",
 		"name": "Let's Go Together!",
 		"category": "Pokemon",
+		"url":"https://youtu.be/uKW1Z1bmnOc",
 		"tags": ["pokemon"]
-	},
-	"cat": {
-		"preset": "minecraft",
-		"name": "Cat",
-		"tags": "minecraft"
-	},
-	"dog": {
-		"preset": "minecraft",
-		"name": "Dog",
-		"tags": "minecraft"
 	},
 	"blocks": {
 		"preset": "minecraft",
 		"name": "Blocks",
-		"tags": [
-			"calm","chill"
-		]
+		"album":"Minecraft - Volume Beta",
+		"url": "https://youtu.be/r87ECi9RR_M"
 	},
 	"strad": {
 		"preset": "minecraft",
 		"name": "Strad",
-		"tags": [
-			"calm","chill"
-		]
+		"album":"Minecraft - Volume Beta"
 	},
 	"eleven": {
 		"preset": "minecraft",
 		"name": "Eleven",
+		"album":"Minecraft - Volume Beta",
+		"url":"https://youtu.be/l9nULbHnzfk",
 		"tags": [
 			"calm","chill"
 		],
 		"color": "#008000"
 	},
+	"cat": {
+		"preset": "minecraft",
+		"name": "Cat",
+		"album":"Minecraft - Volume Alpha",
+		"url":"https://youtu.be/zK5ZdzRnQE8",
+		"tags": "minecraft"
+	},
+	"dog": {
+		"preset": "minecraft",
+		"name": "Dog",
+		"album":"Minecraft - Volume Alpha",
+		"url":"https://youtu.be/PJVvGvPDLWc",
+		"tags": "minecraft"
+	},
 	"subwoofer": {
 		"preset": "minecraft",
 		"name": "Subwoofer Lullaby",
+		"album":"Minecraft - Volume Alpha",
+		"url":"https://youtu.be/ibUOxEBxVsE",
 		"tags": [
 			"calm","chill"
 		],
@@ -1648,6 +2065,8 @@
 	"wet_hands": {
 		"preset": "minecraft",
 		"name": "Wet Hands",
+		"album":"Minecraft - Volume Alpha",
+		"url":"https://youtu.be/MSepOYJxB64",
 		"tags": [
 			"calm","chill"
 		]
@@ -1655,6 +2074,8 @@
 	"dry_hands": {
 		"preset": "minecraft",
 		"name": "Dry Hands",
+		"album":"Minecraft - Volume Alpha",
+		"url":"https://youtu.be/w_vk7UwFBhc",
 		"tags": [
 			"calm","chill"
 		]
@@ -1662,6 +2083,8 @@
 	"sweden": {
 		"preset": "minecraft",
 		"name": "Sweden",
+		"album":"Minecraft - Volume Alpha",
+		"url":"https://youtu.be/_3ngiSxVCBs",
 		"tags": [
 			"calm","chill"
 		]
@@ -1669,76 +2092,61 @@
 	"overworld": {
 		"preset": "terraria",
 		"name": "Overworld Day",
-		"tags": ["calm","chill"]
+		"album":"Terraria (Soundtrack)",
+		"url":"https://youtu.be/3-PA9bexwrA"
 	},
 	"underground": {
 		"preset": "terraria",
 		"name": "Underground",
-		"tags": ["calm","chill"]
+		"album":"Terraria (Soundtrack)",
+		"url":"https://youtu.be/DaPTOc1OgXw"
 	},
 	"boss1": {
 		"preset": "terraria",
 		"name": "Boss 1",
+		"album":"Terraria (Soundtrack)",
+		"url":"https://youtu.be/pBygBkCmE9o",
 		"alias": "boss"
 	},
 	"alt_underground": {
 		"preset": "terraria",
 		"name": "Alternate Underground",
-		"tags": ["calm","chill"],
+		"album":"Terraria, Vol. 3 (Soundtrack)",
+		"url":"https://youtu.be/2B4MnLA9xco",
 		"alias": ["alternate_underground","underground_alt","underground_alternate"]
 	},
 	"fight_against_monsters": {
 		"name": "Fight Against Monsters",
 		"tags": ["mario","mariorpg","supermariorpg"],
+		"url":"https://youtu.be/UNADbGeY2vQ",
 		"game": "Super Mario RPG"
 	},
-	"delfino_plaza": {
-		"name": "Delfino Plaza",
-		"author": "Koji Kondo",
-		"tags": ["calm","chill","mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
-		"game": "Super Mario Sunshine"
-	},
-	"ricco_harbor": {
-		"name": "Ricco Harbor",
-		"author": "Koji Kondo",
-		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
-		"game": "Super Mario Sunshine"
-	},
-	"vs_boss": {
-		"name": "VS Boss",
-		"author": "Koji Kondo",
-		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
-		"game": "Super Mario Sunshine"
-	},
-	"meet_bowser_jr": {
-		"name": "Meet Bowser Jr.",
-		"author": "Koji Kondo",
-		"tags": ["calm","chill","mario","sunshine","mariosunshine","supermariosunshine","3dmario","bowser_jr","bowserjr","bjr"],
-		"game": "Super Mario Sunshine"
-	},
-	"mecha_bowser": {
-		"name": "Mecha Bowser",
-		"author": "Koji Kondo",
-		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario"],
-		"game": "Super Mario Sunshine"
+	"1am": {
+		"name": "1 AM",
+		"game": "Animal Crossing: New Leaf",
+		"category": "Animal Crossing",
+		"url": "https://youtu.be/ogZOuyEUaqM",
+		"tags": ["calm","chill","ac","animalcrossing","animal_crossing","new_leaf","newleaf"]
 	},
 	"2pm": {
 		"name": "2 PM",
-		"game": "Animal Crossing: New Horizons",
+		"game": "Animal Crossing: New Leaf",
 		"category": "Animal Crossing",
-		"volume": 3,
-		"tags": ["calm","chill","ac","animalcrossing","animal_crossing","new_horizons","newhorizons"]
+		"url":"https://youtu.be/yQicvIsa8W8",
+		"tags": ["calm","chill","ac","animalcrossing","animal_crossing","new_leaf","newleaf"]
 	},
 	"7pm": {
 		"name": "7 PM",
 		"game": "Animal Crossing: New Leaf",
 		"category": "Animal Crossing",
+		"url": "https://youtu.be/qYhA2QqFDS8",
 		"tags": ["calm","chill","ac","animalcrossing","animal_crossing","new_leaf","newleaf"]
 	},
 	"prologue": {
 		"name": "Prologue",
 		"game": "Animal Crossing: New Horizons",
 		"category": "Animal Crossing",
+		"url":"https://youtu.be/V6gUwBfYqkI",
 		"volume": 3,
 		"tags": ["calm","chill","ac","animalcrossing","animal_crossing","new_horizons","newhorizons"]
 	},
@@ -1746,17 +2154,19 @@
 		"name": "VS. Ridley (Smash Ver.)",
 		"game": "Super Metroid",
 		"alias": "ridley",
+		"url":"https://youtu.be/0RnKtEoF14Q",
 		"tags": ["metroid","ridley","smash"],
 		"category": "Other"
 	},
 	"trial": {
-		"name": "Turnabout Courtroom - Trial",
+		"name": "Trial",
 		"game": "Pheonix Wright - Ace Attorney",
 		"category": "Ace Attorney",
 		"color": "#0000FF",
 		"color2": "#FFFFFF",
 		"color3": "#FF0000",
 		"colorstyle": 3,
+		"url":"https://youtu.be/UEGVxLs6Sr0",
 		"tags": ["calm","chill","court","aa","ace_attorney","pheonix","pheonix_wright","wright"],
 		"alias": [
 			"turnabout_courtroom",
@@ -1767,6 +2177,7 @@
 		"name": "Pressing Pursuit ~ Cornered",
 		"game": "Pheonix Wright - Ace Attorney",
 		"preset": "ace_attorney",
+		"url": "https://youtu.be/UxnvGDK0WGM",
 		"alias": [
 			"pressing_pursuit"
 		]
@@ -1776,6 +2187,7 @@
 		"game": "Ace Attorney - Trials and Tribulations",
 		"preset": "ace_attorney",
 		"tags": ["mia","mia_fey","fey"],
+		"url": "https://youtu.be/wP1DJ_D4chA",
 		"alias": [
 			"pursuit"
 		]
@@ -1785,6 +2197,7 @@
 		"game": "Ace Attorney: Spirit of Justice",
 		"preset": "ace_attorney",
 		"tags": ["apollo","apollo_justice","justice"],
+		"url":"https://youtu.be/0JpvZk3Xcxc",
 		"alias": [
 			"objection_2016",
 			"objection!"
@@ -1836,5 +2249,35 @@
 		"url": "https://kemikziel.bandcamp.com/album/a-land-of-tales-yet-to-be-told-ep",
 		"album": "A Land of Tales Yet to be Told EP",
 		"name": "No Rest"
+	},
+	"biscuit": {
+		"preset": "lukrembo",
+		"name": "Biscuit",
+		"color":"a3814b",
+		"url":"https://youtu.be/EtZ2m2Zm3vY"
+	},
+	"bread": {
+		"preset": "lukrembo",
+		"name": "Bread",
+		"color":"#f1daad",
+		"url":"https://youtu.be/6eWIffP2M3Y"
+	},
+	"chocolate": {
+		"preset": "lukrembo",
+		"name": "Chocolate",
+		"color":"#fddae2",
+		"url":"https://youtu.be/9P4wn4ITE_Q"
+	},
+	"onion": {
+		"preset": "lukrembo",
+		"name": "Onion",
+		"color":"#b78e73",
+		"url":"https://youtu.be/KGQNrzqrGqw"
+	},
+	"branch": {
+		"preset": "lukrembo",
+		"name": "Branch",
+		"color":"#d9908a",
+		"url":"https://youtu.be/xPOy2pkImiU"
 	}
 }
