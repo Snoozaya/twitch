@@ -218,20 +218,20 @@
 	"bowser_jr_battle": {
 		"name": "Bowser Jr. Battle 4",
 		"game": "Mario Party 9",
-		"tags": ["mario","party","marioparty","bowser_jr","bowserjr","bjr"],
+		"tags": ["mario","party","marioparty","bowser_jr","bowserjr","bjr","jr"],
 		"url": "https://youtu.be/WOC-n6UOIOw"
 	},
 	"battle_with_bowser_jr": {
 		"name": "Battle with Bowser Jr.",
 		"game": "Mario Party 9",
-		"tags": ["mario","party","marioparty","bowser_jr","bowserjr","bjr"],
+		"tags": ["mario","party","marioparty","bowser_jr","bowserjr","bjr","jr"],
 		"alias": "battle_bowser_jr",
 		"url": "https://youtu.be/OiGiUC09v0M"
 	},
 	"bowser_jr_mad": {
 		"name": "Bowser Jr.'s Mad",
 		"game": "Mario Party 9",
-		"tags": ["mario","party","marioparty","bowser_jr","bowserjr","bjr"],
+		"tags": ["mario","party","marioparty","bowser_jr","bowserjr","bjr","jr"],
 		"url": "https://youtu.be/IOPdyowRYf8"
 	},
 	"flower_garden": {
@@ -262,6 +262,16 @@
 		"tags": ["yoshi"],
 		"url": "https://youtu.be/vbFQh32xlh0",
 		"game": "Yoshi's Island"
+	},
+	"ninja_hideaway": {
+		"name": "Ninja Hideaway",
+		"game": "Mario Kart Tour",
+		"category": "Mario Kart",
+		"tags": ["mario","kart","mariokart","tour"],
+		"url": "https://youtu.be/O6e2h90UYlE",
+		"alias": [
+			"ninjahideaway"
+		]
 	},
 	"electrodrome": {
 		"name": "Electrodrome",
@@ -385,7 +395,7 @@
 	"meet_bowser_jr": {
 		"name": "Meet Bowser Jr.",
 		"author": "Koji Kondo",
-		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario","bowser_jr","bowserjr","bjr"],
+		"tags": ["mario","sunshine","mariosunshine","supermariosunshine","3dmario","bowser_jr","bowserjr","bjr","jr"],
 		"url":"https://youtu.be/UPR7uvXIC3A",
 		"game": "Super Mario Sunshine"
 	},
@@ -411,7 +421,7 @@
 	},
 	"enter_bowser_jr": {
 		"name": "Enter Bowser Jr!",
-		"tags": ["mario","galaxy","mariogalaxy","supermariogalaxy","3dmario","bowser_jr","bowserjr","bjr"],
+		"tags": ["mario","galaxy","mariogalaxy","supermariogalaxy","3dmario","bowser_jr","bowserjr","bjr","jr"],
 		"url": "https://youtu.be/smfAA6NN5Cs",
 		"game": "Super Mario Galaxy"
 	},
@@ -1630,7 +1640,7 @@
 	"charge_and_clash": {
 		"name": "Charge and Clash!",
 		"game": "Bowser Jr.'s Journey",
-		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis","bowser_jr","bowserjr","bjr"],
+		"tags": ["mario","bowser","m&l","marioandluigi","luigi","bowsersinsidestory","bis","bowser_jr","bowserjr","bjr","jr"],
 		"url": "https://youtu.be/ENJFuBHdCkk",
 		"category": "Mario & Luigi"
 	},
@@ -1790,6 +1800,14 @@
 		"tags": ["mario","world","marioworld","2dmario"],
 		"color": "#FF0000"
 	},
+	"bowser_jr_boss": {
+		"name": "Bowser Jr. Boss",
+		"game": "New Super Mario Bros. DS",
+		"category": "New Super Mario Bros.",
+		"tags": ["mario","nsmb","ds","nsmbds","bowser_jr","bowserjr","bjr","jr"],
+		"url":"https://youtu.be/8jKwUdoFJrA",
+		"alias": ["bowser_jr_boss_ds","bowser_jr_ds_boss","bowser_jr_ds","ds_bowser_jr"]
+	},
 	"ground_u": {
 		"name": "Ground",
 		"game": "New Super Mario Bros. U",
@@ -1880,7 +1898,7 @@
 		"name": "Airship Boss (Bowser Jr.)",
 		"game": "New Super Mario Bros. Wii",
 		"category": "New Super Mario Bros.",
-		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii","bowser_jr","bowserjr","bjr"],
+		"tags": ["mario","nsmb","nsmbu","u","nsmbwii","wii","bowser_jr","bowserjr","bjr","jr"],
 		"url":"https://youtu.be/8jKwUdoFJrA",
 		"alias": "airship_boss_u"
 	},
