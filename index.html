@@ -26,6 +26,13 @@
 				white-space: nowrap;
 			}
 			
+			.search_bar {
+				display: inline;
+				margin: 0;
+				color: #000;
+				margin: 10px 0px;
+			}
+			
 			.icon, .icon-text {
 				display: block;
 				vertical-align: middle;
@@ -92,6 +99,7 @@
 				text-align: left;
 				line-height: 24px;
 				color: #fff;
+				width: 100%;
 			}
 			
 			p {
@@ -148,6 +156,7 @@
 				
 				<p>I try to credit all music with the artist(s) and source, if you own any of the music in this list and wish for me not to use it, or feel like you're not properly credited, you can contact me at <strong>nubz4lif#0001</strong> on Discord.</p>
 			</div>
+			<!--<input type="text" id="search_bar" class="search_bar" placeholder="Search..">-->
 			<div id="music-list">
 			</div>
 			
@@ -158,6 +167,93 @@
 			
 			<hr>
 			<!-- <a href="https://www.twitch.tv/nubz4lifstream">twitch.tv/nubz4lifstream</a> -->
+			
+		<!--
+		<script defer>
+			let searchBar = document.getElementById("search_bar");
+			
+			function enableEverything() {
+				let musicListings = document.getElementById('music-list').children;
+				for (i = 0; i <= musicListings.length - 1; i++) {
+					let musicListing = musicListings[i]
+					musicListing.visibility = "visible";
+					let musicItems = musicListing.children;
+					for (o = 0; i <= musicItems.length - 1; i++) {
+						let musicItem = musicItems[i]
+						musicItem.visibility = "visible";
+					}
+				}
+			}
+			
+			function categoryContainsSearchText(category,searchText) {
+				let loweredSearchText = searchText.toLowerCase().trim()
+				let containsSearchText = false
+				
+				if(!category) return false;
+				
+				let musicItems = category.children;
+				
+				for (i = 0; i <= musicItems.length - 1; i++) {
+					let musicItem = musicItems[i]
+					
+					if(musicItem) {
+						musicItem.visibility = "hidden";
+					
+						let name = musicItem.name ? musicItem.name.toLowerCase() : null
+						let author = musicItem.author ? (musicItem.author).toLowerCase() : null
+						let game = musicItem.game ? (musicItem.game).toLowerCase() : null
+						let album = musicItem.album ? (musicItem.album).toLowerCase() : null
+						
+						
+						if(name && loweredSearchText.includes(author)) {
+							containsSearchText = true
+							musicItem.visibility = "visible";
+						}
+						
+						if(album && loweredSearchText.includes(author)) {
+							containsSearchText = true
+							musicItem.visibility = "visible";
+						}
+						if(game && loweredSearchText.includes(author)) {
+							containsSearchText = true
+							musicItem.visibility = "visible";
+						}
+						
+						if(author && loweredSearchText.includes(author)) {
+							containsSearchText = true
+							musicItem.visibility = "visible";
+						}
+					}
+				}
+				return containsSearchText
+			}
+			
+			console.log(document.getElementById('music-list').children)
+			//categoryContainsSearchText("a","test")
+			
+			function searchForCategory(searchText) {
+				let musicListings = document.getElementById('music-list').children;
+				for (i = 0; i <= musicListings.length - 1; i++) {
+					let musicListing = musicListings[i]
+					musicListing.visibility = "hidden";
+					if(musicListing && categoryContainsSearchText(musicListing,searchText)) {
+						musicListing.visibility = "visible";
+					}
+				}
+			}
+			searchForCategory("test")
+			
+			searchBar.oninput = function() {
+				let searchText = (searchBar.value).trim()
+				
+				if(searchText == "") {
+					enableEverything()
+				} else {
+					searchForCategory(searchText)
+				}
+			}
+		</script>
+		-->
 		<script>
 			var curDate = new Date();
 			var htmlVerNumber = curDate.getMonth();
@@ -187,6 +283,7 @@
 					hrLine3.className = "minor"
 					
 					categoryDiv = document.createElement("div")
+					categoryDiv.title = category
 					categoryDiv.id = categoryDivName
 					
 					let categoryTitleSpan = document.createElement("span")
@@ -199,7 +296,7 @@
 					
 					let imgSourceName = categoryDivName+"-sourceImg"
 					
-					let img			
+					let img	
 					if(imgSource && !document.getElementById(imgSourceName) && false) {
 						img = document.createElement("img")
 						img.src = imgSource
@@ -224,6 +321,7 @@
 				
 				let musicItem = document.createElement("div")
 				musicItem.id = "div-music-" + ((fileName || name || author || game).replaceAll(" ","-").replaceAll("_","-"))
+				musicItem.title = (name || fileName || author || game)
 				musicItem.className = "music-item"
 				category.appendChild(musicItem)
 				
@@ -298,18 +396,22 @@
 				
 				if(name) {
 					addField(musicSourceFieldsDiv,"Music",name)
+					musicItem.name = name
 				}
 				
 				if(game) {
 					addField(musicSourceFieldsDiv,"Game",game)
+					musicItem.game = game
 				}
 				
 				if(album) {
 					addField(musicSourceFieldsDiv,"Album",album)
+					musicItem.album = album
 				}
 				
 				if(author) {
 					addField(musicSourceFieldsDiv,"Artist",author)
+					musicItem.author = author
 				}
 				
 				musicSourceDiv.appendChild(musicSourceElement)
@@ -404,8 +506,10 @@
 					
 					let elementsArray = document.querySelectorAll("input");
 					elementsArray.forEach(function(elem) {
-						elem.addEventListener("input", resizeInput);
-						resizeInput.call(elem)
+						if(elem.className != "search_bar") {
+							elem.addEventListener("input", resizeInput);
+							resizeInput.call(elem)
+						}
 					});
 					
 					function resizeInput() {
