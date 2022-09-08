@@ -1,4 +1,4 @@
-<canvas id="wheelCanvas" width="400" height="450" style="border:1px solid #000000;"></canvas>
+<canvas id="wheelCanvas" width="600" height="650" style="border:1px solid #000000; margin:0; padding:0;"></canvas>
 <noscript>No script? :(</noscript>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
 <script>
@@ -27,9 +27,9 @@
 		
 		var startAngle = 360 * segments;
 		
-		var outsideRadius = 200;
-		var insideRadius = 0;
-		var textRadius = 190
+		var outsideRadius = 240;
+		var insideRadius = 20;
+		var textRadius = outsideRadius - 10
 	
 		var requiredElapsed= 1/60;
 		var lastTime = 0
@@ -60,6 +60,10 @@
 		//startAngle = 9999
 		var framesRendered = 0
 		var framesToReachGoal = 0
+		
+		var waitTime = Number(urlParams.get("waittime") || 0.75)
+		if(urlParams.has("waitTime")) waitTime = Number(urlParams.get("waittime"))
+		
 		function renderFrame(now) {
 			requestAnimationFrame(renderFrame);
 		
@@ -78,9 +82,9 @@
 				startAngle += 1 * (Math.PI/180)
 			}
 			else {
-				if(framesRendered > 60*2.5) {
+				if(framesRendered > 60 * 0.75) {
 					if(!tween) {
-						var wheelSpinTime = Number(urlParams.get("time") || 15)
+						var wheelSpinTime = Number(urlParams.get("time") || 15) - 0.75
 						console.log(wheelSpinTime)
 					
 						tweenTarget = {x:startAngle}
