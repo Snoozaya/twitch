@@ -20,7 +20,7 @@
 		}
 		
 		var wheelOptions = parseParam(urlParams.get("options") || ("1\n2\n3\n4\n5\n6")).split("\n")
-		var wheelResult = parseParam(urlParams.get("result")) || "1"
+		var wheelResult = parseParam(urlParams.get("result") || 1)
 	
 		var canvas = document.getElementById("wheelCanvas");
 		//canvas.width = window.innerWidth;
