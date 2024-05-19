@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weighted Random Index</title>
+</head>
+<body>
+    <h1>Weighted Random Index</h1>
+    <p id="result"></p>
+    <script>
+        function getWeightedRandomIndex(weights) {
+            const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
+            const normalizedWeights = weights.map(weight => weight / totalWeight);
+            const cumulativeWeights = [];
+            normalizedWeights.reduce((sum, weight, index) => {
+                sum += weight;
+                cumulativeWeights[index] = sum;
+                return sum;
+            }, 0);
+            const random = Math.random();
+            for (let i = 0; i < cumulativeWeights.length; i++) {
+                if (random <= cumulativeWeights[i]) {
+                    return i;
+                }
+            }
+            throw new Error('Invalid weights array');
+        }
+
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                weights: JSON.parse(params.get('weights'))
+            };
+        }
+
+        window.onload = function() {
+            const params = getQueryParams();
+            const index = getWeightedRandomIndex(params.weights);
+            document.getElementById('result').textContent = `Selected index: ${index}`;
+        };
+    </script>
+</body>
+</html>
