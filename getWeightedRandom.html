@@ -42,7 +42,7 @@
 
         function outputResult(responseType, index) {
             if (responseType === 'json') {
-                const jsonResponse = JSON.stringify({ index });
+                const jsonResponse = JSON.stringify({ "index": index });
                 document.body.innerHTML = `<pre>${jsonResponse}</pre>`;
                 document.body.style.fontFamily = 'monospace';
             } else if (responseType === 'text') {
