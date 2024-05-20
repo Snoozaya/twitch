@@ -299,63 +299,6 @@ player.addEventListener("timeupdate", function() {
 
 console.log(channel);
 
-// Chat Section for triggers
-// ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
-
-//             if((flags.broadcaster && command == 'so') || (flags.mod && command == 'so') ) {
-//          //fetchData(message)
-//          console.log(message.replace("@", "").split(" ", 1));
-//          fetchData(message.replace("@", "").split(" ", 1));
-//         }
-
-//         if (command === "resetso" && flags.broadcaster || command === "resetso" && flags.mod) {
-//           location.reload();
-//         }
-
-//         if (command === "soskip" && flags.broadcaster || command === "soskip" && flags.mod) {
-//           endVid();
-//         }
-
-//         if (command === "sostats" && flags.broadcaster || command === "sostats" && flags.mod) {
-//             getStats(message.replace("@", "").split(" ", 1));
-//         }
-
-
-// Stats
-async function getStats(x) {
-  
-  if(token && messtat === "true"){
-    const response = await fetch("https://twitch.so/api/sostats.php?to="+x+"&from="+channel);
-    const data = await response.json();
-    console.log(data);
-    ComfyJS.Say(data)
-  }
-}
-
-        if (command === "soreplay" && flags.broadcaster && lastSlug|| command === "soreplay" && flags.mod && lastSlug) {
-          fetchDataClip(lastSlug)
-        }
-
-        if( (flags.broadcaster && command == 'slug') || (flags.mod && command == 'slug') ){
-            if (message.includes("clip/")) {
-            console.log("true /");
-            message = message.split("clip/");
-            message = message[1];
-          }
-          if (message.includes("?")) {
-            console.log("tr ?");
-            message = message.split("?");
-            message = message[0];
-          }
-          if (message.includes("clips.twitch.tv")) {
-            console.log("clips.twitch");
-            message = message.split(".tv/");
-            message = message[1];
-          }
-            fetchDataClip(message);
-        }
-}
-
 // Grab the clip details and start the shoutout
 async function fetchData(m) {
     let message1;
