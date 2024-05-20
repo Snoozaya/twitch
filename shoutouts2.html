@@ -74,7 +74,7 @@
       let channelName = getUrlParameter('channel').toLowerCase().trim();
       let showClip = getUrlParameter('showClip');
       let showRecentClip = getUrlParameter('showRecentClip');
-      let showMsg = getUrlParameter('showMsg');
+      let showMsg = false;
       let showText = getUrlParameter('showText');
       let showDetails = getUrlParameter('showDetails').trim();
       let detailsText = getUrlParameter('detailsText').trim(); 
@@ -156,7 +156,6 @@
     }
 
     let replay = false; // set variable. default value
-
     let watch = false; // set variable. default value
 
     // Load theme css file if theme is set
@@ -244,155 +243,6 @@
         return chatmsg.match(urlRegex)
     }
 
-    // If Auth token is set, then connect to chat using oauth, else connect anonymously.
-    if (ref) {
-        client = new tmi.Client({
-            options: {
-                debug: true,
-                skipUpdatingEmotesets: true
-            },
-            connection: {reconnect: true},
-            identity: {
-                username: channelName,
-                password: 'oauth:' + atob(ref)
-            },
-            channels: [channelName]
-        });
-    } else {
-        client = new tmi.Client({
-            options: {
-                debug: true,
-                skipUpdatingEmotesets: true
-            },
-            connection: {reconnect: true},
-            channels: [channelName]
-        });
-    }
-
-    client.connect().catch(console.error);
-
-    // triggers on message
-    client.on('chat', (channel, user, message, self) => {
-
-        // Ignore echoed messages.
-        if (self) {
-            return false;
-        }
-
-        // If message contains a clip url
-        if (message.includes('https://clips.twitch.tv/')) {
-
-            // Remove trailing spaces from message
-            message = message.trim();
-
-            // get the url from the chat message
-            let chatClipUrl = detectURLs(message);
-
-            // parse url into an array
-            let urlArr = chatClipUrl[0].split('/');
-
-            // extract the clip id/slug from the url
-            let clip_Id = urlArr[3];
-
-            // remove everything in the url after the '?'
-            clip_Id = clip_Id.split('?')[0];
-
-            // get the clip_url from the api
-            getClipUrl(clip_Id, function (info) {
-                if (info.data[0]['clip_url']) {
-                    // save the clip url to localstorage
-                    localStorage.setItem('twitchSOWatchClip', info.data[0]['clip_url']);
-                }
-            });
-
-        }
-
-        if (user['message-type'] === 'chat' && message.startsWith('!') && (user.mod || user.username === channelName)) {
-
-            // Hard-coded commands to control the clips
-            if (message === "!sostop" || message === "!stopso" || message === "!stopclip" || message === "!clipstop" || message === "!clipreload") {
-
-                // Reloads browser source
-                window.location.reload();
-
-            // Replay previous shout-out clip
-            } else if (message === "!clipreplay" || message === "!replayclip" || message === "!soreplay" || message === "!replayso") {
-
-                console.log("Replaying SO");
-
-                watch = false;
-                replay = true;
-
-                if (localStorage.getItem('twitchSOChannel') && localStorage.getItem('twitchSOClipUrl')) {
-                    doShoutOut(localStorage.getItem('twitchSOChannel'), true, false);
-                }
-
-            // Watch a clip from chat
-            } else if (message === "!watchclip") {
-
-                console.log("Watching a clip from chat");
-
-                watch = true;
-                replay = false;
-
-                if (localStorage.getItem('twitchSOWatchClip')) {
-                    doShoutOut(channelName, false, true);
-                }
-
-            } else {
-
-                watch = false;
-                replay = false;
-
-            }
-
-            // If message starts with custom command + space. !so teklynk
-            if (message.startsWith('!' + command + ' ')) {
-
-                // Ignore if video clip is playing
-                if (document.getElementById("clip") || document.getElementById("text-container")) {
-                    return false; // Exit and Do nothing
-                }
-
-                getChannel = message.substr(command.length + 1);
-                getChannel = getChannel.replace('@', '');
-                getChannel = getChannel.trim();
-                getChannel = getChannel.toLowerCase();
-
-                console.log(getChannel);
-
-                // Create an array of channel names
-                cmdArray = message.split('@'); //Split channel names using the @ symbol
-                cmdArray = cmdArray.slice(1);
-                cmdArray = cmdArray.filter(String);
-
-            } else {
-                return false; // Exit and Do nothing else
-            }
-
-            if (modsOnly === 'true' && (user.mod || user.username === channelName)) {
-                // If is array, then iterate over each channel name. Uses the timeOut value from the URL.
-                if (cmdArray.length > 1) {
-                    console.log(cmdArray);
-                    arrayPlusDelay(cmdArray, function (obj) {
-                        obj = obj.replace('@', '');
-                        obj = obj.trim();
-                        obj = obj.toLowerCase();
-
-                        console.log('In Array: ' + obj);
-
-                        doShoutOut(obj);
-
-                    }, parseInt(timeOut) * 1000 + 1000); // + 1 seconds, just to be sure that elements are completely removed
-                } else {
-                    console.log(getChannel);
-                    doShoutOut(getChannel); // Mods only
-                }
-            } else if (modsOnly === 'false' || user.username === channelName) {
-                doShoutOut(getChannel); // Everyone
-            }
-        }
-    });
 
     function doShoutOut(getChannel, replayClip = false, watchClip = false) {
 
@@ -722,20 +572,8 @@
         });
     }
 
-    // Automatically shout-out channel on raid
-    if (raided === "true") {
-        client.on("raided", (channel, username, viewers) => {
-            // Checks if raid viewer count - default is 3
-            if (viewers >= parseInt(raidCount)) {
-                // Delay before doing the shout-out to allow for other raid alerts to fire off
-                setTimeout(function () {
-                    console.log(username + ': is raiding!');
-                    console.log(delay + ' second: delay');
-                    doShoutOut(username);
-                }, parseInt(delay) * 1000);
-            }
-        });
-    }
+    // triggers on message
+    doShoutOut("Snoozaya_");    
 
 });
   </script>
