@@ -409,7 +409,8 @@ function runNext() {
         console.log("default no setting")
     }
     console.log("https://twitch.so/vids/"+file+".mp4");
-    player.src = "https://twitch.so/vids/"+file+".mp4";
+    player.src = x.embed_url; // "https://twitch.so/vids/"+file+".mp4";
+    player.load();
     player.addEventListener("loadeddata", function() {
       ai = 'fade';
       showDiv(ai)
