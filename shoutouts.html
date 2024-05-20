@@ -244,7 +244,7 @@ const res = url.searchParams.get("res");
 const alist = url.searchParams.get("alist") === 'true';
 const aioptions = ["left", "right", "top", "bottom", "fade", "zoom"];
 let apiAddress = url.search.replace("channel", "own").replace("?", "&").split("&chanicon")[0];
-let customcoms = ["Snoozaya_", "TeaWithCara", "Thaderos"];// JSON.parse(url.searchParams.get("custcoms"));
+let customcoms = JSON.parse(url.searchParams.get("custcoms"));
 let chatMess = "Check out $name ($followers), last seen playing $game. $link";
 let chatAI = false;
 let player =   document.getElementById('player');
@@ -300,28 +300,28 @@ player.addEventListener("timeupdate", function() {
 console.log(channel);
 
 // Chat Section for triggers
-ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
+// ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
 
-            if((flags.broadcaster && command == 'so') || (flags.mod && command == 'so') ) {
-         //fetchData(message)
-         console.log(message.replace("@", "").split(" ", 1));
-         fetchData(message.replace("@", "").split(" ", 1));
-        }
+//             if((flags.broadcaster && command == 'so') || (flags.mod && command == 'so') ) {
+//          //fetchData(message)
+//          console.log(message.replace("@", "").split(" ", 1));
+//          fetchData(message.replace("@", "").split(" ", 1));
+//         }
 
-        if (command === "resetso" && flags.broadcaster || command === "resetso" && flags.mod) {
-          location.reload();
-        }
+//         if (command === "resetso" && flags.broadcaster || command === "resetso" && flags.mod) {
+//           location.reload();
+//         }
 
-        if (command === "soskip" && flags.broadcaster || command === "soskip" && flags.mod) {
-          endVid();
-        }
+//         if (command === "soskip" && flags.broadcaster || command === "soskip" && flags.mod) {
+//           endVid();
+//         }
 
-        if (command === "sostats" && flags.broadcaster || command === "sostats" && flags.mod) {
-            getStats(message.replace("@", "").split(" ", 1));
-        }
+//         if (command === "sostats" && flags.broadcaster || command === "sostats" && flags.mod) {
+//             getStats(message.replace("@", "").split(" ", 1));
+//         }
 
 
-        // Stats
+// Stats
 async function getStats(x) {
   
   if(token && messtat === "true"){
@@ -354,19 +354,6 @@ async function getStats(x) {
           }
             fetchDataClip(message);
         }
-}
-
-    
-// Settings for just listening or connect to send to chat
-if(bot){
-    ComfyJS.Init( bot, token, channel );
-    console.log("bot");
-    } else if(token){
-    ComfyJS.Init( channel, token );
-    console.log("token");
-    } else {
-    ComfyJS.Init( channel );
-    console.log("no send");
 }
 
 // Grab the clip details and start the shoutout
@@ -640,6 +627,8 @@ main.addEventListener("transitionend", function(){
         main.classList.add("animate");
     }, 20);
 }
+
+fetchData(channel);
 
 </script>
   </body>
