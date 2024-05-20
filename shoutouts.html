@@ -225,9 +225,8 @@
 <script>
 
 // Setting up the variables
-const url =  new URL("https://twitch.so/shoutout/shoutout.php?channel=Snoozaya_&quality=high&vol=1&dur=30&mdur=0&durtype=fs&ranmode=pop&peroid=all&extra=none&chanicon=true&game=true&showfollow=false&showdetail=false&timer=false&title=Checkout%20%24streamer%20and%20follow!&bstyle=solid&bsize=2&bcolor=000000&font=Bangers&fcolor=ffffff&ocolor=000000&ai=rand&ae=rand&access_token&botmess=Check%20out%20%24name%20(%24followers)%2C%20last%20seen%20playing%20%24game.%20%24link&messo=false&messtat=false&messapi=false&com=so&pmod=true&psub=false&pvip=false&araid=true&asub=false&abit=false&ahost=false&alist=false&rid1rid2rv=1&rd=1&ba=150&bd=1&hv=1&vd=1&cl=1&custcoms=[]");
-// new URL(window.location.href);
-const channel = "Snoozaya_"; //url.searchParams.get("channel");
+const url =  new URL(window.location.href);
+const channel = url.searchParams.get("channel");
 const token = url.searchParams.get("access_token");
 const messo = url.searchParams.get("messo");
 const messtat = url.searchParams.get("messtat");
