@@ -215,7 +215,6 @@
             <video id="player" width="50%" autoplay>
                 
             </video>
-            <iframe id="shoutoutIframe" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
             <div><img src="../assets/img/tools/logo.png" id="game"></div>
             <div id="info"></div>
             <div id="timer">0</div>
@@ -249,7 +248,6 @@ let customcoms = JSON.parse(url.searchParams.get("custcoms"));
 let chatMess = "Check out $name ($followers), last seen playing $game. $link";
 let chatAI = false;
 let player =   document.getElementById('player');
-let shoutoutIframe = document.getElementById('shoutoutIframe');
 let titleDiv =   document.getElementById('title');
 let chanLogo = document.getElementById("logo")
 let infoDiv = document.getElementById("info")
@@ -411,7 +409,6 @@ function runNext() {
         console.log("default no setting")
     }
 
-    shoutoutIframe.src = x.embed_url;
     player.src = "https://twitch.so/vids/"+file+".mp4";
     player.addEventListener("loadeddata", function() {
       ai = 'fade';
