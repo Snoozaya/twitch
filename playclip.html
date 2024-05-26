@@ -86,7 +86,7 @@
           getClipUrl(clip_Id, function (info) {
               if (info.data[0]['clip_url']) {
                   // save the clip url to localstorage
-                  return info.data[0]['clip_url']
+                  playClip(clipToPlay);
               }
           });
       }
@@ -311,8 +311,7 @@
     }
 
     // triggers on message
-    clipToPlay = getClipFromUrl(clipToPlay);
-    playClip(clipToPlay);    
+   getClipFromUrl(clipToPlay);
 
 });
   </script>
