@@ -73,7 +73,6 @@
       let client = '';
       let lowQualityVideo = '';
       let clipToPlay = getUrlParameter('clip').trim();
-      let channelName = getUrlParameter('channel').toLowerCase().trim();
       let showClip = getUrlParameter('showClip');
       let showRecentClip = getUrlParameter('showRecentClip');
       let showMsg = false;
@@ -134,10 +133,6 @@
 
     if (!lowQuality) {
         lowQuality = 'false'; // default
-    }
-
-    if (channelName === '') {
-        alert('channel is not set in the URL');
     }
 
     if (!dateRange || dateRange === "0") {
