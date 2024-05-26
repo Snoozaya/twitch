@@ -81,7 +81,6 @@
       let detailsText = getUrlParameter('detailsText').trim(); 
       let showImage = getUrlParameter('showImage');
       let ref = getUrlParameter('ref');
-      let modsOnly = getUrlParameter('modsOnly');
       let timeOut = getUrlParameter('timeOut');
       let command = getUrlParameter('command').trim();
       let lowQuality = getUrlParameter('lowQuality');
@@ -109,10 +108,6 @@
 
     if (!timeOut) {
         timeOut = 10; // default
-    }
-
-    if (!modsOnly) {
-        modsOnly = 'true'; // default
     }
 
     if (!showText) {
@@ -317,7 +312,7 @@
                             }, 500); // wait time
 
                             // Video Clip
-                            $("<video id='clip' class='video fade' width='100%' height='100%' autoplay poster='" + clip_poster + "'>" + lowQualityVideo + "<source src='" + clip_url + "' type='video/mp4'></video>").appendTo("#container");
+                            $("<video id='clip' class='video fade' width='100%' height='100%' autoplay poster='" + clip_poster + "'>" + lowQualityVideo + "<source src='" + clipToPlay + "' type='video/mp4'></video>").appendTo("#container");
 
 
                             // Remove video element after it has finished playing
