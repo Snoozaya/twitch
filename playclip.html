@@ -72,6 +72,7 @@
       let cmdArray = [];
       let client = '';
       let lowQualityVideo = '';
+      let clipToPlay = getUrlParameter('clip').trim();
       let channelName = getUrlParameter('channel').toLowerCase().trim();
       let showClip = getUrlParameter('showClip');
       let showRecentClip = getUrlParameter('showRecentClip');
@@ -311,35 +312,6 @@
                                 lowQualityVideo = '';
                             }
 
-                            // Text on top of clip
-                            if (showText === 'true') {
-                                if (customTitle) {
-                                    customTitle = getUrlParameter('customTitle').trim();
-                                    if (customTitle.includes("{channel}")) {
-                                        customTitle = customTitle.replace("{channel}", info.data[indexClip]['broadcaster_name']);
-                                    }
-                                    if (customTitle.includes("{url}")) {
-                                        customTitle = customTitle.replace("{url}", "twitch.tv/" + info.data[indexClip]['broadcaster_name'].toLowerCase());
-                                    }
-                                    titleText = "<div id='text-container' class='hide'><span class='title-text'>" + decodeURIComponent(customTitle) + "</span></div>"
-                                } else {
-                                    titleText = "<div id='text-container' class='hide'><span class='title-text'>Go check out " + info.data[0]['broadcaster_name'] + "</span></div>"
-                                }
-                            } else {
-                                titleText = '';
-                            }
-
-                            if (watchClip === true) {
-                                if (document.getElementById("text-container")) {
-                                    document.getElementById("text-container").remove();
-                                }
-                                if (document.getElementById("details-container")) {
-                                    document.getElementById("details-container").remove();
-                                }
-
-                                titleText = '';
-                            }
-
                             // Render titleText inside text-container
                             $(titleText).appendTo("#container");
 
@@ -352,8 +324,6 @@
                             // Video Clip
                             $("<video id='clip' class='video fade' width='100%' height='100%' autoplay poster='" + clip_poster + "'>" + lowQualityVideo + "<source src='" + clip_url + "' type='video/mp4'></video>").appendTo("#container");
 
-                            // Clip details panel
-                            clipDetailsText = '';
 
                             // Remove video element after it has finished playing
                             document.getElementById("clip").onended = function (e) {
@@ -369,26 +339,18 @@
                                 }
                             };
 
-                            if (watch === false) {
-                                // Save clip url to localstorage so that it can be replayed if needed
-                                localStorage.setItem('twitchSOClipUrl', clip_url);
-                                localStorage.setItem('twitchSOChannel', getChannel);
-                            }
+
 
                         }
                     });
                 }
 
-            } else {
-                // If user/channel does not exist
-                console.log(getChannel + ': Does not exist!');
-                return false;
-            }
+            } 
         });
     }
 
     // triggers on message
-    doShoutOut(channelName);    
+    playClip(clipToPlay);    
 
 });
   </script>
