@@ -66,6 +66,22 @@
           }
       }
 
+      async function fetchDataClip(m) {
+          try {
+              const response = await fetch('https://twitch.so/api/generatevids.php?slug='+m);
+              if (!response.ok) {
+                  throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              const data = await response.json();
+              console.log(data)
+              if(data != "none"){
+                  playClip(data);
+              }
+          } catch (error) {
+              console.error('There was a problem with the API call:', error);
+          }
+      }
+
       function getClipFromUrl(clip_url) {
           clip_url = "https://clips.twitch.tv/" + clip_url
           clip_url = clip_url.trim();
@@ -311,7 +327,7 @@
     }
 
     // triggers on message
-   getClipFromUrl(clipToPlay);
+    playClip(clipToPlay);
 
 });
   </script>
