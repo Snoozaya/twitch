@@ -66,6 +66,31 @@
           }
       }
 
+      function getClipFromUrl(clip_url) {
+          clip_url = "https://clips.twitch.tv/" + clip_url
+          clip_url = clip_url.trim();
+          
+          // get the url from the chat message
+          let chatClipUrl = detectURLs(message);
+          
+          // parse url into an array
+          let urlArr = chatClipUrl[0].split('/');
+
+          // extract the clip id/slug from the url
+          let clip_Id = urlArr[3];
+
+          // remove everything in the url after the '?'
+          clip_Id = clip_Id.split('?')[0];
+
+          // get the clip_url from the api
+          getClipUrl(clip_Id, function (info) {
+              if (info.data[0]['clip_url']) {
+                  // save the clip url to localstorage
+                  return info.data[0]['clip_url']
+              }
+          });
+      }
+
       let getChannel;
       let titleText;
       let clipDetailsText;
@@ -286,6 +311,7 @@
     }
 
     // triggers on message
+    clipToPlay = getClipFromUrl(clipToPlay);
     playClip(clipToPlay);    
 
 });
