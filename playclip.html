@@ -71,7 +71,7 @@
           clip_url = clip_url.trim();
           
           // get the url from the chat message
-          let chatClipUrl = detectURLs(message);
+          let chatClipUrl = detectURLs(clip_url);
           
           // parse url into an array
           let urlArr = chatClipUrl[0].split('/');
