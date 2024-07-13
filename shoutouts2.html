@@ -88,11 +88,14 @@
       let customMsg = getUrlParameter('customMsg').trim();
       let customTitle = getUrlParameter('customTitle').trim();
       let limit = getUrlParameter('limit').trim();
-      let dateRange = getUrlParameter('dateRange').trim();
       let raided = getUrlParameter('raided').trim();
       let raidCount = getUrlParameter('raidCount').trim();
       let delay = getUrlParameter('delay').trim();
       let themeOption = getUrlParameter('themeOption').trim();
+        
+      let dateRange = 400 ;// getUrlParameter('dateRange').trim();
+      let filterUnpopular = getUrlParameter('filterUnpopular');
+      let maxDuration = getUrlParameter('maxDuration');
 
 
     if (!delay) {
@@ -100,7 +103,7 @@
     }
 
     if (!limit) {
-        limit = "30"; //default
+        limit = "100"; //default, gets capped at 100
     }
 
     if (!command) {
@@ -208,12 +211,14 @@
 
     // Twitch API get clips for !so command
     let getClips = function (SOChannel, limit, callback) {
-        let urlC = "https://twitchapi.teklynk.com/getuserclips.php?channel=" + SOChannel + "&limit=" + limit + "" + dateRange;
+        let urlC = "https://twitchapi.teklynk.com/getuserclips.php?channel=" + SOChannel + "&limit=" + limit + "" + dateRange; 
+        // + "&prefer_featured=true"+ "&random=true"; // issue here is, i want to filter by duration and viewerCount and random=True only pulls 1 clip
         let xhrC = new XMLHttpRequest();
         xhrC.open("GET", urlC);
         xhrC.onreadystatechange = function () {
             if (xhrC.readyState === 4) {
-                callback(JSON.parse(xhrC.responseText));
+                info = JSON.parse(xhrC.responseText);
+                callback(info);
                 return true;
             } else {
                 return false;
@@ -221,6 +226,7 @@
         };
         xhrC.send();
     };
+    
 
     // Twitch API get clip for !watchclip command
     let getClipUrl = function (id, callback) {
@@ -243,7 +249,14 @@
         let urlRegex = /(((https?:\/\/)|(www\.))[^\s]+)/g;
         return chatmsg.match(urlRegex)
     }
-
+    
+    // Function to calculate the nth percentile of an array
+    function calculatePercentile(arr, percentile) {
+        if (arr.length === 0) return 0;
+        arr.sort((a, b) => a - b);
+        const index = Math.floor((percentile / 100) * arr.length);
+        return arr[index];
+    }
 
     function doShoutOut(getChannel, replayClip = false, watchClip = false) {
 
@@ -265,9 +278,28 @@
                         if (info.data.length > 0) {
 
                             console.log('clips exist!');
+                            console.log(info.data.length)
+
+                            // Apply filters
+                            if (maxDuration != 0 && maxDuration != null && maxDuration != undefined) {
+                                info.data = info.data.filter(function(item) {
+                                    return item.duration <= maxDuration;
+                                });
+                            }
+                            if (filterUnpopular) {
+                                // Calculate the 10th percentile of viewCount
+                                const viewCounts = info.data.map(item => item.view_count);
+                                let lowViewCountThreshold = calculatePercentile(viewCounts, 2);
+                                if (lowViewCountThreshold > 3) {
+                                    lowViewCountThreshold = 3;
+                                }
+                                info.data = info.data.filter(function(item) {
+                                    return item.view_count > lowViewCountThreshold;
+                                });
+                            }
 
                             // Sort clips array by created_at
-                            info.data.sort(sortByProperty('created_at'));
+                            //info.data.sort(sortByProperty('created_at'));
 
                             // Remove existing video element
                             if (document.getElementById("clip")) {
