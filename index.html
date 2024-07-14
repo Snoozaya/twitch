@@ -2,7 +2,7 @@
 <html>
 	<link rel="icon" href="favicon.png">
 	<head>
-		<title>Music @ twitch.tv/nubz4lifstream</title>
+		<title>Snoozaya Twitch Tools</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
 		
 		<style>
@@ -138,26 +138,44 @@
 	<body>
 		<div id="content">
 			<h1>
-				Music for
+				Twitch tools for
 				<span>
-					<a href="https://www.twitch.tv/nubz4lifstream">twitch.tv/nubz4lifstream</a>
+					<a href="https://www.twitch.tv/Snoozaya_">twitch.tv/Snoozaya_</a>
 				</span>
 			</h1>
 			<hr>
 			
-			<div id='music-help'>
-				<p>My twitch channel will sometimes allow you to request music from a pre-determined list by using the <strong>!play</strong> command.</p>
-				
-				<p>If you see a music visualiser on the screen, then you can type any of these commands in chat to request a song!</p>
-				
-				<p>I also try to maintain a <strong><a href="https://www.youtube.com/playlist?list=PLklKscz0XhO19JSwlz33TWntaYjS2ouBi">YouTube playlist</a></strong> that contains every song, but it may not be up to date. This list pulls straight from the .json file that the actual music player uses so it should always be up to date.</p>
-				
-				<p>If you have a song you want to be added to this list, feel free to suggest it in <strong>#suggestions on <a href="https://bit.ly/NUBZDISCORD">my discord server!</a></strong></p>
-				
-				<p>I try to credit all music with the artist(s) and source, if you own any of the music in this list and wish for me not to use it, or feel like you're not properly credited, you can contact me at <strong>nubz4lif#0001</strong> on Discord.</p>
+			<div id='tools-help'>
+                <p>
+                    I have tools for:
+                </p>
+                 <ul>
+                  <li>shoutouts [ready]</li>
+                  <li>play clip [in progress]</li>
+                  <li>clip slideshow [in progress]</li>
+                 </ul> 
+                
 			</div>
-			<!--<input type="text" id="search_bar" class="search_bar" placeholder="Search..">-->
-			<div id="music-list">
+			<div id="tools-list">
+                <div class="tool-item">
+                    <h2>https://snoozaya.github.io/twitch/shoutouts2</h2>
+                    <p>channel=$targetuserdisplayname</p>
+                    <p>showClip=true</p>
+                    <p>themeOption=2</p>
+                    <p>maxDuration=29</p>
+                    <p>limit=100</p>
+                </div>
+                
+                <div class="tool-item">
+                    <h2>https://snoozaya.github.io/twitch/playclip</h2>
+                    <p>clipURl=$url</p>
+                </div>
+                
+                <div class="tool-item">
+                </div>
+                
+                <div class="tool-item">
+                </div>
 			</div>
 			
 			<noscript>
@@ -165,358 +183,6 @@
 				<h3><strong>This page requires javascript to work as all the songs are loaded from a .json file. Please enable javascript for this page to make it work properly!</strong></h3>
 			</noscript>
 			
-			<hr>
-			<!-- <a href="https://www.twitch.tv/nubz4lifstream">twitch.tv/nubz4lifstream</a> -->
-			
-		<!--
-		<script defer>
-			let searchBar = document.getElementById("search_bar");
-			
-			function enableEverything() {
-				let musicListings = document.getElementById('music-list').children;
-				for (i = 0; i <= musicListings.length - 1; i++) {
-					let musicListing = musicListings[i]
-					musicListing.visibility = "visible";
-					let musicItems = musicListing.children;
-					for (o = 0; i <= musicItems.length - 1; i++) {
-						let musicItem = musicItems[i]
-						musicItem.visibility = "visible";
-					}
-				}
-			}
-			
-			function categoryContainsSearchText(category,searchText) {
-				let loweredSearchText = searchText.toLowerCase().trim()
-				let containsSearchText = false
-				
-				if(!category) return false;
-				
-				let musicItems = category.children;
-				
-				for (i = 0; i <= musicItems.length - 1; i++) {
-					let musicItem = musicItems[i]
-					
-					if(musicItem) {
-						musicItem.visibility = "hidden";
-					
-						let name = musicItem.name ? musicItem.name.toLowerCase() : null
-						let author = musicItem.author ? (musicItem.author).toLowerCase() : null
-						let game = musicItem.game ? (musicItem.game).toLowerCase() : null
-						let album = musicItem.album ? (musicItem.album).toLowerCase() : null
-						
-						
-						if(name && loweredSearchText.includes(author)) {
-							containsSearchText = true
-							musicItem.visibility = "visible";
-						}
-						
-						if(album && loweredSearchText.includes(author)) {
-							containsSearchText = true
-							musicItem.visibility = "visible";
-						}
-						if(game && loweredSearchText.includes(author)) {
-							containsSearchText = true
-							musicItem.visibility = "visible";
-						}
-						
-						if(author && loweredSearchText.includes(author)) {
-							containsSearchText = true
-							musicItem.visibility = "visible";
-						}
-					}
-				}
-				return containsSearchText
-			}
-			
-			console.log(document.getElementById('music-list').children)
-			//categoryContainsSearchText("a","test")
-			
-			function searchForCategory(searchText) {
-				let musicListings = document.getElementById('music-list').children;
-				for (i = 0; i <= musicListings.length - 1; i++) {
-					let musicListing = musicListings[i]
-					musicListing.visibility = "hidden";
-					if(musicListing && categoryContainsSearchText(musicListing,searchText)) {
-						musicListing.visibility = "visible";
-					}
-				}
-			}
-			searchForCategory("test")
-			
-			searchBar.oninput = function() {
-				let searchText = (searchBar.value).trim()
-				
-				if(searchText == "") {
-					enableEverything()
-				} else {
-					searchForCategory(searchText)
-				}
-			}
-		</script>
-		-->
-		<script>
-			var curDate = new Date();
-			var htmlVerNumber = curDate.getMonth();
-			var showAliases = false
-			
-			const musicList = document.getElementById("music-list");
-			
-			function loadJSON(callback,jsonName) {   
-				var xobj = new XMLHttpRequest();
-				xobj.overrideMimeType("application/json");
-				xobj.open('GET', (jsonName || "songs.json")+'?ver=' + htmlVerNumber, true); // Prevent browsers from caching the page, and if it does cache, then htmlVerNumber above will change every month so that it has a cache for each seperate month.
-				xobj.onreadystatechange = function () {
-					if (xobj.readyState == 4 && xobj.status == "200") {
-						callback(JSON.parse(xobj.responseText));
-					}
-				};
-				xobj.send(null);  
-			}
-			
-			function getCategoryDiv(category,shouldntCreate,imgSource) {
-				let categoryDivName = "div-category-"+(category.toLowerCase().replaceAll(" ","-").replaceAll("_","-"))
-				let categoryDiv = document.getElementById(categoryDivName);
-				if(!categoryDiv && !shouldntCreate) {
-					let hrLine = document.createElement("hr")
-					let hrLine2 = document.createElement("hr")
-					let hrLine3 = document.createElement("hr")
-					hrLine3.className = "minor"
-					
-					categoryDiv = document.createElement("div")
-					categoryDiv.title = category
-					categoryDiv.id = categoryDivName
-					
-					let categoryTitleSpan = document.createElement("span")
-					
-					let categoryTitle = document.createElement("p")
-					categoryTitle.className = "category-name"
-					categoryTitle.appendChild(document.createTextNode(category))
-					
-					console.log(imgSource)
-					
-					let imgSourceName = categoryDivName+"-sourceImg"
-					
-					let img	
-					if(imgSource && !document.getElementById(imgSourceName) && false) {
-						img = document.createElement("img")
-						img.src = imgSource
-						img.className = "icon"
-						img.id = imgSourceName
-						categoryTitleSpan.appendChild(img)
-					}
-					categoryTitleSpan.appendChild(categoryTitle)
-					
-					categoryDiv.appendChild(hrLine)
-					musicList.appendChild(categoryDiv)
-					categoryDiv.appendChild(categoryTitleSpan)
-					categoryDiv.appendChild(hrLine2)
-					categoryDiv.appendChild(hrLine3)
-					return categoryDiv
-				}
-				return categoryDiv
-			}
-		
-			function addMusicItem(fileName,name,categoryName,author,game,url,album,categoryImage) {
-				let category = getCategoryDiv(categoryName || game || author || "Other",false,categoryImage)
-				
-				let musicItem = document.createElement("div")
-				musicItem.id = "div-music-" + ((fileName || name || author || game).replaceAll(" ","-").replaceAll("_","-"))
-				musicItem.title = (name || fileName || author || game)
-				musicItem.className = "music-item"
-				category.appendChild(musicItem)
-				
-				let musicCommand = "!play "+fileName.toLowerCase()
-				
-				let musicCmdElement = document.createElement("input")
-				musicCmdElement.className = "music-copy-input"
-				musicCmdElement.value = musicCommand
-				musicCmdElement.readOnly = true
-				
-				let musicCopy = document.createElement("a")
-				musicCopy.href = "javascript:void(0)"
-				musicCopy.className = "music-copy-button"
-				musicCopy.appendChild(document.createTextNode("[copy]"))
-				musicCopy.lastTimeout
-				musicCopy.onclick = function() { 
-					musicCmdElement.select(); 
-					document.execCommand('copy') 
-					
-					if(musicCopy.lastTimeout) {
-						clearTimeout(musicCopy.lastTimeout)
-					}
-					
-					musicCopy.textContent = "[copied]"
-					musicCopy.lastTimeout = setTimeout(function(){ musicCopy.textContent = "[copy]"; }, 3000);
-				}
-				
-				let musicSource = (name || fileName)+" - "+(game || author || categoryName)
-				
-				let musicSourceDiv = document.createElement("div")
-				musicSourceDiv.className = "music-data-division"
-				musicSourceDiv.id = musicItem.id+"-sources"
-				
-				let musicSourceElement = document.createElement("span")
-				musicSourceElement.className = "music-data-source"
-				if(!url) {
-					musicSourceElement.appendChild(document.createTextNode("Source: "+musicSource))
-				}
-				else {
-					//<a href="https://www.twitch.tv/nubz4lifstream">twitch.tv/nubz4lifstream</a>
-					musicSourceElement.appendChild(document.createTextNode("Source: "))
-					
-					let musicSourceURL = document.createElement("a")
-					musicSourceURL.href = url
-					musicSourceURL.className = musicSourceElement.className
-					musicSourceURL.appendChild(document.createTextNode(musicSource))
-					musicSourceElement.appendChild(musicSourceURL)
-				}
-				
-				let musicSourceFieldsDiv = document.createElement("div")
-				musicSourceFieldsDiv.className = "music-data-list"
-				function addField(div,name,text,url) {
-					let musicField = document.createElement("span")
-					musicField.className = "music-data-name"
-					musicField.appendChild(document.createTextNode(name+": "))
-					
-					let musicFieldURL = document.createElement("a")
-					musicFieldURL.appendChild(document.createTextNode(text))
-					if(url) {
-						musicFieldURL.href = url
-					}
-					
-					if(musicSourceFieldsDiv.childElementCount > 0) {
-						let musicFieldDot = document.createElement("span")
-						musicFieldDot.appendChild(document.createTextNode(" \u2022 "))
-						musicSourceFieldsDiv.appendChild(musicFieldDot)
-					}
-					
-					musicField.appendChild(musicFieldURL)
-					musicSourceFieldsDiv.appendChild(musicField)
-				}
-				
-				if(name) {
-					addField(musicSourceFieldsDiv,"Music",name)
-					musicItem.name = name
-				}
-				
-				if(game) {
-					addField(musicSourceFieldsDiv,"Game",game)
-					musicItem.game = game
-				}
-				
-				if(album) {
-					addField(musicSourceFieldsDiv,"Album",album)
-					musicItem.album = album
-				}
-				
-				if(author) {
-					addField(musicSourceFieldsDiv,"Artist",author)
-					musicItem.author = author
-				}
-				
-				musicSourceDiv.appendChild(musicSourceElement)
-				musicSourceDiv.appendChild(musicSourceFieldsDiv)
-				
-				musicItem.appendChild(musicCmdElement)
-				musicItem.appendChild(musicCopy)
-				musicItem.appendChild(musicSourceDiv)
-				
-				let hrLine = document.createElement("hr")
-				hrLine.className = "minor"
-				
-				category.appendChild(hrLine)
-			}
-			
-			//addMusicItem('test-file','Test File','Test Category','Test Author','Test Game','https://www.google.com','https://www.example.com')
-			//addMusicItem('test-file2','Test File #2','Test Category','Test Author','Test Game','https://www.google.com','https://www.example.com')
-			
-			const params = new URLSearchParams(window.location.search)
-			var songPresets = []
-			loadJSON(function(presets) {
-				rawdata = JSON.stringify(presets);
-				songPresets = JSON.parse(rawdata);
-			
-				Object.keys(songPresets).forEach(function (index){
-					if(songPresets[index]['alt_name'] && !songPresets[index]['alias']) {
-						songPresets[index]['alias'] = songPresets[index]['alt_name']
-						delete songPresets[index]['alt_name']
-					}
-						
-					if(songPresets[index]['aliases'] || songPresets[index]['aliass']) {
-						songPresets[index]['alias'] = (songPresets[index]['aliases'] || songPresets[index]['aliass'])
-						delete songPresets[index]['aliases']
-					}
-						
-					if(songPresets[index]['tag']) {
-						songPresets[index]['tags'] = songPresets[index]['tag'];
-						delete songPresets[index]['tag'];
-					}
-						
-					if(songPresets[index]['color3'] && !songPresets[index]['color2']) {
-						songPresets[index]['color2'] = songPresets[index]['color3']
-						delete songPresets[index]['color3']
-					}
-						
-					if(songPresets[index]['color2'] && !songPresets[index]['color']) {
-						songPresets[index]['color'] = songPresets[index]['color2']
-						delete songPresets[index]['color2']
-					}
-						
-						
-					if(typeof songPresets[index]['tags'] == 'string' || songPresets[index]['tags'] instanceof String) {
-						songPresets[index]['tags'] = [songPresets[index]['tags']]
-					}
-				})
-				
-				loadJSON(function(json) {
-					json = JSON.stringify(json);
-					songs = JSON.parse(json);
-					Object.keys(songs).forEach(function (index){
-						let song = songs[index]
-						if(song['preset'] && songPresets[song['preset']]) {
-							let songPreset = songPresets[song['preset']]
-							Object.keys(songPreset).forEach(function (presetIndex){
-								if(presetIndex == "tags" && songPreset[presetIndex] && songs[index][presetIndex]) {
-									Object.keys(songPreset[presetIndex]).forEach(function (tagIndex){
-										if(!songs[index][presetIndex].includes(songPreset[presetIndex][tagIndex])) {
-											songs[index][presetIndex].push(songPreset[presetIndex][tagIndex])
-										}
-									})
-								}
-									
-								if(songPreset[presetIndex] && !songs[index][presetIndex]) {
-									songs[index][presetIndex] = songPreset[presetIndex]
-								}
-							})
-						}
-					})
-					
-					Object.keys(songs).forEach(function (index){
-						let song = songs[index]
-						if(song && song['name'] && !song['hidden']) {
-							//function addMusicItem(fileName,name,categoryName,author,game,url,source)
-							addMusicItem(index,song['site_name'] || song['name'],song['category'],song['author'],song['game'],song['url'],song['album'],song['category_img'] || song['categoryimg'])
-						}
-					})
-					
-					let otherCategory = getCategoryDiv("Other",true)
-					if(otherCategory) {
-						musicList.appendChild(otherCategory)
-					}
-					
-					let elementsArray = document.querySelectorAll("input");
-					elementsArray.forEach(function(elem) {
-						if(elem.className != "search_bar") {
-							elem.addEventListener("input", resizeInput);
-							resizeInput.call(elem)
-						}
-					});
-					
-					function resizeInput() {
-						this.style.width = this.value.length + "ch";
-					}
-				})
-			},"presets.json")
-		</script>
+
 	</body>
 </html>
