@@ -24,9 +24,16 @@
    <canvas id="rainbow"></canvas>
  </body>
  <script>
+// URL Params
+const url =  new URL(window.location.href);
+const level = url.searchParams.get("level");
+if (!level) {
+	level = 6;
+}
+	 
    // VARS
 const DPR = window.devicePixelRatio
-const colors = [
+let colors = [
   ['#EC008C', '#f957b6'],
   ['#EF4136', '#ff7972'],
   ['yellow', '#fff'],
@@ -34,6 +41,7 @@ const colors = [
   ['#27AAE1', '#5ec8f2'],
   ["#662D91", '#a158d8']
 ]
+colors = colors.slice(0, level*2);
 const tau = Math.PI * 2
 const start = Math.PI // Start position
 const finish = .5 // Finish (in % of circle "tau" basically ending at Math.PI * 2)
